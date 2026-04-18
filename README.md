@@ -23,6 +23,7 @@
 - Tailwind CSS
 - Zustand（狀態管理 + 錯題本持久化）
 - Framer Motion（動畫，備用）
+- **Supabase**（Email Auth + Postgres，雲端同步錯題本）
 
 ## 🚀 本地執行
 
@@ -41,26 +42,11 @@ npm run build
 
 輸出在 `dist/` 目錄。
 
-## ☁️ 部署到 Cloudflare Pages
+## ☁️ 部署
 
-### 方法一：從 GitHub 連結（推薦）
+後端用 **Supabase**（Auth + Postgres），前端打包後丟到任一靜態站（Vercel / Netlify / Cloudflare Pages 都可）。完整步驟、SQL schema、RLS policy、環境變數設定見 [DEPLOY.md](./DEPLOY.md)。
 
-1. 把這個資料夾推到你的 GitHub repo
-2. 登入 Cloudflare Dashboard → Workers & Pages → Create → Pages → Connect to Git
-3. 選你的 repo，設定：
-   - **Framework preset**：`Vite`
-   - **Build command**：`npm run build`
-   - **Build output directory**：`dist`
-   - **Node version**：`18` 或以上（在環境變數加 `NODE_VERSION=20`）
-4. 點 Save and Deploy，幾分鐘後就會拿到 `xxx.pages.dev` 網址 🎉
-
-### 方法二：Wrangler CLI 直接上傳
-
-```bash
-npm install -g wrangler
-npm run build
-wrangler pages deploy dist --project-name=n3-dojo
-```
+本機執行前先複製 `.env.example` 成 `.env`，填入 Supabase `Project URL` 與 `anon public key`。
 
 ## 📝 如何擴充題目
 
@@ -127,7 +113,6 @@ n3-dojo/
 - [ ] 音效（答對 / 答錯 / combo）
 - [ ] 每日登入連續天數紀錄
 - [ ] 分享成績（OG image）
-- [ ] 更多狗狗表情（驕傲、害羞、想睡覺…）
 - [ ] 錯題本也能當練習題重考
 
 ---

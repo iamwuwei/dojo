@@ -27,6 +27,8 @@ export function HomeScreen() {
   const startQuiz = useGameStore((s) => s.startQuiz);
   const openMistakes = useGameStore((s) => s.openMistakes);
   const mistakes = useGameStore((s) => s.mistakes);
+  const user = useGameStore((s) => s.user);
+  const signOut = useGameStore((s) => s.signOut);
 
   const [selectedMode, setSelectedMode] = useState<GameMode>("combo");
   const [greeting] = useState(
@@ -37,12 +39,24 @@ export function HomeScreen() {
     <div className="min-h-screen px-4 sm:px-5 py-5 pb-10 max-w-3xl mx-auto">
       {/* 標題區 */}
       <header className="text-center mb-5 sm:mb-6">
-        <h1 className="font-display text-xl sm:text-2xl md:text-3xl text-ink tracking-tight">
-          N3 修行道場
-        </h1>
-        <p className="text-xs sm:text-sm text-ink/70 mt-2 font-pixel">
-          JLPT N3 複習・毎日ちょっとずつ
-        </p>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-3">
+          <div>
+            <h1 className="font-display text-xl sm:text-2xl md:text-3xl text-ink tracking-tight">
+              N3 修行道場
+            </h1>
+            <p className="text-xs sm:text-sm text-ink/70 mt-2 font-pixel">
+              JLPT N3 複習・毎日ちょっとずつ
+            </p>
+          </div>
+          {user ? (
+            <button
+              onClick={async () => await signOut()}
+              className="pixel-btn pixel-border bg-white text-ink text-xs px-3 py-2 shadow-pixelSm btn-compact"
+            >
+              登出 {user.email}
+            </button>
+          ) : null}
+        </div>
       </header>
 
       {/* 狗狗歡迎區 */}

@@ -1,0 +1,52 @@
+title: "N3 自訂學習內容"
+description: |
+  這個檔案可以讓你輸入自己的單字、文法、句型和閃卡內容。
+  AI 可以讀取這份 YAML，依照項目生成題目與練習內容。
+ai:
+  instructions: |
+    請根據下面的學習內容生成 N3 模擬題目，題型可包含單字選擇題、文法填空題、句型配對題、以及閃卡練習。
+    每題請提供日文原句、中文說明與正確答案。
+
+vocabulary:
+  - word: 経済
+    reading: けいざい
+    meaning: 經濟
+    example: "経済ニュースを見ます。"
+  - word: 連絡
+    reading: れんらく
+    meaning: 聯絡
+    example: "後で連絡します。"
+
+grammar:
+  - pattern: "〜ようにする"
+    meaning: "努力做到某事或養成習慣"
+    example: "毎日漢字を覚えるようにしています。"
+  - pattern: "〜たばかり"
+    meaning: "剛剛完成某事"
+    example: "食べたばかりです。"
+
+sentence:
+  - prompt: "配對：推測與傳聞句型"
+    lefts:
+      - "天気予報によると、明日は"
+      - "あの人は旅行中だ"
+    rights:
+      - "雨だそうです。"
+      - "と言っていました。"
+  - prompt: "配對：原因與結果"
+    lefts:
+      - "忙しかった"
+      - "風邪をひいた"
+    rights:
+      - "ので、行けません。"
+      - "から、休みます。"
+
+flashcards:
+  - front: 計画
+    reading: けいかく
+    back: 計畫
+    example: "旅行の計画を立てました。"
+  - front: 説明
+    reading: せつめい
+    back: 說明
+    example: "使い方を説明してください。"

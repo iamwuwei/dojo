@@ -1,52 +1,440 @@
-title: "N3 自訂學習內容"
-description: |
-  這個檔案可以讓你輸入自己的單字、文法、句型和閃卡內容。
-  AI 可以讀取這份 YAML，依照項目生成題目與練習內容。
-ai:
-  instructions: |
-    請根據下面的學習內容生成 N3 模擬題目，題型可包含單字選擇題、文法填空題、句型配對題、以及閃卡練習。
-    每題請提供日文原句、中文說明與正確答案。
+# ===================================================================
+# N3 頻出語リスト（learning.yml 追加用）
+# -------------------------------------------------------------------
+# 使い方：既存の public/learning.yml の vocabulary: セクションに
+# 以下のエントリを追記してください（既存データとは重複していません）。
+#
+# 出典の目安：
+#   ※ = N3V.pdf（JLPT公式問題例集 N3 言語知識・文字語彙）掲載語
+#   他 = N3レベルで頻出する語彙（語彙カテゴリ別に整理）
+# ===================================================================
 
 vocabulary:
-  - word: 経済
-    reading: けいざい
-    meaning: 經濟
-    example: "経済ニュースを見ます。"
-  - word: 連絡
-    reading: れんらく
-    meaning: 聯絡
-    example: "後で連絡します。"
 
-grammar:
-  - pattern: "〜ようにする"
-    meaning: "努力做到某事或養成習慣"
-    example: "毎日漢字を覚えるようにしています。"
-  - pattern: "〜たばかり"
-    meaning: "剛剛完成某事"
-    example: "食べたばかりです。"
+  # ----------------------------------------------------------
+  # ① 社会・経済・文化（名詞）
+  # ----------------------------------------------------------
+  - word: 社会
+    reading: しゃかい
+    meaning: 社會
+    example: "社会のルールを守りましょう。"
+  - word: 環境
+    reading: かんきょう
+    meaning: 環境
+    example: "環境を守ることが大切です。"
+  - word: 教育
+    reading: きょういく
+    meaning: 教育
+    example: "日本の教育について調べています。"
+  - word: 情報
+    reading: じょうほう
+    meaning: 資訊、情報
+    example: "最新の情報を集めます。"
+  - word: 技術
+    reading: ぎじゅつ
+    meaning: 技術
+    example: "新しい技術を学びたいです。"
+  - word: 科学
+    reading: かがく
+    meaning: 科學
+    example: "科学の本を読むのが好きです。"
+  - word: 歴史
+    reading: れきし
+    meaning: 歷史
+    example: "日本の歴史に興味があります。"
+  - word: 自然
+    reading: しぜん
+    meaning: 自然
+    example: "自然の中を散歩します。"
 
-sentence:
-  - prompt: "配對：推測與傳聞句型"
-    lefts:
-      - "天気予報によると、明日は"
-      - "あの人は旅行中だ"
-    rights:
-      - "雨だそうです。"
-      - "と言っていました。"
-  - prompt: "配對：原因與結果"
-    lefts:
-      - "忙しかった"
-      - "風邪をひいた"
-    rights:
-      - "ので、行けません。"
-      - "から、休みます。"
+  # ----------------------------------------------------------
+  # ② 職場・ビジネス（名詞）
+  # ----------------------------------------------------------
+  - word: 会議
+    reading: かいぎ
+    meaning: 會議
+    example: "午後から会議があります。"
+  - word: 資料
+    reading: しりょう
+    meaning: 資料
+    example: "明日までに資料を用意します。"
+  - word: 報告
+    reading: ほうこく
+    meaning: 報告
+    example: "結果を上司に報告しました。"
+  - word: 提出
+    reading: ていしゅつ
+    meaning: 提交、提出
+    example: "レポートを金曜日までに提出してください。"
+  - word: 締切
+    reading: しめきり
+    meaning: 截止日期
+    example: "申し込みの締切は明日です。"
+  - word: 残業
+    reading: ざんぎょう
+    meaning: 加班
+    example: "今日は残業で遅くなります。"
+  - word: 休暇
+    reading: きゅうか
+    meaning: 休假
+    example: "夏の休暇に旅行に行きます。"
+  - word: 給料
+    reading: きゅうりょう
+    meaning: 薪水
+    example: "今月の給料が入りました。"
+  - word: 責任
+    reading: せきにん
+    meaning: 責任
+    example: "自分の仕事に責任を持ちます。"
 
-flashcards:
-  - front: 計画
-    reading: けいかく
-    back: 計畫
-    example: "旅行の計画を立てました。"
-  - front: 説明
-    reading: せつめい
-    back: 說明
-    example: "使い方を説明してください。"
+  # ----------------------------------------------------------
+  # ③ 手続き・書類（N3V頻出）
+  # ----------------------------------------------------------
+  - word: 証明書   # ※ N3V
+    reading: しょうめいしょ
+    meaning: 證明書
+    example: "卒業証明書を提出します。"
+  - word: 領収書   # ※ N3V
+    reading: りょうしゅうしょ
+    meaning: 收據
+    example: "レシートではなく、領収書をください。"
+  - word: 申込書   # ※ N3V
+    reading: もうしこみしょ
+    meaning: 申請書
+    example: "セミナーの申込書に記入してください。"
+  - word: 参考書   # ※ N3V
+    reading: さんこうしょ
+    meaning: 參考書
+    example: "N3の参考書を買いました。"
+  - word: 履歴書
+    reading: りれきしょ
+    meaning: 履歷書
+    example: "面接の前に履歴書を書きました。"
+
+  # ----------------------------------------------------------
+  # ④ 学習・試験（N3V頻出）
+  # ----------------------------------------------------------
+  - word: 成績   # ※ N3V
+    reading: せいせき
+    meaning: 成績
+    example: "今回の成績はよかったです。"
+  - word: 発表   # ※ N3V
+    reading: はっぴょう
+    meaning: 發表、發佈
+    example: "試験の結果が発表されました。"
+  - word: 応募   # ※ N3V
+    reading: おうぼ
+    meaning: 報名、應徵
+    example: "奨学金に応募しました。"
+  - word: 奨学金   # ※ N3V
+    reading: しょうがくきん
+    meaning: 獎學金
+    example: "奨学金のおかげで大学に通えます。"
+  - word: 単語   # ※ N3V
+    reading: たんご
+    meaning: 單字
+    example: "毎日新しい単語を覚えます。"
+  - word: 疑問   # ※ N3V
+    reading: ぎもん
+    meaning: 疑問
+    example: "子どもの疑問に答えました。"
+  - word: 目標   # ※ N3V
+    reading: もくひょう
+    meaning: 目標
+    example: "今年の目標はN2合格です。"
+  - word: 感想
+    reading: かんそう
+    meaning: 感想
+    example: "映画の感想を聞かせてください。"
+
+  # ----------------------------------------------------------
+  # ⑤ 感情・気持ち（名詞・ナ形容詞）
+  # ----------------------------------------------------------
+  - word: 感動
+    reading: かんどう
+    meaning: 感動
+    example: "その映画に感動しました。"
+  - word: 自信
+    reading: じしん
+    meaning: 自信
+    example: "試験に自信があります。"
+  - word: 性格
+    reading: せいかく
+    meaning: 個性
+    example: "彼は優しい性格です。"
+  - word: 印象
+    reading: いんしょう
+    meaning: 印象
+    example: "第一印象が大切です。"
+  - word: 緊張
+    reading: きんちょう
+    meaning: 緊張
+    example: "発表の前は緊張します。"
+  - word: 我慢   # ※ N3V
+    reading: がまん
+    meaning: 忍耐
+    example: "痛くても我慢してください。"
+  - word: 関心   # ※ N3V
+    reading: かんしん
+    meaning: 關心、興趣
+    example: "政治に関心があります。"
+  - word: 不満   # ※ N3V
+    reading: ふまん
+    meaning: 不滿
+    example: "給料に不満があります。"
+
+  # ----------------------------------------------------------
+  # ⑥ 動詞（基本動作）
+  # ----------------------------------------------------------
+  - word: 遅れる   # ※ N3V
+    reading: おくれる
+    meaning: 遲到、延遲
+    example: "電車が遅れて、会議に間に合いませんでした。"
+  - word: ためる   # ※ N3V
+    reading: ためる
+    meaning: 儲存、累積
+    example: "将来のためにお金をためています。"
+  - word: 比較する
+    reading: ひかくする
+    meaning: 比較
+    example: "二つの商品を比較しました。"
+  - word: 返信する   # ※ N3V
+    reading: へんしんする
+    meaning: 回信、回覆
+    example: "メールに返信してください。"
+  - word: 注文する   # ※ N3V
+    reading: ちゅうもんする
+    meaning: 訂購
+    example: "ネットで本を注文しました。"
+  - word: 主張する   # ※ N3V
+    reading: しゅちょうする
+    meaning: 主張
+    example: "自分の意見を強く主張しました。"
+  - word: 命令する   # ※ N3V
+    reading: めいれいする
+    meaning: 命令
+    example: "部長が命令しました。"
+  - word: 優勝する   # ※ N3V
+    reading: ゆうしょうする
+    meaning: 獲得冠軍
+    example: "チームが大会で優勝しました。"
+
+  # ----------------------------------------------------------
+  # ⑦ 動詞（感情・思考）
+  # ----------------------------------------------------------
+  - word: 感じる
+    reading: かんじる
+    meaning: 感覺、感受
+    example: "幸せを感じます。"
+  - word: 信じる
+    reading: しんじる
+    meaning: 相信
+    example: "彼の言葉を信じます。"
+  - word: 迷う
+    reading: まよう
+    meaning: 猶豫、迷路
+    example: "どちらにするか迷っています。"
+  - word: 悩む
+    reading: なやむ
+    meaning: 煩惱
+    example: "進路のことで悩んでいます。"
+  - word: 諦める
+    reading: あきらめる
+    meaning: 放棄
+    example: "夢を諦めないでください。"
+
+  # ----------------------------------------------------------
+  # ⑧ ナ形容詞
+  # ----------------------------------------------------------
+  - word: 意外   # ※ N3V
+    reading: いがい
+    meaning: 意外、出乎意料
+    example: "彼の答えは意外でした。"
+  - word: 重大   # ※ N3V
+    reading: じゅうだい
+    meaning: 重大
+    example: "これは重大な問題です。"
+  - word: 複雑   # ※ N3V
+    reading: ふくざつ
+    meaning: 複雜
+    example: "この計算は複雑です。"
+  - word: 正常   # ※ N3V
+    reading: せいじょう
+    meaning: 正常
+    example: "機械は正常に動いています。"
+  - word: 新鮮
+    reading: しんせん
+    meaning: 新鮮
+    example: "新鮮な野菜を買いました。"
+  - word: 様々
+    reading: さまざま
+    meaning: 各式各樣
+    example: "様々な意見があります。"
+  - word: 確か
+    reading: たしか
+    meaning: 確實、確定
+    example: "確かな情報が欲しいです。"
+  - word: 真剣
+    reading: しんけん
+    meaning: 認真
+    example: "真剣に考えてください。"
+
+  # ----------------------------------------------------------
+  # ⑨ イ形容詞
+  # ----------------------------------------------------------
+  - word: 細かい
+    reading: こまかい
+    meaning: 細小、仔細
+    example: "細かい字が読みにくいです。"
+  - word: 深い
+    reading: ふかい
+    meaning: 深的
+    example: "この川はとても深いです。"
+  - word: 浅い
+    reading: あさい
+    meaning: 淺的
+    example: "浅いプールで泳ぎます。"
+  - word: 硬い
+    reading: かたい
+    meaning: 硬的
+    example: "このパンは硬いです。"
+  - word: 柔らかい
+    reading: やわらかい
+    meaning: 柔軟的
+    example: "柔らかいベッドが好きです。"
+  - word: 厳しい
+    reading: きびしい
+    meaning: 嚴格、嚴厲
+    example: "父はとても厳しい人です。"
+  - word: 懐かしい
+    reading: なつかしい
+    meaning: 懷念的
+    example: "昔の写真を見て懐かしく思いました。"
+  - word: 珍しい
+    reading: めずらしい
+    meaning: 稀有的
+    example: "珍しい鳥を見ました。"
+
+  # ----------------------------------------------------------
+  # ⑩ 副詞・接続詞
+  # ----------------------------------------------------------
+  - word: 必ず
+    reading: かならず
+    meaning: 一定、必定
+    example: "明日は必ず来てください。"
+  - word: きっと
+    reading: きっと
+    meaning: 一定、肯定
+    example: "彼はきっと来ます。"
+  - word: そろそろ
+    reading: そろそろ
+    meaning: 差不多該…
+    example: "そろそろ帰りましょう。"
+  - word: やっと
+    reading: やっと
+    meaning: 終於
+    example: "やっと宿題が終わりました。"
+  - word: ずっと
+    reading: ずっと
+    meaning: 一直、比…得多
+    example: "ずっとあなたを待っていました。"
+  - word: まるで
+    reading: まるで
+    meaning: 簡直像、彷彿
+    example: "まるで夢のようです。"
+  - word: つまり
+    reading: つまり
+    meaning: 也就是說
+    example: "つまり、行けないということですね。"
+  - word: それに
+    reading: それに
+    meaning: 而且
+    example: "安いし、それに美味しいです。"
+
+  # ----------------------------------------------------------
+  # ⑪ オノマトペ（擬音・擬態語、N3V頻出）
+  # ----------------------------------------------------------
+  - word: ぶらぶら   # ※ N3V
+    reading: ぶらぶら
+    meaning: 漫步、閒晃
+    example: "街をぶらぶらしていたら、友達に会いました。"
+  - word: からから   # ※ N3V
+    reading: からから
+    meaning: 乾渴、空空
+    example: "のどがからからです。水をください。"
+  - word: ぺこぺこ   # ※ N3V
+    reading: ぺこぺこ
+    meaning: 肚子很餓
+    example: "朝ごはんを食べていないので、お腹がぺこぺこです。"
+  - word: ぐっすり
+    reading: ぐっすり
+    meaning: 熟睡
+    example: "昨日はぐっすり眠れました。"
+  - word: びっくり
+    reading: びっくり
+    meaning: 驚訝、嚇一跳
+    example: "突然の音にびっくりしました。"
+  - word: わくわく
+    reading: わくわく
+    meaning: 興奮期待
+    example: "旅行が楽しみでわくわくしています。"
+
+  # ----------------------------------------------------------
+  # ⑫ カタカナ語（N3V頻出）
+  # ----------------------------------------------------------
+  - word: インタビュー   # ※ N3V
+    reading: インタビュー
+    meaning: 訪問、採訪
+    example: "選手にインタビューをしました。"
+  - word: スピーチ
+    reading: スピーチ
+    meaning: 演講
+    example: "結婚式でスピーチをしました。"
+  - word: メッセージ
+    reading: メッセージ
+    meaning: 訊息
+    example: "LINEでメッセージを送ります。"
+  - word: コミュニケーション
+    reading: コミュニケーション
+    meaning: 溝通
+    example: "コミュニケーションが大切です。"
+  - word: スケジュール
+    reading: スケジュール
+    meaning: 行程、日程
+    example: "今週のスケジュールを確認します。"
+  - word: アドバイス
+    reading: アドバイス
+    meaning: 建議
+    example: "先生のアドバイスが役に立ちました。"
+
+  # ----------------------------------------------------------
+  # ⑬ 日常・生活
+  # ----------------------------------------------------------
+  - word: 首都   # ※ N3V
+    reading: しゅと
+    meaning: 首都
+    example: "日本の首都は東京です。"
+  - word: 地球   # ※ N3V
+    reading: ちきゅう
+    meaning: 地球
+    example: "地球は太陽のまわりを回っています。"
+  - word: 太陽   # ※ N3V
+    reading: たいよう
+    meaning: 太陽
+    example: "朝、太陽が昇ります。"
+  - word: 協力   # ※ N3V
+    reading: きょうりょく
+    meaning: 合作、協助
+    example: "二人で協力すれば、仕事が早く終わります。"
+  - word: 将来   # ※ N3V
+    reading: しょうらい
+    meaning: 將來
+    example: "将来のために、お金をためています。"
+  - word: 計算   # ※ N3V
+    reading: けいさん
+    meaning: 計算
+    example: "この計算は複雑です。"
+  - word: 選手   # ※ N3V
+    reading: せんしゅ
+    meaning: 選手
+    example: "サッカーの選手になりたいです。"

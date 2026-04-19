@@ -1,0 +1,2129 @@
+# ===================================================================
+# JLPT N3 單字列表 - 名詞批次（共 530 詞）
+# 分級依據：舊日檢出題基準（舊 2 級範圍內的中階詞）、
+#           JLPT Sensei / Jisho.org / TRY! 系列交叉比對
+# ⚠️ JLPT 官方不公開語彙清單，分級為民間共識
+# 已避免與 N5、N4、既有 N3 檔重複
+# ===================================================================
+
+vocabulary:
+  - word: 議会
+    reading: ぎかい
+    meaning: 議會
+    level: N3
+  - word: 選挙
+    reading: せんきょ
+    meaning: 選舉
+    level: N3
+  - word: 大臣
+    reading: だいじん
+    meaning: 部長、大臣
+    level: N3
+  - word: 首相
+    reading: しゅしょう
+    meaning: 首相
+    level: N3
+  - word: 大統領
+    reading: だいとうりょう
+    meaning: 總統
+    level: N3
+  - word: 政治家
+    reading: せいじか
+    meaning: 政治家
+    level: N3
+  - word: 政党
+    reading: せいとう
+    meaning: 政黨
+    level: N3
+  - word: 法律
+    reading: ほうりつ
+    meaning: 法律
+    level: N3
+  - word: 憲法
+    reading: けんぽう
+    meaning: 憲法
+    level: N3
+  - word: 条例
+    reading: じょうれい
+    meaning: 條例
+    level: N3
+  - word: 規則
+    reading: きそく
+    meaning: 規則
+    level: N3
+  - word: ルール
+    reading: ルール
+    meaning: 規則
+    level: N3
+  - word: 秩序
+    reading: ちつじょ
+    meaning: 秩序
+    level: N3
+  - word: 世代
+    reading: せだい
+    meaning: 世代
+    level: N3
+  - word: 世間
+    reading: せけん
+    meaning: 社會、世間
+    level: N3
+  - word: 市民
+    reading: しみん
+    meaning: 市民
+    level: N3
+  - word: 国民
+    reading: こくみん
+    meaning: 國民
+    level: N3
+  - word: 市長
+    reading: しちょう
+    meaning: 市長
+    level: N3
+  - word: 知事
+    reading: ちじ
+    meaning: 縣長、知事
+    level: N3
+  - word: 役所
+    reading: やくしょ
+    meaning: 政府機關
+    level: N3
+  - word: 役割
+    reading: やくわり
+    meaning: 角色、職責
+    level: N3
+  - word: 地位
+    reading: ちい
+    meaning: 地位
+    level: N3
+  - word: 身分
+    reading: みぶん
+    meaning: 身分
+    level: N3
+  - word: 階級
+    reading: かいきゅう
+    meaning: 階級
+    level: N3
+  - word: 階層
+    reading: かいそう
+    meaning: 階層
+    level: N3
+  - word: 差別
+    reading: さべつ
+    meaning: 歧視
+    level: N3
+  - word: 平等
+    reading: びょうどう
+    meaning: 平等
+    level: N3
+  - word: 権利
+    reading: けんり
+    meaning: 權利
+    level: N3
+  - word: 義務
+    reading: ぎむ
+    meaning: 義務
+    level: N3
+  - word: 財政
+    reading: ざいせい
+    meaning: 財政
+    level: N3
+  - word: 予算
+    reading: よさん
+    meaning: 預算
+    level: N3
+  - word: 経費
+    reading: けいひ
+    meaning: 經費
+    level: N3
+  - word: 景気
+    reading: けいき
+    meaning: 景氣
+    level: N3
+  - word: 不景気
+    reading: ふけいき
+    meaning: 不景氣
+    level: N3
+  - word: 物価
+    reading: ぶっか
+    meaning: 物價
+    level: N3
+  - word: 金融
+    reading: きんゆう
+    meaning: 金融
+    level: N3
+  - word: 株
+    reading: かぶ
+    meaning: 股票
+    level: N3
+  - word: 投資
+    reading: とうし
+    meaning: 投資
+    level: N3
+  - word: 貿易
+    reading: ぼうえき
+    meaning: 貿易
+    level: N3
+  - word: 輸入
+    reading: ゆにゅう
+    meaning: 進口
+    level: N3
+  - word: 輸出
+    reading: ゆしゅつ
+    meaning: 出口
+    level: N3
+  - word: 組織
+    reading: そしき
+    meaning: 組織
+    level: N3
+  - word: 団体
+    reading: だんたい
+    meaning: 團體
+    level: N3
+  - word: 協会
+    reading: きょうかい
+    meaning: 協會
+    level: N3
+  - word: 企業
+    reading: きぎょう
+    meaning: 企業
+    level: N3
+  - word: 工場
+    reading: こうじょう
+    meaning: 工廠
+    level: N3
+  - word: 施設
+    reading: しせつ
+    meaning: 設施
+    level: N3
+  - word: 機関
+    reading: きかん
+    meaning: 機構
+    level: N3
+  - word: 部門
+    reading: ぶもん
+    meaning: 部門
+    level: N3
+  - word: 部署
+    reading: ぶしょ
+    meaning: 部門
+    level: N3
+  - word: 課
+    reading: か
+    meaning: 課（組織單位）
+    level: N3
+  - word: 係
+    reading: かかり
+    meaning: 負責人員、組
+    level: N3
+  - word: チーム
+    reading: チーム
+    meaning: 團隊
+    level: N3
+  - word: グループ
+    reading: グループ
+    meaning: 小組
+    level: N3
+  - word: 委員会
+    reading: いいんかい
+    meaning: 委員會
+    level: N3
+  - word: サークル
+    reading: サークル
+    meaning: 社團
+    level: N3
+  - word: クラブ
+    reading: クラブ
+    meaning: 俱樂部
+    level: N3
+  - word: 支店
+    reading: してん
+    meaning: 分店
+    level: N3
+  - word: 本社
+    reading: ほんしゃ
+    meaning: 總公司
+    level: N3
+  - word: 事務所
+    reading: じむしょ
+    meaning: 辦公室
+    level: N3
+  - word: オフィス
+    reading: オフィス
+    meaning: 辦公室
+    level: N3
+  - word: 犯罪
+    reading: はんざい
+    meaning: 犯罪
+    level: N3
+  - word: 犯人
+    reading: はんにん
+    meaning: 犯人
+    level: N3
+  - word: 事件
+    reading: じけん
+    meaning: 事件
+    level: N3
+  - word: 被害
+    reading: ひがい
+    meaning: 受害
+    level: N3
+  - word: 被害者
+    reading: ひがいしゃ
+    meaning: 受害者
+    level: N3
+  - word: 加害者
+    reading: かがいしゃ
+    meaning: 加害者
+    level: N3
+  - word: 刑務所
+    reading: けいむしょ
+    meaning: 監獄
+    level: N3
+  - word: 裁判
+    reading: さいばん
+    meaning: 審判
+    level: N3
+  - word: 裁判所
+    reading: さいばんしょ
+    meaning: 法院
+    level: N3
+  - word: 弁護士
+    reading: べんごし
+    meaning: 律師
+    level: N3
+  - word: 判決
+    reading: はんけつ
+    meaning: 判決
+    level: N3
+  - word: 証拠
+    reading: しょうこ
+    meaning: 證據
+    level: N3
+  - word: 泥棒
+    reading: どろぼう
+    meaning: 小偷
+    level: N3
+  - word: 強盗
+    reading: ごうとう
+    meaning: 強盜
+    level: N3
+  - word: 詐欺
+    reading: さぎ
+    meaning: 詐騙
+    level: N3
+  - word: 殺人
+    reading: さつじん
+    meaning: 殺人
+    level: N3
+  - word: 暴力
+    reading: ぼうりょく
+    meaning: 暴力
+    level: N3
+  - word: 罰金
+    reading: ばっきん
+    meaning: 罰款
+    level: N3
+  - word: 逮捕
+    reading: たいほ
+    meaning: 逮捕
+    level: N3
+  - word: 容疑者
+    reading: ようぎしゃ
+    meaning: 嫌疑人
+    level: N3
+  - word: 哲学
+    reading: てつがく
+    meaning: 哲學
+    level: N3
+  - word: 心理学
+    reading: しんりがく
+    meaning: 心理學
+    level: N3
+  - word: 経済学
+    reading: けいざいがく
+    meaning: 經濟學
+    level: N3
+  - word: 社会学
+    reading: しゃかいがく
+    meaning: 社會學
+    level: N3
+  - word: 歴史学
+    reading: れきしがく
+    meaning: 歷史學
+    level: N3
+  - word: 医学
+    reading: いがく
+    meaning: 醫學
+    level: N3
+  - word: 工学
+    reading: こうがく
+    meaning: 工學
+    level: N3
+  - word: 物理学
+    reading: ぶつりがく
+    meaning: 物理學
+    level: N3
+  - word: 生物学
+    reading: せいぶつがく
+    meaning: 生物學
+    level: N3
+  - word: 天文学
+    reading: てんもんがく
+    meaning: 天文學
+    level: N3
+  - word: 言語
+    reading: げんご
+    meaning: 語言
+    level: N3
+  - word: 語学
+    reading: ごがく
+    meaning: 語學
+    level: N3
+  - word: 外国語
+    reading: がいこくご
+    meaning: 外語
+    level: N3
+  - word: 方言
+    reading: ほうげん
+    meaning: 方言
+    level: N3
+  - word: 敬語
+    reading: けいご
+    meaning: 敬語
+    level: N3
+  - word: 発音
+    reading: はつおん
+    meaning: 發音
+    level: N3
+  - word: 文章
+    reading: ぶんしょう
+    meaning: 文章
+    level: N3
+  - word: 文字
+    reading: もじ
+    meaning: 文字
+    level: N3
+  - word: 詩
+    reading: し
+    meaning: 詩
+    level: N3
+  - word: 小説
+    reading: しょうせつ
+    meaning: 小說
+    level: N3
+  - word: 物語
+    reading: ものがたり
+    meaning: 故事
+    level: N3
+  - word: 童話
+    reading: どうわ
+    meaning: 童話
+    level: N3
+  - word: エッセイ
+    reading: エッセイ
+    meaning: 散文
+    level: N3
+  - word: 学科
+    reading: がっか
+    meaning: 學科
+    level: N3
+  - word: 入試
+    reading: にゅうし
+    meaning: 入學考試
+    level: N3
+  - word: 受験
+    reading: じゅけん
+    meaning: 應試
+    level: N3
+  - word: 合格
+    reading: ごうかく
+    meaning: 合格
+    level: N3
+  - word: 不合格
+    reading: ふごうかく
+    meaning: 不合格
+    level: N3
+  - word: 演習
+    reading: えんしゅう
+    meaning: 練習課
+    level: N3
+  - word: ゼミ
+    reading: ゼミ
+    meaning: 研討課
+    level: N3
+  - word: クラスメート
+    reading: クラスメート
+    meaning: 同班同學
+    level: N3
+  - word: 同級生
+    reading: どうきゅうせい
+    meaning: 同年級生
+    level: N3
+  - word: 同窓会
+    reading: どうそうかい
+    meaning: 同學會
+    level: N3
+  - word: 評価
+    reading: ひょうか
+    meaning: 評價
+    level: N3
+  - word: 点数
+    reading: てんすう
+    meaning: 分數
+    level: N3
+  - word: 偏差値
+    reading: へんさち
+    meaning: 偏差值
+    level: N3
+  - word: 卒業式
+    reading: そつぎょうしき
+    meaning: 畢業典禮
+    level: N3
+  - word: 入学式
+    reading: にゅうがくしき
+    meaning: 入學典禮
+    level: N3
+  - word: 授業料
+    reading: じゅぎょうりょう
+    meaning: 學費
+    level: N3
+  - word: 校長
+    reading: こうちょう
+    meaning: 校長
+    level: N3
+  - word: 教授
+    reading: きょうじゅ
+    meaning: 教授
+    level: N3
+  - word: 教員
+    reading: きょういん
+    meaning: 教員
+    level: N3
+  - word: 寮
+    reading: りょう
+    meaning: 宿舍
+    level: N3
+  - word: 下宿
+    reading: げしゅく
+    meaning: 租屋、住宿
+    level: N3
+  - word: 職業
+    reading: しょくぎょう
+    meaning: 職業
+    level: N3
+  - word: 職場
+    reading: しょくば
+    meaning: 職場
+    level: N3
+  - word: 業務
+    reading: ぎょうむ
+    meaning: 業務
+    level: N3
+  - word: 労働
+    reading: ろうどう
+    meaning: 勞動
+    level: N3
+  - word: 勤務
+    reading: きんむ
+    meaning: 勤務
+    level: N3
+  - word: 転勤
+    reading: てんきん
+    meaning: 調職
+    level: N3
+  - word: 昇進
+    reading: しょうしん
+    meaning: 升遷
+    level: N3
+  - word: 昇給
+    reading: しょうきゅう
+    meaning: 加薪
+    level: N3
+  - word: 退職
+    reading: たいしょく
+    meaning: 退職
+    level: N3
+  - word: 定年
+    reading: ていねん
+    meaning: 退休年齡
+    level: N3
+  - word: 失業
+    reading: しつぎょう
+    meaning: 失業
+    level: N3
+  - word: 雇用
+    reading: こよう
+    meaning: 雇用
+    level: N3
+  - word: 求人
+    reading: きゅうじん
+    meaning: 徵才
+    level: N3
+  - word: 面接
+    reading: めんせつ
+    meaning: 面試
+    level: N3
+  - word: 契約
+    reading: けいやく
+    meaning: 契約
+    level: N3
+  - word: 企画
+    reading: きかく
+    meaning: 企劃
+    level: N3
+  - word: プロジェクト
+    reading: プロジェクト
+    meaning: 專案
+    level: N3
+  - word: 事業
+    reading: じぎょう
+    meaning: 事業
+    level: N3
+  - word: 営業
+    reading: えいぎょう
+    meaning: 營業
+    level: N3
+  - word: 販売
+    reading: はんばい
+    meaning: 銷售
+    level: N3
+  - word: 顧客
+    reading: こきゃく
+    meaning: 顧客
+    level: N3
+  - word: 取引
+    reading: とりひき
+    meaning: 交易
+    level: N3
+  - word: 取引先
+    reading: とりひきさき
+    meaning: 客戶
+    level: N3
+  - word: 業界
+    reading: ぎょうかい
+    meaning: 業界
+    level: N3
+  - word: ブランド
+    reading: ブランド
+    meaning: 品牌
+    level: N3
+  - word: 商品
+    reading: しょうひん
+    meaning: 商品
+    level: N3
+  - word: 製品
+    reading: せいひん
+    meaning: 產品
+    level: N3
+  - word: 感情
+    reading: かんじょう
+    meaning: 情感
+    level: N3
+  - word: 感覚
+    reading: かんかく
+    meaning: 感覺
+    level: N3
+  - word: 喜び
+    reading: よろこび
+    meaning: 喜悅
+    level: N3
+  - word: 悲しみ
+    reading: かなしみ
+    meaning: 悲傷
+    level: N3
+  - word: 苦しみ
+    reading: くるしみ
+    meaning: 痛苦
+    level: N3
+  - word: 楽しみ
+    reading: たのしみ
+    meaning: 樂趣
+    level: N3
+  - word: 怒り
+    reading: いかり
+    meaning: 憤怒
+    level: N3
+  - word: 恐怖
+    reading: きょうふ
+    meaning: 恐懼
+    level: N3
+  - word: 欲望
+    reading: よくぼう
+    meaning: 慾望
+    level: N3
+  - word: 願い
+    reading: ねがい
+    meaning: 願望
+    level: N3
+  - word: 思考
+    reading: しこう
+    meaning: 思考
+    level: N3
+  - word: 意識
+    reading: いしき
+    meaning: 意識
+    level: N3
+  - word: 記憶
+    reading: きおく
+    meaning: 記憶
+    level: N3
+  - word: 雰囲気
+    reading: ふんいき
+    meaning: 氣氛
+    level: N3
+  - word: 態度
+    reading: たいど
+    meaning: 態度
+    level: N3
+  - word: 人柄
+    reading: ひとがら
+    meaning: 人品
+    level: N3
+  - word: 個性
+    reading: こせい
+    meaning: 個性
+    level: N3
+  - word: 癖
+    reading: くせ
+    meaning: 習慣、毛病
+    level: N3
+  - word: ムード
+    reading: ムード
+    meaning: 氣氛
+    level: N3
+  - word: ストレス
+    reading: ストレス
+    meaning: 壓力
+    level: N3
+  - word: 悩み
+    reading: なやみ
+    meaning: 煩惱
+    level: N3
+  - word: 人間関係
+    reading: にんげんかんけい
+    meaning: 人際關係
+    level: N3
+  - word: 友情
+    reading: ゆうじょう
+    meaning: 友情
+    level: N3
+  - word: 恋愛
+    reading: れんあい
+    meaning: 戀愛
+    level: N3
+  - word: 結婚
+    reading: けっこん
+    meaning: 結婚
+    level: N3
+  - word: 離婚
+    reading: りこん
+    meaning: 離婚
+    level: N3
+  - word: 出会い
+    reading: であい
+    meaning: 相遇
+    level: N3
+  - word: 別れ
+    reading: わかれ
+    meaning: 分別
+    level: N3
+  - word: 交際
+    reading: こうさい
+    meaning: 交往
+    level: N3
+  - word: 信頼
+    reading: しんらい
+    meaning: 信賴
+    level: N3
+  - word: 絆
+    reading: きずな
+    meaning: 羈絆
+    level: N3
+  - word: 仲間
+    reading: なかま
+    meaning: 夥伴
+    level: N3
+  - word: 知り合い
+    reading: しりあい
+    meaning: 認識的人
+    level: N3
+  - word: 知人
+    reading: ちじん
+    meaning: 熟人
+    level: N3
+  - word: 親子
+    reading: おやこ
+    meaning: 親子
+    level: N3
+  - word: 夫婦
+    reading: ふうふ
+    meaning: 夫妻
+    level: N3
+  - word: 兄弟姉妹
+    reading: きょうだいしまい
+    meaning: 兄弟姊妹
+    level: N3
+  - word: カップル
+    reading: カップル
+    meaning: 情侶
+    level: N3
+  - word: 天然
+    reading: てんねん
+    meaning: 天然
+    level: N3
+  - word: 宇宙
+    reading: うちゅう
+    meaning: 宇宙
+    level: N3
+  - word: 惑星
+    reading: わくせい
+    meaning: 行星
+    level: N3
+  - word: 銀河
+    reading: ぎんが
+    meaning: 銀河
+    level: N3
+  - word: 温暖化
+    reading: おんだんか
+    meaning: 暖化
+    level: N3
+  - word: 汚染
+    reading: おせん
+    meaning: 污染
+    level: N3
+  - word: 公害
+    reading: こうがい
+    meaning: 公害
+    level: N3
+  - word: 森林
+    reading: しんりん
+    meaning: 森林
+    level: N3
+  - word: 砂漠
+    reading: さばく
+    meaning: 沙漠
+    level: N3
+  - word: 山脈
+    reading: さんみゃく
+    meaning: 山脈
+    level: N3
+  - word: 海洋
+    reading: かいよう
+    meaning: 海洋
+    level: N3
+  - word: 河川
+    reading: かせん
+    meaning: 河川
+    level: N3
+  - word: 大陸
+    reading: たいりく
+    meaning: 大陸
+    level: N3
+  - word: 気候
+    reading: きこう
+    meaning: 氣候
+    level: N3
+  - word: 生態系
+    reading: せいたいけい
+    meaning: 生態系
+    level: N3
+  - word: 津波
+    reading: つなみ
+    meaning: 海嘯
+    level: N3
+  - word: 洪水
+    reading: こうずい
+    meaning: 洪水
+    level: N3
+  - word: 噴火
+    reading: ふんか
+    meaning: 火山噴發
+    level: N3
+  - word: 火山
+    reading: かざん
+    meaning: 火山
+    level: N3
+  - word: 植物
+    reading: しょくぶつ
+    meaning: 植物
+    level: N3
+  - word: 昆虫
+    reading: こんちゅう
+    meaning: 昆蟲
+    level: N3
+  - word: ペット
+    reading: ペット
+    meaning: 寵物
+    level: N3
+  - word: 家畜
+    reading: かちく
+    meaning: 家畜
+    level: N3
+  - word: 野生
+    reading: やせい
+    meaning: 野生
+    level: N3
+  - word: 絶滅
+    reading: ぜつめつ
+    meaning: 絕種
+    level: N3
+  - word: 種
+    reading: しゅ
+    meaning: 種類、品種
+    level: N3
+  - word: 草
+    reading: くさ
+    meaning: 草
+    level: N3
+  - word: 葉
+    reading: は
+    meaning: 葉子
+    level: N3
+  - word: 根
+    reading: ね
+    meaning: 根
+    level: N3
+  - word: 樹木
+    reading: じゅもく
+    meaning: 樹木
+    level: N3
+  - word: 機械
+    reading: きかい
+    meaning: 機械
+    level: N3
+  - word: 装置
+    reading: そうち
+    meaning: 裝置
+    level: N3
+  - word: 設備
+    reading: せつび
+    meaning: 設備
+    level: N3
+  - word: 道具
+    reading: どうぐ
+    meaning: 工具
+    level: N3
+  - word: 器具
+    reading: きぐ
+    meaning: 器具
+    level: N3
+  - word: 発明
+    reading: はつめい
+    meaning: 發明
+    level: N3
+  - word: 発見
+    reading: はっけん
+    meaning: 發現
+    level: N3
+  - word: 発展
+    reading: はってん
+    meaning: 發展
+    level: N3
+  - word: 開発
+    reading: かいはつ
+    meaning: 開發
+    level: N3
+  - word: 実験
+    reading: じっけん
+    meaning: 實驗
+    level: N3
+  - word: 理論
+    reading: りろん
+    meaning: 理論
+    level: N3
+  - word: 仮説
+    reading: かせつ
+    meaning: 假說
+    level: N3
+  - word: データ
+    reading: データ
+    meaning: 資料
+    level: N3
+  - word: 電子
+    reading: でんし
+    meaning: 電子
+    level: N3
+  - word: 電波
+    reading: でんぱ
+    meaning: 電波
+    level: N3
+  - word: 光
+    reading: ひかり
+    meaning: 光
+    level: N3
+  - word: 力
+    reading: ちから
+    meaning: 力量
+    level: N3
+  - word: エネルギー
+    reading: エネルギー
+    meaning: 能源
+    level: N3
+  - word: 燃料
+    reading: ねんりょう
+    meaning: 燃料
+    level: N3
+  - word: 資源
+    reading: しげん
+    meaning: 資源
+    level: N3
+  - word: インターネット
+    reading: インターネット
+    meaning: 網路
+    level: N3
+  - word: ネット
+    reading: ネット
+    meaning: 網路
+    level: N3
+  - word: ソフト
+    reading: ソフト
+    meaning: 軟體
+    level: N3
+  - word: ソフトウェア
+    reading: ソフトウェア
+    meaning: 軟體
+    level: N3
+  - word: ハードウェア
+    reading: ハードウェア
+    meaning: 硬體
+    level: N3
+  - word: プログラム
+    reading: プログラム
+    meaning: 程式
+    level: N3
+  - word: ファイル
+    reading: ファイル
+    meaning: 檔案
+    level: N3
+  - word: ウェブサイト
+    reading: ウェブサイト
+    meaning: 網站
+    level: N3
+  - word: ホームページ
+    reading: ホームページ
+    meaning: 網頁
+    level: N3
+  - word: ブログ
+    reading: ブログ
+    meaning: 部落格
+    level: N3
+  - word: メール
+    reading: メール
+    meaning: 電子郵件
+    level: N3
+  - word: ユーザー
+    reading: ユーザー
+    meaning: 使用者
+    level: N3
+  - word: パスワード
+    reading: パスワード
+    meaning: 密碼
+    level: N3
+  - word: アカウント
+    reading: アカウント
+    meaning: 帳號
+    level: N3
+  - word: セキュリティ
+    reading: セキュリティ
+    meaning: 資安
+    level: N3
+  - word: ウイルス
+    reading: ウイルス
+    meaning: 病毒
+    level: N3
+  - word: ダウンロード
+    reading: ダウンロード
+    meaning: 下載
+    level: N3
+  - word: アップロード
+    reading: アップロード
+    meaning: 上傳
+    level: N3
+  - word: サーバー
+    reading: サーバー
+    meaning: 伺服器
+    level: N3
+  - word: ネットワーク
+    reading: ネットワーク
+    meaning: 網路
+    level: N3
+  - word: デジタル
+    reading: デジタル
+    meaning: 數位
+    level: N3
+  - word: アナログ
+    reading: アナログ
+    meaning: 類比
+    level: N3
+  - word: 交通機関
+    reading: こうつうきかん
+    meaning: 交通機構
+    level: N3
+  - word: 鉄道
+    reading: てつどう
+    meaning: 鐵道
+    level: N3
+  - word: 航空
+    reading: こうくう
+    meaning: 航空
+    level: N3
+  - word: 航空機
+    reading: こうくうき
+    meaning: 航空器
+    level: N3
+  - word: 船舶
+    reading: せんぱく
+    meaning: 船舶
+    level: N3
+  - word: フェリー
+    reading: フェリー
+    meaning: 渡輪
+    level: N3
+  - word: 時刻表
+    reading: じこくひょう
+    meaning: 時刻表
+    level: N3
+  - word: ダイヤ
+    reading: ダイヤ
+    meaning: 班次表
+    level: N3
+  - word: 遅延
+    reading: ちえん
+    meaning: 延誤
+    level: N3
+  - word: 運賃
+    reading: うんちん
+    meaning: 車資
+    level: N3
+  - word: 乗客
+    reading: じょうきゃく
+    meaning: 乘客
+    level: N3
+  - word: 通学
+    reading: つうがく
+    meaning: 上學
+    level: N3
+  - word: 徒歩
+    reading: とほ
+    meaning: 步行
+    level: N3
+  - word: 距離
+    reading: きょり
+    meaning: 距離
+    level: N3
+  - word: 道順
+    reading: みちじゅん
+    meaning: 路線
+    level: N3
+  - word: 地区
+    reading: ちく
+    meaning: 地區
+    level: N3
+  - word: 通り
+    reading: とおり
+    meaning: 街道
+    level: N3
+  - word: 大通り
+    reading: おおどおり
+    meaning: 大街
+    level: N3
+  - word: 路地
+    reading: ろじ
+    meaning: 巷弄
+    level: N3
+  - word: 住宅地
+    reading: じゅうたくち
+    meaning: 住宅區
+    level: N3
+  - word: 商店街
+    reading: しょうてんがい
+    meaning: 商店街
+    level: N3
+  - word: 繁華街
+    reading: はんかがい
+    meaning: 鬧區
+    level: N3
+  - word: 中心部
+    reading: ちゅうしんぶ
+    meaning: 中心地帶
+    level: N3
+  - word: 海岸
+    reading: かいがん
+    meaning: 海岸
+    level: N3
+  - word: 海辺
+    reading: うみべ
+    meaning: 海邊
+    level: N3
+  - word: 風景
+    reading: ふうけい
+    meaning: 風景
+    level: N3
+  - word: 景色
+    reading: けしき
+    meaning: 景色
+    level: N3
+  - word: 眺め
+    reading: ながめ
+    meaning: 眺望景色
+    level: N3
+  - word: 体調
+    reading: たいちょう
+    meaning: 身體狀況
+    level: N3
+  - word: 症状
+    reading: しょうじょう
+    meaning: 症狀
+    level: N3
+  - word: インフルエンザ
+    reading: インフルエンザ
+    meaning: 流感
+    level: N3
+  - word: 感染
+    reading: かんせん
+    meaning: 感染
+    level: N3
+  - word: 感染症
+    reading: かんせんしょう
+    meaning: 傳染病
+    level: N3
+  - word: ガン
+    reading: ガン
+    meaning: 癌症
+    level: N3
+  - word: 治療
+    reading: ちりょう
+    meaning: 治療
+    level: N3
+  - word: 医療
+    reading: いりょう
+    meaning: 醫療
+    level: N3
+  - word: 診察
+    reading: しんさつ
+    meaning: 看診
+    level: N3
+  - word: 診断
+    reading: しんだん
+    meaning: 診斷
+    level: N3
+  - word: 入院
+    reading: にゅういん
+    meaning: 住院
+    level: N3
+  - word: 退院
+    reading: たいいん
+    meaning: 出院
+    level: N3
+  - word: 通院
+    reading: つういん
+    meaning: 回診
+    level: N3
+  - word: 予防
+    reading: よぼう
+    meaning: 預防
+    level: N3
+  - word: ワクチン
+    reading: ワクチン
+    meaning: 疫苗
+    level: N3
+  - word: アレルギー
+    reading: アレルギー
+    meaning: 過敏
+    level: N3
+  - word: 疲労
+    reading: ひろう
+    meaning: 疲勞
+    level: N3
+  - word: 不眠
+    reading: ふみん
+    meaning: 失眠
+    level: N3
+  - word: 食欲
+    reading: しょくよく
+    meaning: 食慾
+    level: N3
+  - word: カロリー
+    reading: カロリー
+    meaning: 卡路里
+    level: N3
+  - word: 栄養
+    reading: えいよう
+    meaning: 營養
+    level: N3
+  - word: 体力
+    reading: たいりょく
+    meaning: 體力
+    level: N3
+  - word: 筋肉
+    reading: きんにく
+    meaning: 肌肉
+    level: N3
+  - word: 試合観戦
+    reading: しあいかんせん
+    meaning: 觀賽
+    level: N3
+  - word: 選手権
+    reading: せんしゅけん
+    meaning: 冠軍賽
+    level: N3
+  - word: 決勝
+    reading: けっしょう
+    meaning: 決賽
+    level: N3
+  - word: 予選
+    reading: よせん
+    meaning: 預賽
+    level: N3
+  - word: 監督
+    reading: かんとく
+    meaning: 教練、導演
+    level: N3
+  - word: コーチ
+    reading: コーチ
+    meaning: 教練
+    level: N3
+  - word: 勝利
+    reading: しょうり
+    meaning: 勝利
+    level: N3
+  - word: 敗北
+    reading: はいぼく
+    meaning: 敗北
+    level: N3
+  - word: 引き分け
+    reading: ひきわけ
+    meaning: 平手
+    level: N3
+  - word: 競技場
+    reading: きょうぎじょう
+    meaning: 競技場
+    level: N3
+  - word: スタジアム
+    reading: スタジアム
+    meaning: 體育場
+    level: N3
+  - word: 体育館
+    reading: たいいくかん
+    meaning: 體育館
+    level: N3
+  - word: ジム
+    reading: ジム
+    meaning: 健身房
+    level: N3
+  - word: フィットネス
+    reading: フィットネス
+    meaning: 健身
+    level: N3
+  - word: ヨガ
+    reading: ヨガ
+    meaning: 瑜珈
+    level: N3
+  - word: ジョギング
+    reading: ジョギング
+    meaning: 慢跑
+    level: N3
+  - word: マラソン
+    reading: マラソン
+    meaning: 馬拉松
+    level: N3
+  - word: 登山
+    reading: とざん
+    meaning: 登山
+    level: N3
+  - word: ハイキング
+    reading: ハイキング
+    meaning: 健行
+    level: N3
+  - word: キャンプ
+    reading: キャンプ
+    meaning: 露營
+    level: N3
+  - word: 釣り
+    reading: つり
+    meaning: 釣魚
+    level: N3
+  - word: スキー
+    reading: スキー
+    meaning: 滑雪
+    level: N3
+  - word: スケート
+    reading: スケート
+    meaning: 溜冰
+    level: N3
+  - word: 水泳
+    reading: すいえい
+    meaning: 游泳
+    level: N3
+  - word: ダンス
+    reading: ダンス
+    meaning: 跳舞
+    level: N3
+  - word: トレーニング
+    reading: トレーニング
+    meaning: 訓練
+    level: N3
+  - word: 芸術
+    reading: げいじゅつ
+    meaning: 藝術
+    level: N3
+  - word: 美術
+    reading: びじゅつ
+    meaning: 美術
+    level: N3
+  - word: ドラマ
+    reading: ドラマ
+    meaning: 連續劇
+    level: N3
+  - word: 演劇
+    reading: えんげき
+    meaning: 戲劇
+    level: N3
+  - word: 演奏
+    reading: えんそう
+    meaning: 演奏
+    level: N3
+  - word: ライブ
+    reading: ライブ
+    meaning: 現場演出
+    level: N3
+  - word: ミュージカル
+    reading: ミュージカル
+    meaning: 音樂劇
+    level: N3
+  - word: オペラ
+    reading: オペラ
+    meaning: 歌劇
+    level: N3
+  - word: バレエ
+    reading: バレエ
+    meaning: 芭蕾
+    level: N3
+  - word: 芸能
+    reading: げいのう
+    meaning: 演藝
+    level: N3
+  - word: 俳優
+    reading: はいゆう
+    meaning: 演員（男）
+    level: N3
+  - word: 女優
+    reading: じょゆう
+    meaning: 女演員
+    level: N3
+  - word: 歌手
+    reading: かしゅ
+    meaning: 歌手
+    level: N3
+  - word: アイドル
+    reading: アイドル
+    meaning: 偶像
+    level: N3
+  - word: 作家
+    reading: さっか
+    meaning: 作家
+    level: N3
+  - word: 画家
+    reading: がか
+    meaning: 畫家
+    level: N3
+  - word: デザイン
+    reading: デザイン
+    meaning: 設計
+    level: N3
+  - word: 作品
+    reading: さくひん
+    meaning: 作品
+    level: N3
+  - word: 博物館
+    reading: はくぶつかん
+    meaning: 博物館
+    level: N3
+  - word: 美術館
+    reading: びじゅつかん
+    meaning: 美術館
+    level: N3
+  - word: 劇場
+    reading: げきじょう
+    meaning: 劇場
+    level: N3
+  - word: 漫画
+    reading: まんが
+    meaning: 漫畫
+    level: N3
+  - word: アニメ
+    reading: アニメ
+    meaning: 動畫
+    level: N3
+  - word: 映像
+    reading: えいぞう
+    meaning: 影像
+    level: N3
+  - word: 放送
+    reading: ほうそう
+    meaning: 廣播、播放
+    level: N3
+  - word: 番組
+    reading: ばんぐみ
+    meaning: 節目
+    level: N3
+  - word: 広告
+    reading: こうこく
+    meaning: 廣告
+    level: N3
+  - word: CM
+    reading: シーエム
+    meaning: 廣告
+    level: N3
+  - word: 観光
+    reading: かんこう
+    meaning: 觀光
+    level: N3
+  - word: 観光地
+    reading: かんこうち
+    meaning: 觀光地
+    level: N3
+  - word: 名所
+    reading: めいしょ
+    meaning: 名勝
+    level: N3
+  - word: 旅
+    reading: たび
+    meaning: 旅行
+    level: N3
+  - word: 観光客
+    reading: かんこうきゃく
+    meaning: 觀光客
+    level: N3
+  - word: 旅行者
+    reading: りょこうしゃ
+    meaning: 旅行者
+    level: N3
+  - word: ツアー
+    reading: ツアー
+    meaning: 行程
+    level: N3
+  - word: ガイド
+    reading: ガイド
+    meaning: 導遊
+    level: N3
+  - word: 旅館
+    reading: りょかん
+    meaning: 日式旅館
+    level: N3
+  - word: 宿
+    reading: やど
+    meaning: 住宿處
+    level: N3
+  - word: 民宿
+    reading: みんしゅく
+    meaning: 民宿
+    level: N3
+  - word: パスポート
+    reading: パスポート
+    meaning: 護照
+    level: N3
+  - word: ビザ
+    reading: ビザ
+    meaning: 簽證
+    level: N3
+  - word: 留学
+    reading: りゅうがく
+    meaning: 留學
+    level: N3
+  - word: 世界遺産
+    reading: せかいいさん
+    meaning: 世界遺產
+    level: N3
+  - word: 食材
+    reading: しょくざい
+    meaning: 食材
+    level: N3
+  - word: 調味料
+    reading: ちょうみりょう
+    meaning: 調味料
+    level: N3
+  - word: 味付け
+    reading: あじつけ
+    meaning: 調味
+    level: N3
+  - word: レシピ
+    reading: レシピ
+    meaning: 食譜
+    level: N3
+  - word: 料理人
+    reading: りょうりにん
+    meaning: 廚師
+    level: N3
+  - word: シェフ
+    reading: シェフ
+    meaning: 主廚
+    level: N3
+  - word: 定食
+    reading: ていしょく
+    meaning: 定食
+    level: N3
+  - word: 和食
+    reading: わしょく
+    meaning: 日本料理
+    level: N3
+  - word: 洋食
+    reading: ようしょく
+    meaning: 西餐
+    level: N3
+  - word: 中華
+    reading: ちゅうか
+    meaning: 中華料理
+    level: N3
+  - word: 寿司屋
+    reading: すしや
+    meaning: 壽司店
+    level: N3
+  - word: 居酒屋
+    reading: いざかや
+    meaning: 居酒屋
+    level: N3
+  - word: カフェ
+    reading: カフェ
+    meaning: 咖啡廳
+    level: N3
+  - word: バイキング
+    reading: バイキング
+    meaning: 自助餐
+    level: N3
+  - word: ビュッフェ
+    reading: ビュッフェ
+    meaning: 自助餐
+    level: N3
+  - word: ランチ
+    reading: ランチ
+    meaning: 午餐
+    level: N3
+  - word: ディナー
+    reading: ディナー
+    meaning: 晚餐
+    level: N3
+  - word: 朝食
+    reading: ちょうしょく
+    meaning: 早餐
+    level: N3
+  - word: 昼食
+    reading: ちゅうしょく
+    meaning: 午餐
+    level: N3
+  - word: 夕食
+    reading: ゆうしょく
+    meaning: 晚餐
+    level: N3
+  - word: 間食
+    reading: かんしょく
+    meaning: 點心時間
+    level: N3
+  - word: おやつ
+    reading: おやつ
+    meaning: 下午茶、點心
+    level: N3
+  - word: 宗教
+    reading: しゅうきょう
+    meaning: 宗教
+    level: N3
+  - word: 信仰
+    reading: しんこう
+    meaning: 信仰
+    level: N3
+  - word: 神
+    reading: かみ
+    meaning: 神
+    level: N3
+  - word: 仏
+    reading: ほとけ
+    meaning: 佛
+    level: N3
+  - word: 神様
+    reading: かみさま
+    meaning: 神明
+    level: N3
+  - word: 寺
+    reading: てら
+    meaning: 寺廟
+    level: N3
+  - word: 神社
+    reading: じんじゃ
+    meaning: 神社
+    level: N3
+  - word: 教会
+    reading: きょうかい
+    meaning: 教堂
+    level: N3
+  - word: 行事
+    reading: ぎょうじ
+    meaning: 活動、儀式
+    level: N3
+  - word: 儀式
+    reading: ぎしき
+    meaning: 儀式
+    level: N3
+  - word: 葬式
+    reading: そうしき
+    meaning: 葬禮
+    level: N3
+  - word: 法事
+    reading: ほうじ
+    meaning: 法事
+    level: N3
+  - word: 占い
+    reading: うらない
+    meaning: 占卜
+    level: N3
+  - word: 運命
+    reading: うんめい
+    meaning: 命運
+    level: N3
+  - word: 縁
+    reading: えん
+    meaning: 緣分
+    level: N3
+  - word: 運
+    reading: うん
+    meaning: 運氣
+    level: N3
+  - word: 幸運
+    reading: こううん
+    meaning: 幸運
+    level: N3
+  - word: 不運
+    reading: ふうん
+    meaning: 不幸
+    level: N3
+  - word: 日常
+    reading: にちじょう
+    meaning: 日常
+    level: N3
+  - word: 暮らし
+    reading: くらし
+    meaning: 生活
+    level: N3
+  - word: 就寝
+    reading: しゅうしん
+    meaning: 就寢
+    level: N3
+  - word: 起床
+    reading: きしょう
+    meaning: 起床
+    level: N3
+  - word: 外出
+    reading: がいしゅつ
+    meaning: 外出
+    level: N3
+  - word: 帰宅
+    reading: きたく
+    meaning: 回家
+    level: N3
+  - word: 洗濯
+    reading: せんたく
+    meaning: 洗衣
+    level: N3
+  - word: 掃除
+    reading: そうじ
+    meaning: 打掃
+    level: N3
+  - word: 炊事
+    reading: すいじ
+    meaning: 做飯
+    level: N3
+  - word: 育児
+    reading: いくじ
+    meaning: 育兒
+    level: N3
+  - word: 介護
+    reading: かいご
+    meaning: 照護
+    level: N3
+  - word: 家事
+    reading: かじ
+    meaning: 家務
+    level: N3
+  - word: 家計
+    reading: かけい
+    meaning: 家計
+    level: N3
+  - word: 日記
+    reading: にっき
+    meaning: 日記
+    level: N3
+  - word: 時刻
+    reading: じこく
+    meaning: 時刻
+    level: N3
+  - word: 時代
+    reading: じだい
+    meaning: 時代
+    level: N3
+  - word: 時間帯
+    reading: じかんたい
+    meaning: 時段
+    level: N3
+  - word: 瞬間
+    reading: しゅんかん
+    meaning: 瞬間
+    level: N3
+  - word: 一瞬
+    reading: いっしゅん
+    meaning: 一瞬間
+    level: N3
+  - word: 期限
+    reading: きげん
+    meaning: 期限
+    level: N3
+  - word: 延長
+    reading: えんちょう
+    meaning: 延長
+    level: N3
+  - word: 継続
+    reading: けいぞく
+    meaning: 持續
+    level: N3
+  - word: 連続
+    reading: れんぞく
+    meaning: 連續
+    level: N3
+  - word: 永遠
+    reading: えいえん
+    meaning: 永遠
+    level: N3
+  - word: 当時
+    reading: とうじ
+    meaning: 當時
+    level: N3
+  - word: 現代
+    reading: げんだい
+    meaning: 現代
+    level: N3
+  - word: 世紀
+    reading: せいき
+    meaning: 世紀
+    level: N3
+  - word: 割合
+    reading: わりあい
+    meaning: 比例
+    level: N3
+  - word: 比率
+    reading: ひりつ
+    meaning: 比率
+    level: N3
+  - word: 倍率
+    reading: ばいりつ
+    meaning: 倍率
+    level: N3
+  - word: 百分率
+    reading: ひゃくぶんりつ
+    meaning: 百分比
+    level: N3
+  - word: パーセント
+    reading: パーセント
+    meaning: ％
+    level: N3
+  - word: 多数
+    reading: たすう
+    meaning: 多數
+    level: N3
+  - word: 少数
+    reading: しょうすう
+    meaning: 少數
+    level: N3
+  - word: 大部分
+    reading: だいぶぶん
+    meaning: 大部分
+    level: N3
+  - word: 平均
+    reading: へいきん
+    meaning: 平均
+    level: N3
+  - word: 最高
+    reading: さいこう
+    meaning: 最高
+    level: N3
+  - word: 最低
+    reading: さいてい
+    meaning: 最低
+    level: N3
+  - word: 上限
+    reading: じょうげん
+    meaning: 上限
+    level: N3
+  - word: 下限
+    reading: かげん
+    meaning: 下限
+    level: N3
+  - word: 最大
+    reading: さいだい
+    meaning: 最大
+    level: N3
+  - word: 最小
+    reading: さいしょう
+    meaning: 最小
+    level: N3
+  - word: 状態
+    reading: じょうたい
+    meaning: 狀態
+    level: N3
+  - word: 状況
+    reading: じょうきょう
+    meaning: 狀況
+    level: N3
+  - word: 事情
+    reading: じじょう
+    meaning: 情況
+    level: N3
+  - word: 条件
+    reading: じょうけん
+    meaning: 條件
+    level: N3
+  - word: 様子
+    reading: ようす
+    meaning: 樣子
+    level: N3
+  - word: 具合
+    reading: ぐあい
+    meaning: 狀況
+    level: N3
+  - word: 調子
+    reading: ちょうし
+    meaning: 狀況、調
+    level: N3
+  - word: 特徴
+    reading: とくちょう
+    meaning: 特徵
+    level: N3
+  - word: 特色
+    reading: とくしょく
+    meaning: 特色
+    level: N3
+  - word: 傾向
+    reading: けいこう
+    meaning: 傾向
+    level: N3
+  - word: 違い
+    reading: ちがい
+    meaning: 差異
+    level: N3
+  - word: 差
+    reading: さ
+    meaning: 差距
+    level: N3
+  - word: 類似
+    reading: るいじ
+    meaning: 類似
+    level: N3
+  - word: 分類
+    reading: ぶんるい
+    meaning: 分類
+    level: N3
+  - word: タイプ
+    reading: タイプ
+    meaning: 類型
+    level: N3
+  - word: 可能性
+    reading: かのうせい
+    meaning: 可能性
+    level: N3
+  - word: 確率
+    reading: かくりつ
+    meaning: 機率
+    level: N3
+  - word: 機会
+    reading: きかい
+    meaning: 機會
+    level: N3
+  - word: 必然
+    reading: ひつぜん
+    meaning: 必然
+    level: N3
+  - word: 物
+    reading: もの
+    meaning: 東西
+    level: N3
+  - word: 事
+    reading: こと
+    meaning: 事情
+    level: N3
+  - word: 物事
+    reading: ものごと
+    meaning: 事物
+    level: N3
+  - word: 存在
+    reading: そんざい
+    meaning: 存在
+    level: N3
+  - word: 全体
+    reading: ぜんたい
+    meaning: 整體
+    level: N3
+  - word: 個別
+    reading: こべつ
+    meaning: 個別
+    level: N3
+  - word: 表面
+    reading: ひょうめん
+    meaning: 表面
+    level: N3
+  - word: 内部
+    reading: ないぶ
+    meaning: 內部
+    level: N3
+  - word: 外部
+    reading: がいぶ
+    meaning: 外部
+    level: N3
+  - word: 中身
+    reading: なかみ
+    meaning: 內容物
+    level: N3
+  - word: 内容
+    reading: ないよう
+    meaning: 內容
+    level: N3
+  - word: 形式
+    reading: けいしき
+    meaning: 形式
+    level: N3
+  - word: 表示
+    reading: ひょうじ
+    meaning: 顯示
+    level: N3
+  - word: 印
+    reading: しるし
+    meaning: 記號
+    level: N3
+  - word: マーク
+    reading: マーク
+    meaning: 標記
+    level: N3
+  - word: 番組表
+    reading: ばんぐみひょう
+    meaning: 節目表
+    level: N3
+  - word: 表
+    reading: ひょう
+    meaning: 表格
+    level: N3
+  - word: グラフ
+    reading: グラフ
+    meaning: 圖表
+    level: N3
+  - word: 図
+    reading: ず
+    meaning: 圖
+    level: N3
+  - word: イメージ
+    reading: イメージ
+    meaning: 印象、形象
+    level: N3
+  - word: モデル
+    reading: モデル
+    meaning: 模型、模特兒
+    level: N3
+  - word: 見本
+    reading: みほん
+    meaning: 樣本
+    level: N3
+  - word: サンプル
+    reading: サンプル
+    meaning: 樣品
+    level: N3
+  - word: メモ
+    reading: メモ
+    meaning: 便條
+    level: N3
+  - word: リスト
+    reading: リスト
+    meaning: 清單
+    level: N3
+  - word: コピー
+    reading: コピー
+    meaning: 複印
+    level: N3
+  - word: 原本
+    reading: げんぽん
+    meaning: 原本
+    level: N3
+  - word: 本物
+    reading: ほんもの
+    meaning: 真品
+    level: N3
+  - word: 偽物
+    reading: にせもの
+    meaning: 贗品
+    level: N3
+  - word: 灰色
+    reading: はいいろ
+    meaning: 灰色
+    level: N3
+  - word: 紫
+    reading: むらさき
+    meaning: 紫色
+    level: N3
+  - word: ピンク
+    reading: ピンク
+    meaning: 粉色
+    level: N3
+  - word: オレンジ
+    reading: オレンジ
+    meaning: 橘色
+    level: N3
+  - word: 水色
+    reading: みずいろ
+    meaning: 水藍色
+    level: N3
+  - word: 金色
+    reading: きんいろ
+    meaning: 金色
+    level: N3
+  - word: 銀色
+    reading: ぎんいろ
+    meaning: 銀色
+    level: N3
+  - word: 素材
+    reading: そざい
+    meaning: 材料
+    level: N3
+  - word: 材料
+    reading: ざいりょう
+    meaning: 材料
+    level: N3
+  - word: 木材
+    reading: もくざい
+    meaning: 木材
+    level: N3
+  - word: 金属
+    reading: きんぞく
+    meaning: 金屬
+    level: N3
+  - word: 鉄
+    reading: てつ
+    meaning: 鐵
+    level: N3
+  - word: 銅
+    reading: どう
+    meaning: 銅
+    level: N3
+  - word: ガラス
+    reading: ガラス
+    meaning: 玻璃
+    level: N3
+  - word: プラスチック
+    reading: プラスチック
+    meaning: 塑膠
+    level: N3
+  - word: ゴム
+    reading: ゴム
+    meaning: 橡膠
+    level: N3
+  - word: 布
+    reading: ぬの
+    meaning: 布
+    level: N3
+  - word: 革
+    reading: かわ
+    meaning: 皮革
+    level: N3

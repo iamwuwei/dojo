@@ -1,6 +1,11 @@
 import type { VocabularyQuestion } from "../types";
+import { buildVocabFromYaml } from "./vocab-builder";
+import verbsYaml from "./learning-n3-verbs.yml?raw";
+import nounsYaml from "./learning-n3-nouns.yml?raw";
 
-export const n3VocabularyQuestions: VocabularyQuestion[] = [
+// Hand-crafted N3 questions kept verbatim so existing mastery progress
+// (n3-v-001..n3-v-010) doesn't reset.
+const handcrafted: VocabularyQuestion[] = [
   {
     id: "n3-v-001",
     type: "vocabulary",
@@ -101,4 +106,15 @@ export const n3VocabularyQuestions: VocabularyQuestion[] = [
     answer: 1,
     explanation: "「得意」＝擅長、拿手；與「上手」意思相近但主觀自信更強。",
   },
+];
+
+// Distractors stay within their own POS pool so a verb question's wrong
+// answers are also verbs (and same for nouns) — keeps the quiz tight.
+const verbsFromYaml = buildVocabFromYaml(verbsYaml, "n3-vv-");
+const nounsFromYaml = buildVocabFromYaml(nounsYaml, "n3-vn-");
+
+export const n3VocabularyQuestions: VocabularyQuestion[] = [
+  ...handcrafted,
+  ...verbsFromYaml,
+  ...nounsFromYaml,
 ];

@@ -1,0 +1,1357 @@
+# ===================================================================
+# JLPT N3 單字列表 - 動詞批次（共 337 詞）
+# 分級依據：舊日檢出題基準（舊 2 級範圍內的中階詞）、
+#           JLPT Sensei / Jisho.org / TRY! 系列交叉比對
+# ⚠️ JLPT 官方不公開語彙清單，分級為民間共識
+# 已避免與 N5、N4 主檔及既有 N3 檔重複
+# ===================================================================
+
+vocabulary:
+  - word: 上げる
+    reading: あげる
+    meaning: 舉起、提高（他）
+    level: N3
+  - word: 上がる
+    reading: あがる
+    meaning: 升起、上升（自）
+    level: N3
+  - word: 下げる
+    reading: さげる
+    meaning: 降下、降低（他）
+    level: N3
+  - word: 下がる
+    reading: さがる
+    meaning: 下降、下垂（自）
+    level: N3
+  - word: 伸ばす
+    reading: のばす
+    meaning: 延長、伸展（他）
+    level: N3
+  - word: 伸びる
+    reading: のびる
+    meaning: 延伸、成長（自）
+    level: N3
+  - word: 縮める
+    reading: ちぢめる
+    meaning: 縮短（他）
+    level: N3
+  - word: 縮む
+    reading: ちぢむ
+    meaning: 縮（自）
+    level: N3
+  - word: 広げる
+    reading: ひろげる
+    meaning: 擴展（他）
+    level: N3
+  - word: 広がる
+    reading: ひろがる
+    meaning: 擴大（自）
+    level: N3
+  - word: 強める
+    reading: つよめる
+    meaning: 加強（他）
+    level: N3
+  - word: 強まる
+    reading: つよまる
+    meaning: 變強（自）
+    level: N3
+  - word: 弱める
+    reading: よわめる
+    meaning: 削弱（他）
+    level: N3
+  - word: 弱まる
+    reading: よわまる
+    meaning: 變弱（自）
+    level: N3
+  - word: 高める
+    reading: たかめる
+    meaning: 提高（他）
+    level: N3
+  - word: 高まる
+    reading: たかまる
+    meaning: 升高（自）
+    level: N3
+  - word: 深める
+    reading: ふかめる
+    meaning: 加深（他）
+    level: N3
+  - word: 深まる
+    reading: ふかまる
+    meaning: 變深（自）
+    level: N3
+  - word: 早める
+    reading: はやめる
+    meaning: 加快、提早（他）
+    level: N3
+  - word: 早まる
+    reading: はやまる
+    meaning: 提前（自）
+    level: N3
+  - word: 並べる
+    reading: ならべる
+    meaning: 排列（他）
+    level: N3
+  - word: 並ぶ
+    reading: ならぶ
+    meaning: 排隊（自）
+    level: N3
+  - word: 終える
+    reading: おえる
+    meaning: 結束（他）
+    level: N3
+  - word: 開く
+    reading: あく
+    meaning: 開（自）
+    level: N3
+  - word: 閉まる
+    reading: しまる
+    meaning: 關（自）
+    level: N3
+  - word: 倒す
+    reading: たおす
+    meaning: 弄倒（他）
+    level: N3
+  - word: 起こす
+    reading: おこす
+    meaning: 喚醒、引起（他）
+    level: N3
+  - word: 離す
+    reading: はなす
+    meaning: 分開（他）
+    level: N3
+  - word: 離れる
+    reading: はなれる
+    meaning: 離開（自）
+    level: N3
+  - word: 近づける
+    reading: ちかづける
+    meaning: 使靠近（他）
+    level: N3
+  - word: 近づく
+    reading: ちかづく
+    meaning: 靠近（自）
+    level: N3
+  - word: 移す
+    reading: うつす
+    meaning: 移動、遷移（他）
+    level: N3
+  - word: 移る
+    reading: うつる
+    meaning: 遷移（自）
+    level: N3
+  - word: 外す
+    reading: はずす
+    meaning: 取下、摘下（他）
+    level: N3
+  - word: 外れる
+    reading: はずれる
+    meaning: 脫落、偏離（自）
+    level: N3
+  - word: 回す
+    reading: まわす
+    meaning: 轉動（他）
+    level: N3
+  - word: 回る
+    reading: まわる
+    meaning: 轉動（自）
+    level: N3
+  - word: 流す
+    reading: ながす
+    meaning: 沖、沖走（他）
+    level: N3
+  - word: 流れる
+    reading: ながれる
+    meaning: 流動（自）
+    level: N3
+  - word: 燃やす
+    reading: もやす
+    meaning: 燒（他）
+    level: N3
+  - word: 燃える
+    reading: もえる
+    meaning: 燃燒（自）
+    level: N3
+  - word: 冷やす
+    reading: ひやす
+    meaning: 冷藏（他）
+    level: N3
+  - word: 冷ます
+    reading: さます
+    meaning: 使涼（他）
+    level: N3
+  - word: 冷める
+    reading: さめる
+    meaning: 變涼（自）
+    level: N3
+  - word: 温める
+    reading: あたためる
+    meaning: 加熱（他）
+    level: N3
+  - word: 温まる
+    reading: あたたまる
+    meaning: 變暖（自）
+    level: N3
+  - word: 乾かす
+    reading: かわかす
+    meaning: 弄乾（他）
+    level: N3
+  - word: 乾く
+    reading: かわく
+    meaning: 乾（自）
+    level: N3
+  - word: 溶かす
+    reading: とかす
+    meaning: 溶解（他）
+    level: N3
+  - word: 溶ける
+    reading: とける
+    meaning: 融化（自）
+    level: N3
+  - word: 濡らす
+    reading: ぬらす
+    meaning: 弄濕（他）
+    level: N3
+  - word: 濡れる
+    reading: ぬれる
+    meaning: 淋濕（自）
+    level: N3
+  - word: 仕上げる
+    reading: しあげる
+    meaning: 完成（他）
+    level: N3
+  - word: 仕上がる
+    reading: しあがる
+    meaning: 完工（自）
+    level: N3
+  - word: 分ける
+    reading: わける
+    meaning: 分（他）
+    level: N3
+  - word: 分かれる
+    reading: わかれる
+    meaning: 分開（自）
+    level: N3
+  - word: 合わせる
+    reading: あわせる
+    meaning: 配合、合上（他）
+    level: N3
+  - word: 合う
+    reading: あう
+    meaning: 吻合（自）
+    level: N3
+  - word: 混ざる
+    reading: まざる
+    meaning: 混入（自）
+    level: N3
+  - word: 取り替える
+    reading: とりかえる
+    meaning: 更換
+    level: N3
+  - word: 想像する
+    reading: そうぞうする
+    meaning: 想像
+    level: N3
+  - word: 予想する
+    reading: よそうする
+    meaning: 預料
+    level: N3
+  - word: 予測する
+    reading: よそくする
+    meaning: 預測
+    level: N3
+  - word: 期待する
+    reading: きたいする
+    meaning: 期待
+    level: N3
+  - word: 判断する
+    reading: はんだんする
+    meaning: 判斷
+    level: N3
+  - word: 理解する
+    reading: りかいする
+    meaning: 理解
+    level: N3
+  - word: 納得する
+    reading: なっとくする
+    meaning: 接受、信服
+    level: N3
+  - word: 認める
+    reading: みとめる
+    meaning: 承認
+    level: N3
+  - word: 疑う
+    reading: うたがう
+    meaning: 懷疑
+    level: N3
+  - word: 考え直す
+    reading: かんがえなおす
+    meaning: 重新考慮
+    level: N3
+  - word: 検討する
+    reading: けんとうする
+    meaning: 研究、檢討
+    level: N3
+  - word: 区別する
+    reading: くべつする
+    meaning: 區分
+    level: N3
+  - word: 区分する
+    reading: くぶんする
+    meaning: 區分
+    level: N3
+  - word: 反省する
+    reading: はんせいする
+    meaning: 反省
+    level: N3
+  - word: 確かめる
+    reading: たしかめる
+    meaning: 確認
+    level: N3
+  - word: 観察する
+    reading: かんさつする
+    meaning: 觀察
+    level: N3
+  - word: 分析する
+    reading: ぶんせきする
+    meaning: 分析
+    level: N3
+  - word: 計算する
+    reading: けいさんする
+    meaning: 計算
+    level: N3
+  - word: 測る
+    reading: はかる
+    meaning: 測量
+    level: N3
+  - word: 予定する
+    reading: よていする
+    meaning: 預計
+    level: N3
+  - word: 喜ぶ
+    reading: よろこぶ
+    meaning: 高興
+    level: N3
+  - word: 悲しむ
+    reading: かなしむ
+    meaning: 悲傷
+    level: N3
+  - word: 楽しむ
+    reading: たのしむ
+    meaning: 享受
+    level: N3
+  - word: 苦しむ
+    reading: くるしむ
+    meaning: 痛苦
+    level: N3
+  - word: 慌てる
+    reading: あわてる
+    meaning: 慌張
+    level: N3
+  - word: 焦る
+    reading: あせる
+    meaning: 著急
+    level: N3
+  - word: 嫌う
+    reading: きらう
+    meaning: 厭惡
+    level: N3
+  - word: 憎む
+    reading: にくむ
+    meaning: 憎恨
+    level: N3
+  - word: 恐れる
+    reading: おそれる
+    meaning: 害怕
+    level: N3
+  - word: 感謝する
+    reading: かんしゃする
+    meaning: 感謝
+    level: N3
+  - word: 落ち込む
+    reading: おちこむ
+    meaning: 心情低落
+    level: N3
+  - word: 興奮する
+    reading: こうふんする
+    meaning: 興奮
+    level: N3
+  - word: 退屈する
+    reading: たいくつする
+    meaning: 無聊
+    level: N3
+  - word: 反感を持つ
+    reading: はんかんをもつ
+    meaning: 反感
+    level: N3
+  - word: 満足する
+    reading: まんぞくする
+    meaning: 滿足
+    level: N3
+  - word: 後悔する
+    reading: こうかいする
+    meaning: 後悔
+    level: N3
+  - word: 油断する
+    reading: ゆだんする
+    meaning: 疏忽、大意
+    level: N3
+  - word: 遠慮する
+    reading: えんりょする
+    meaning: 客氣、推辭
+    level: N3
+  - word: 尊敬する
+    reading: そんけいする
+    meaning: 尊敬
+    level: N3
+  - word: 信頼する
+    reading: しんらいする
+    meaning: 信賴
+    level: N3
+  - word: 好む
+    reading: このむ
+    meaning: 喜好
+    level: N3
+  - word: 呼ぶ
+    reading: よぶ
+    meaning: 呼叫
+    level: N3
+  - word: 呼びかける
+    reading: よびかける
+    meaning: 呼籲
+    level: N3
+  - word: 叫ぶ
+    reading: さけぶ
+    meaning: 叫
+    level: N3
+  - word: 問う
+    reading: とう
+    meaning: 提問、質問
+    level: N3
+  - word: 語る
+    reading: かたる
+    meaning: 講述
+    level: N3
+  - word: 述べる
+    reading: のべる
+    meaning: 陳述
+    level: N3
+  - word: 話し合う
+    reading: はなしあう
+    meaning: 商談
+    level: N3
+  - word: 議論する
+    reading: ぎろんする
+    meaning: 議論
+    level: N3
+  - word: 討論する
+    reading: とうろんする
+    meaning: 討論
+    level: N3
+  - word: 説得する
+    reading: せっとくする
+    meaning: 說服
+    level: N3
+  - word: 宣伝する
+    reading: せんでんする
+    meaning: 宣傳
+    level: N3
+  - word: 発表する
+    reading: はっぴょうする
+    meaning: 發表
+    level: N3
+  - word: 報告する
+    reading: ほうこくする
+    meaning: 報告
+    level: N3
+  - word: 交流する
+    reading: こうりゅうする
+    meaning: 交流
+    level: N3
+  - word: 指示する
+    reading: しじする
+    meaning: 指示
+    level: N3
+  - word: 警告する
+    reading: けいこくする
+    meaning: 警告
+    level: N3
+  - word: 勧める
+    reading: すすめる
+    meaning: 推薦
+    level: N3
+  - word: 進める
+    reading: すすめる
+    meaning: 推進
+    level: N3
+  - word: 引用する
+    reading: いんようする
+    meaning: 引用
+    level: N3
+  - word: 要求する
+    reading: ようきゅうする
+    meaning: 要求
+    level: N3
+  - word: 依頼する
+    reading: いらいする
+    meaning: 委託
+    level: N3
+  - word: 提案する
+    reading: ていあんする
+    meaning: 提案
+    level: N3
+  - word: 跳ぶ
+    reading: とぶ
+    meaning: 跳
+    level: N3
+  - word: 跳ねる
+    reading: はねる
+    meaning: 跳躍
+    level: N3
+  - word: 進む
+    reading: すすむ
+    meaning: 前進
+    level: N3
+  - word: 移動する
+    reading: いどうする
+    meaning: 移動
+    level: N3
+  - word: 通る
+    reading: とおる
+    meaning: 經過
+    level: N3
+  - word: 通う
+    reading: かよう
+    meaning: 往返
+    level: N3
+  - word: 通す
+    reading: とおす
+    meaning: 穿過、讓過
+    level: N3
+  - word: 渡る
+    reading: わたる
+    meaning: 渡過
+    level: N3
+  - word: 登る
+    reading: のぼる
+    meaning: 登
+    level: N3
+  - word: 上る
+    reading: のぼる
+    meaning: 上升
+    level: N3
+  - word: 下る
+    reading: くだる
+    meaning: 下（坡、河）
+    level: N3
+  - word: 追う
+    reading: おう
+    meaning: 追
+    level: N3
+  - word: 追いつく
+    reading: おいつく
+    meaning: 趕上
+    level: N3
+  - word: 追い抜く
+    reading: おいぬく
+    meaning: 超越
+    level: N3
+  - word: 逃げる
+    reading: にげる
+    meaning: 逃
+    level: N3
+  - word: 逃がす
+    reading: にがす
+    meaning: 放走
+    level: N3
+  - word: 隠す
+    reading: かくす
+    meaning: 隱藏（他）
+    level: N3
+  - word: 隠れる
+    reading: かくれる
+    meaning: 躲藏（自）
+    level: N3
+  - word: 触る
+    reading: さわる
+    meaning: 觸碰
+    level: N3
+  - word: 掴む
+    reading: つかむ
+    meaning: 抓住
+    level: N3
+  - word: 投げる
+    reading: なげる
+    meaning: 投、丟
+    level: N3
+  - word: 押す
+    reading: おす
+    meaning: 推、按
+    level: N3
+  - word: 引く
+    reading: ひく
+    meaning: 拉、退
+    level: N3
+  - word: 持ち上げる
+    reading: もちあげる
+    meaning: 舉起
+    level: N3
+  - word: 扱う
+    reading: あつかう
+    meaning: 處理、對待
+    level: N3
+  - word: 結ぶ
+    reading: むすぶ
+    meaning: 綁、締結
+    level: N3
+  - word: 繋ぐ
+    reading: つなぐ
+    meaning: 連接
+    level: N3
+  - word: 向かう
+    reading: むかう
+    meaning: 朝向
+    level: N3
+  - word: 向く
+    reading: むく
+    meaning: 面向
+    level: N3
+  - word: 向ける
+    reading: むける
+    meaning: 朝向（他）
+    level: N3
+  - word: 言い出す
+    reading: いいだす
+    meaning: 開口說
+    level: N3
+  - word: 動き出す
+    reading: うごきだす
+    meaning: 開始動
+    level: N3
+  - word: 走り出す
+    reading: はしりだす
+    meaning: 跑起來
+    level: N3
+  - word: 飛び出す
+    reading: とびだす
+    meaning: 衝出
+    level: N3
+  - word: 取り出す
+    reading: とりだす
+    meaning: 取出
+    level: N3
+  - word: 引き出す
+    reading: ひきだす
+    meaning: 抽出
+    level: N3
+  - word: 持ち出す
+    reading: もちだす
+    meaning: 帶出
+    level: N3
+  - word: 呼び出す
+    reading: よびだす
+    meaning: 叫出
+    level: N3
+  - word: 送り出す
+    reading: おくりだす
+    meaning: 送出
+    level: N3
+  - word: 差し出す
+    reading: さしだす
+    meaning: 遞出
+    level: N3
+  - word: 口に出す
+    reading: くちにだす
+    meaning: 說出口
+    level: N3
+  - word: 引き込む
+    reading: ひきこむ
+    meaning: 引入
+    level: N3
+  - word: 飛び込む
+    reading: とびこむ
+    meaning: 跳入
+    level: N3
+  - word: 乗り込む
+    reading: のりこむ
+    meaning: 搭乘入、進入
+    level: N3
+  - word: 持ち込む
+    reading: もちこむ
+    meaning: 帶入
+    level: N3
+  - word: 書き込む
+    reading: かきこむ
+    meaning: 寫入、填入
+    level: N3
+  - word: 詰め込む
+    reading: つめこむ
+    meaning: 塞入
+    level: N3
+  - word: 駆け込む
+    reading: かけこむ
+    meaning: 跑入
+    level: N3
+  - word: 巻き込む
+    reading: まきこむ
+    meaning: 捲入
+    level: N3
+  - word: 割り込む
+    reading: わりこむ
+    meaning: 插入、插嘴
+    level: N3
+  - word: 食べ過ぎる
+    reading: たべすぎる
+    meaning: 吃太多
+    level: N3
+  - word: 飲み過ぎる
+    reading: のみすぎる
+    meaning: 喝太多
+    level: N3
+  - word: 働き過ぎる
+    reading: はたらきすぎる
+    meaning: 工作過頭
+    level: N3
+  - word: やり過ぎる
+    reading: やりすぎる
+    meaning: 做過頭
+    level: N3
+  - word: 言い過ぎる
+    reading: いいすぎる
+    meaning: 說過頭
+    level: N3
+  - word: 使い過ぎる
+    reading: つかいすぎる
+    meaning: 用太多
+    level: N3
+  - word: 寝過ぎる
+    reading: ねすぎる
+    meaning: 睡太多
+    level: N3
+  - word: 通り過ぎる
+    reading: とおりすぎる
+    meaning: 經過
+    level: N3
+  - word: 向き合う
+    reading: むきあう
+    meaning: 面對
+    level: N3
+  - word: 助け合う
+    reading: たすけあう
+    meaning: 互相幫助
+    level: N3
+  - word: 分け合う
+    reading: わけあう
+    meaning: 分享
+    level: N3
+  - word: 出会う
+    reading: であう
+    meaning: 相遇
+    level: N3
+  - word: 似合う
+    reading: にあう
+    meaning: 適合、相稱
+    level: N3
+  - word: 見かける
+    reading: みかける
+    meaning: 偶然看到
+    level: N3
+  - word: 出かける
+    reading: でかける
+    meaning: 外出
+    level: N3
+  - word: 追いかける
+    reading: おいかける
+    meaning: 追趕
+    level: N3
+  - word: 書きかける
+    reading: かきかける
+    meaning: 寫到一半
+    level: N3
+  - word: 腰かける
+    reading: こしかける
+    meaning: 坐下
+    level: N3
+  - word: 立ち上がる
+    reading: たちあがる
+    meaning: 站起來
+    level: N3
+  - word: 出来上がる
+    reading: できあがる
+    meaning: 完成
+    level: N3
+  - word: 起き上がる
+    reading: おきあがる
+    meaning: 起身
+    level: N3
+  - word: 盛り上がる
+    reading: もりあがる
+    meaning: 熱絡
+    level: N3
+  - word: 欲しがる
+    reading: ほしがる
+    meaning: 想要（他人）
+    level: N3
+  - word: 気付く
+    reading: きづく
+    meaning: 察覺
+    level: N3
+  - word: 近付く
+    reading: ちかづく
+    meaning: 靠近
+    level: N3
+  - word: 落ち着く
+    reading: おちつく
+    meaning: 冷靜、安頓
+    level: N3
+  - word: 引き付ける
+    reading: ひきつける
+    meaning: 吸引
+    level: N3
+  - word: 気を付ける
+    reading: きをつける
+    meaning: 小心
+    level: N3
+  - word: 手を付ける
+    reading: てをつける
+    meaning: 著手
+    level: N3
+  - word: やり直す
+    reading: やりなおす
+    meaning: 重新做
+    level: N3
+  - word: 書き直す
+    reading: かきなおす
+    meaning: 重寫
+    level: N3
+  - word: 見直す
+    reading: みなおす
+    meaning: 重新檢視
+    level: N3
+  - word: 読み直す
+    reading: よみなおす
+    meaning: 重讀
+    level: N3
+  - word: 作り直す
+    reading: つくりなおす
+    meaning: 重做
+    level: N3
+  - word: 立ち止まる
+    reading: たちどまる
+    meaning: 站住
+    level: N3
+  - word: 呼び戻す
+    reading: よびもどす
+    meaning: 叫回
+    level: N3
+  - word: 受け入れる
+    reading: うけいれる
+    meaning: 接受
+    level: N3
+  - word: 受け取る
+    reading: うけとる
+    meaning: 收取
+    level: N3
+  - word: 取り消す
+    reading: とりけす
+    meaning: 取消
+    level: N3
+  - word: 払い戻す
+    reading: はらいもどす
+    meaning: 退款
+    level: N3
+  - word: 持ち帰る
+    reading: もちかえる
+    meaning: 帶回
+    level: N3
+  - word: 差し上げる
+    reading: さしあげる
+    meaning: 給（謙讓）
+    level: N3
+  - word: 申し上げる
+    reading: もうしあげる
+    meaning: 說（謙讓）
+    level: N3
+  - word: いらっしゃる
+    reading: いらっしゃる
+    meaning: 來／去／在（尊敬）
+    level: N3
+  - word: おっしゃる
+    reading: おっしゃる
+    meaning: 說（尊敬）
+    level: N3
+  - word: 召し上がる
+    reading: めしあがる
+    meaning: 用餐（尊敬）
+    level: N3
+  - word: ご覧になる
+    reading: ごらんになる
+    meaning: 看（尊敬）
+    level: N3
+  - word: 伺う
+    reading: うかがう
+    meaning: 拜訪、請教（謙讓）
+    level: N3
+  - word: 致す
+    reading: いたす
+    meaning: 做（謙讓）
+    level: N3
+  - word: 拝見する
+    reading: はいけんする
+    meaning: 拜見（謙讓）
+    level: N3
+  - word: 存じる
+    reading: ぞんじる
+    meaning: 知道（謙讓）
+    level: N3
+  - word: 暮らす
+    reading: くらす
+    meaning: 生活
+    level: N3
+  - word: 過ごす
+    reading: すごす
+    meaning: 度過
+    level: N3
+  - word: 過ぎる
+    reading: すぎる
+    meaning: 經過、超過
+    level: N3
+  - word: 生活する
+    reading: せいかつする
+    meaning: 生活
+    level: N3
+  - word: 買い物する
+    reading: かいものする
+    meaning: 購物
+    level: N3
+  - word: 味わう
+    reading: あじわう
+    meaning: 品嘗、體驗
+    level: N3
+  - word: 歓迎する
+    reading: かんげいする
+    meaning: 歡迎
+    level: N3
+  - word: 招く
+    reading: まねく
+    meaning: 招呼、邀請
+    level: N3
+  - word: 世話する
+    reading: せわする
+    meaning: 照顧
+    level: N3
+  - word: 預ける
+    reading: あずける
+    meaning: 寄放
+    level: N3
+  - word: 預かる
+    reading: あずかる
+    meaning: 保管、代保管
+    level: N3
+  - word: 働きかける
+    reading: はたらきかける
+    meaning: 動員、推動
+    level: N3
+  - word: 付き添う
+    reading: つきそう
+    meaning: 陪伴
+    level: N3
+  - word: 頼る
+    reading: たよる
+    meaning: 依靠
+    level: N3
+  - word: 甘える
+    reading: あまえる
+    meaning: 撒嬌、依賴
+    level: N3
+  - word: 怒鳴る
+    reading: どなる
+    meaning: 怒吼
+    level: N3
+  - word: 殴る
+    reading: なぐる
+    meaning: 毆打
+    level: N3
+  - word: 成る
+    reading: なる
+    meaning: 變成
+    level: N3
+  - word: 発生する
+    reading: はっせいする
+    meaning: 發生
+    level: N3
+  - word: 発達する
+    reading: はったつする
+    meaning: 發達
+    level: N3
+  - word: 発展する
+    reading: はってんする
+    meaning: 發展
+    level: N3
+  - word: 成長する
+    reading: せいちょうする
+    meaning: 成長
+    level: N3
+  - word: 変化する
+    reading: へんかする
+    meaning: 變化
+    level: N3
+  - word: 改善する
+    reading: かいぜんする
+    meaning: 改善
+    level: N3
+  - word: 改良する
+    reading: かいりょうする
+    meaning: 改良
+    level: N3
+  - word: 悪化する
+    reading: あっかする
+    meaning: 惡化
+    level: N3
+  - word: 回復する
+    reading: かいふくする
+    meaning: 恢復
+    level: N3
+  - word: 復活する
+    reading: ふっかつする
+    meaning: 復活
+    level: N3
+  - word: 衰える
+    reading: おとろえる
+    meaning: 衰退
+    level: N3
+  - word: 現れる
+    reading: あらわれる
+    meaning: 出現（自）
+    level: N3
+  - word: 消える
+    reading: きえる
+    meaning: 消失
+    level: N3
+  - word: 現す
+    reading: あらわす
+    meaning: 顯現（他）
+    level: N3
+  - word: 制作する
+    reading: せいさくする
+    meaning: 製作
+    level: N3
+  - word: 完成する
+    reading: かんせいする
+    meaning: 完成
+    level: N3
+  - word: 創る
+    reading: つくる
+    meaning: 創造
+    level: N3
+  - word: 建てる
+    reading: たてる
+    meaning: 建造
+    level: N3
+  - word: 組み立てる
+    reading: くみたてる
+    meaning: 組裝
+    level: N3
+  - word: 開発する
+    reading: かいはつする
+    meaning: 開發
+    level: N3
+  - word: 発明する
+    reading: はつめいする
+    meaning: 發明
+    level: N3
+  - word: 発見する
+    reading: はっけんする
+    meaning: 發現
+    level: N3
+  - word: 修理する
+    reading: しゅうりする
+    meaning: 修理
+    level: N3
+  - word: 修正する
+    reading: しゅうせいする
+    meaning: 修正
+    level: N3
+  - word: 製造する
+    reading: せいぞうする
+    meaning: 製造
+    level: N3
+  - word: 運営する
+    reading: うんえいする
+    meaning: 經營、運營
+    level: N3
+  - word: 経営する
+    reading: けいえいする
+    meaning: 經營
+    level: N3
+  - word: 管理する
+    reading: かんりする
+    meaning: 管理
+    level: N3
+  - word: 処理する
+    reading: しょりする
+    meaning: 處理
+    level: N3
+  - word: 解決する
+    reading: かいけつする
+    meaning: 解決
+    level: N3
+  - word: 対応する
+    reading: たいおうする
+    meaning: 對應
+    level: N3
+  - word: 対処する
+    reading: たいしょする
+    meaning: 處理、應對
+    level: N3
+  - word: 応じる
+    reading: おうじる
+    meaning: 回應
+    level: N3
+  - word: 応募する
+    reading: おうぼする
+    meaning: 報名
+    level: N3
+  - word: 採用する
+    reading: さいようする
+    meaning: 採用
+    level: N3
+  - word: 解雇する
+    reading: かいこする
+    meaning: 解僱
+    level: N3
+  - word: 担当する
+    reading: たんとうする
+    meaning: 負責
+    level: N3
+  - word: 任せる
+    reading: まかせる
+    meaning: 交付、委託
+    level: N3
+  - word: 引き受ける
+    reading: ひきうける
+    meaning: 承擔
+    level: N3
+  - word: 実行する
+    reading: じっこうする
+    meaning: 執行
+    level: N3
+  - word: 実施する
+    reading: じっしする
+    meaning: 實施
+    level: N3
+  - word: 実現する
+    reading: じつげんする
+    meaning: 實現
+    level: N3
+  - word: 実験する
+    reading: じっけんする
+    meaning: 實驗
+    level: N3
+  - word: 実感する
+    reading: じっかんする
+    meaning: 實際感受
+    level: N3
+  - word: 仕事する
+    reading: しごとする
+    meaning: 工作
+    level: N3
+  - word: 活動する
+    reading: かつどうする
+    meaning: 活動
+    level: N3
+  - word: 研究する
+    reading: けんきゅうする
+    meaning: 研究
+    level: N3
+  - word: 調査する
+    reading: ちょうさする
+    meaning: 調查
+    level: N3
+  - word: 学ぶ
+    reading: まなぶ
+    meaning: 學習
+    level: N3
+  - word: 教わる
+    reading: おそわる
+    meaning: 受教、學到
+    level: N3
+  - word: 暗記する
+    reading: あんきする
+    meaning: 背誦
+    level: N3
+  - word: 習得する
+    reading: しゅうとくする
+    meaning: 習得
+    level: N3
+  - word: 身に付ける
+    reading: みにつける
+    meaning: 掌握、穿上
+    level: N3
+  - word: 証明する
+    reading: しょうめいする
+    meaning: 證明
+    level: N3
+  - word: 記録する
+    reading: きろくする
+    meaning: 記錄
+    level: N3
+  - word: 許可する
+    reading: きょかする
+    meaning: 許可
+    level: N3
+  - word: 禁止する
+    reading: きんしする
+    meaning: 禁止
+    level: N3
+  - word: 我慢する
+    reading: がまんする
+    meaning: 忍耐
+    level: N3
+  - word: 辞める
+    reading: やめる
+    meaning: 辭職
+    level: N3
+  - word: やめる
+    reading: やめる
+    meaning: 停止、放棄
+    level: N3
+  - word: 延期する
+    reading: えんきする
+    meaning: 延期
+    level: N3
+  - word: 中止する
+    reading: ちゅうしする
+    meaning: 中止
+    level: N3
+  - word: 整理する
+    reading: せいりする
+    meaning: 整理
+    level: N3
+  - word: 整頓する
+    reading: せいとんする
+    meaning: 整頓
+    level: N3
+  - word: 片付く
+    reading: かたづく
+    meaning: 整理好（自）
+    level: N3
+  - word: 統一する
+    reading: とういつする
+    meaning: 統一
+    level: N3
+  - word: 求める
+    reading: もとめる
+    meaning: 尋求
+    level: N3
+  - word: 願う
+    reading: ねがう
+    meaning: 期望
+    level: N3
+  - word: 望む
+    reading: のぞむ
+    meaning: 期望
+    level: N3
+  - word: 得る
+    reading: える
+    meaning: 得到
+    level: N3
+  - word: 失う
+    reading: うしなう
+    meaning: 失去
+    level: N3
+  - word: 手に入れる
+    reading: てにいれる
+    meaning: 得到、入手
+    level: N3
+  - word: 儲ける
+    reading: もうける
+    meaning: 賺
+    level: N3
+  - word: 稼ぐ
+    reading: かせぐ
+    meaning: 賺錢
+    level: N3
+  - word: 貯める
+    reading: ためる
+    meaning: 儲蓄
+    level: N3
+  - word: 貯金する
+    reading: ちょきんする
+    meaning: 存錢
+    level: N3
+  - word: 支払う
+    reading: しはらう
+    meaning: 支付
+    level: N3
+  - word: させる
+    reading: させる
+    meaning: 使（使役助動詞）
+    level: N3
+  - word: 知らせる
+    reading: しらせる
+    meaning: 通知
+    level: N3
+  - word: 見せる
+    reading: みせる
+    meaning: 給人看
+    level: N3
+  - word: 聞かせる
+    reading: きかせる
+    meaning: 給人聽
+    level: N3
+  - word: 覚えさせる
+    reading: おぼえさせる
+    meaning: 使記住
+    level: N3
+  - word: びっくりする
+    reading: びっくりする
+    meaning: 吃驚
+    level: N3
+  - word: ごまかす
+    reading: ごまかす
+    meaning: 蒙混、隱瞞
+    level: N3
+  - word: 嘘をつく
+    reading: うそをつく
+    meaning: 說謊
+    level: N3
+  - word: 約束する
+    reading: やくそくする
+    meaning: 約定
+    level: N3
+  - word: 保つ
+    reading: たもつ
+    meaning: 保持
+    level: N3
+  - word: 維持する
+    reading: いじする
+    meaning: 維持
+    level: N3
+  - word: やり遂げる
+    reading: やりとげる
+    meaning: 完成
+    level: N3
+  - word: 仕方がない
+    reading: しかたがない
+    meaning: 沒辦法
+    level: N3
+  - word: 戦う
+    reading: たたかう
+    meaning: 戰鬥
+    level: N3
+  - word: 勝つ
+    reading: かつ
+    meaning: 贏
+    level: N3
+  - word: 負ける
+    reading: まける
+    meaning: 輸
+    level: N3
+  - word: 競う
+    reading: きそう
+    meaning: 競爭
+    level: N3
+  - word: 競争する
+    reading: きょうそうする
+    meaning: 競爭
+    level: N3

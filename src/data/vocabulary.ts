@@ -21,9 +21,11 @@ export const vocabularyQuestions: VocabularyQuestion[] = Object.values(
   vocabularyByLevel
 ).flat();
 
+// Match by level prefix only — N3 has multiple sub-prefixes (n3-v-,
+// n3-vv-, n3-vn-) for handcrafted / verbs / nouns batches.
 export function levelOfVocabId(id: string): VocabLevel | null {
-  if (id.startsWith("n5-v-")) return "N5";
-  if (id.startsWith("n4-v-")) return "N4";
-  if (id.startsWith("n3-v-")) return "N3";
+  if (id.startsWith("n5-")) return "N5";
+  if (id.startsWith("n4-")) return "N4";
+  if (id.startsWith("n3-")) return "N3";
   return null;
 }

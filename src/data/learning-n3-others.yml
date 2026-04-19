@@ -1,0 +1,1368 @@
+# ===================================================================
+# JLPT N3 單字列表 - 形容詞+副詞+カタカナ+オノマトペ（共 340 詞）
+# 包含：イ形容詞、ナ形容詞、副詞、オノマトペ、カタカナ、接續詞
+# 分級依據：舊日檢出題基準、JLPT Sensei / Jisho.org / TRY! 系列
+# ⚠️ JLPT 官方不公開語彙清單，分級為民間共識
+# ===================================================================
+
+vocabulary:
+  - word: 素晴らしい
+    reading: すばらしい
+    meaning: 美好的、出色的
+    level: N3
+  - word: 恐ろしい
+    reading: おそろしい
+    meaning: 可怕的
+    level: N3
+  - word: 詳しい
+    reading: くわしい
+    meaning: 詳細的
+    level: N3
+  - word: 乏しい
+    reading: とぼしい
+    meaning: 缺乏的
+    level: N3
+  - word: 悔しい
+    reading: くやしい
+    meaning: 悔恨的、不甘心的
+    level: N3
+  - word: 鋭い
+    reading: するどい
+    meaning: 尖銳的、敏銳的
+    level: N3
+  - word: 鈍い
+    reading: にぶい
+    meaning: 遲鈍的
+    level: N3
+  - word: 塩辛い
+    reading: しおからい
+    meaning: 鹹的
+    level: N3
+  - word: 美しい
+    reading: うつくしい
+    meaning: 美麗的
+    level: N3
+  - word: ひどい
+    reading: ひどい
+    meaning: 過分的、嚴重的
+    level: N3
+  - word: 臭い
+    reading: くさい
+    meaning: 臭的
+    level: N3
+  - word: 幼い
+    reading: おさない
+    meaning: 年幼的
+    level: N3
+  - word: 勇ましい
+    reading: いさましい
+    meaning: 勇敢的
+    level: N3
+  - word: くだらない
+    reading: くだらない
+    meaning: 無聊的、沒意義的
+    level: N3
+  - word: しつこい
+    reading: しつこい
+    meaning: 糾纏不休的、濃的
+    level: N3
+  - word: きつい
+    reading: きつい
+    meaning: 嚴苛的、緊的
+    level: N3
+  - word: ありがたい
+    reading: ありがたい
+    meaning: 感謝的、難得的
+    level: N3
+  - word: おかしい
+    reading: おかしい
+    meaning: 奇怪的、可笑的
+    level: N3
+  - word: 粗い
+    reading: あらい
+    meaning: 粗糙的
+    level: N3
+  - word: 荒い
+    reading: あらい
+    meaning: 粗暴的
+    level: N3
+  - word: 濃い
+    reading: こい
+    meaning: 濃的、深的
+    level: N3
+  - word: 淡い
+    reading: あわい
+    meaning: 淡的
+    level: N3
+  - word: 眩しい
+    reading: まぶしい
+    meaning: 刺眼的、耀眼的
+    level: N3
+  - word: 等しい
+    reading: ひとしい
+    meaning: 相等的
+    level: N3
+  - word: 恋しい
+    reading: こいしい
+    meaning: 思念的
+    level: N3
+  - word: 憎い
+    reading: にくい
+    meaning: 可恨的
+    level: N3
+  - word: 憎らしい
+    reading: にくらしい
+    meaning: 討厭的
+    level: N3
+  - word: 親しい
+    reading: したしい
+    meaning: 親密的
+    level: N3
+  - word: 賢い
+    reading: かしこい
+    meaning: 聰明的
+    level: N3
+  - word: 怠い
+    reading: だるい
+    meaning: 疲倦的、沒力的
+    level: N3
+  - word: 凄い
+    reading: すごい
+    meaning: 厲害的、了不起的
+    level: N3
+  - word: 緩い
+    reading: ゆるい
+    meaning: 鬆的、緩慢的
+    level: N3
+  - word: 辛い
+    reading: つらい
+    meaning: 痛苦的、難受的
+    level: N3
+  - word: 青白い
+    reading: あおじろい
+    meaning: 蒼白的
+    level: N3
+  - word: 眠たい
+    reading: ねむたい
+    meaning: 想睡的
+    level: N3
+  - word: 気持ちいい
+    reading: きもちいい
+    meaning: 舒服的
+    level: N3
+  - word: 気持ち悪い
+    reading: きもちわるい
+    meaning: 噁心的、不舒服的
+    level: N3
+  - word: 愚か
+    reading: おろか
+    meaning: 愚蠢的
+    level: N3
+  - word: 利口
+    reading: りこう
+    meaning: 聰明的
+    level: N3
+  - word: 頑固
+    reading: がんこ
+    meaning: 頑固的
+    level: N3
+  - word: 地味
+    reading: じみ
+    meaning: 樸素的
+    level: N3
+  - word: 派手
+    reading: はで
+    meaning: 華麗的
+    level: N3
+  - word: 上品
+    reading: じょうひん
+    meaning: 優雅的、高尚的
+    level: N3
+  - word: 下品
+    reading: げひん
+    meaning: 下流的
+    level: N3
+  - word: 朗らか
+    reading: ほがらか
+    meaning: 開朗的
+    level: N3
+  - word: 明らか
+    reading: あきらか
+    meaning: 清楚、明顯的
+    level: N3
+  - word: 確実
+    reading: かくじつ
+    meaning: 確實的
+    level: N3
+  - word: 不確か
+    reading: ふたしか
+    meaning: 不確定的
+    level: N3
+  - word: 独特
+    reading: どくとく
+    meaning: 獨特的
+    level: N3
+  - word: 特殊
+    reading: とくしゅ
+    meaning: 特殊的
+    level: N3
+  - word: 一般的
+    reading: いっぱんてき
+    meaning: 一般的
+    level: N3
+  - word: 具体的
+    reading: ぐたいてき
+    meaning: 具體的
+    level: N3
+  - word: 抽象的
+    reading: ちゅうしょうてき
+    meaning: 抽象的
+    level: N3
+  - word: 積極的
+    reading: せっきょくてき
+    meaning: 積極的
+    level: N3
+  - word: 消極的
+    reading: しょうきょくてき
+    meaning: 消極的
+    level: N3
+  - word: 経済的
+    reading: けいざいてき
+    meaning: 經濟的
+    level: N3
+  - word: 効率的
+    reading: こうりつてき
+    meaning: 效率的
+    level: N3
+  - word: 効果的
+    reading: こうかてき
+    meaning: 有效的
+    level: N3
+  - word: 合理的
+    reading: ごうりてき
+    meaning: 合理的
+    level: N3
+  - word: 理想的
+    reading: りそうてき
+    meaning: 理想的
+    level: N3
+  - word: 理論的
+    reading: りろんてき
+    meaning: 理論的
+    level: N3
+  - word: 実用的
+    reading: じつようてき
+    meaning: 實用的
+    level: N3
+  - word: 伝統的
+    reading: でんとうてき
+    meaning: 傳統的
+    level: N3
+  - word: 現代的
+    reading: げんだいてき
+    meaning: 現代的
+    level: N3
+  - word: 科学的
+    reading: かがくてき
+    meaning: 科學的
+    level: N3
+  - word: 文化的
+    reading: ぶんかてき
+    meaning: 文化的
+    level: N3
+  - word: 歴史的
+    reading: れきしてき
+    meaning: 歷史的
+    level: N3
+  - word: 社会的
+    reading: しゃかいてき
+    meaning: 社會的
+    level: N3
+  - word: 政治的
+    reading: せいじてき
+    meaning: 政治的
+    level: N3
+  - word: 個人的
+    reading: こじんてき
+    meaning: 個人的
+    level: N3
+  - word: 世界的
+    reading: せかいてき
+    meaning: 世界性的
+    level: N3
+  - word: 客観的
+    reading: きゃっかんてき
+    meaning: 客觀的
+    level: N3
+  - word: 主観的
+    reading: しゅかんてき
+    meaning: 主觀的
+    level: N3
+  - word: 主要
+    reading: しゅよう
+    meaning: 主要的
+    level: N3
+  - word: 中心的
+    reading: ちゅうしんてき
+    meaning: 中心的
+    level: N3
+  - word: 専門的
+    reading: せんもんてき
+    meaning: 專業的
+    level: N3
+  - word: 全般的
+    reading: ぜんぱんてき
+    meaning: 全面的
+    level: N3
+  - word: 当然
+    reading: とうぜん
+    meaning: 當然的
+    level: N3
+  - word: 不要
+    reading: ふよう
+    meaning: 不需要的
+    level: N3
+  - word: 可能
+    reading: かのう
+    meaning: 可能的
+    level: N3
+  - word: 不可能
+    reading: ふかのう
+    meaning: 不可能的
+    level: N3
+  - word: 有利
+    reading: ゆうり
+    meaning: 有利的
+    level: N3
+  - word: 不利
+    reading: ふり
+    meaning: 不利的
+    level: N3
+  - word: 得
+    reading: とく
+    meaning: 划算的、得到的
+    level: N3
+  - word: 損
+    reading: そん
+    meaning: 虧的、損失的
+    level: N3
+  - word: 幸せ
+    reading: しあわせ
+    meaning: 幸福的
+    level: N3
+  - word: 不幸
+    reading: ふこう
+    meaning: 不幸的
+    level: N3
+  - word: 豊富
+    reading: ほうふ
+    meaning: 豐富的
+    level: N3
+  - word: 冷静
+    reading: れいせい
+    meaning: 冷靜的
+    level: N3
+  - word: 上等
+    reading: じょうとう
+    meaning: 上等的
+    level: N3
+  - word: 完璧
+    reading: かんぺき
+    meaning: 完美的
+    level: N3
+  - word: 完全
+    reading: かんぜん
+    meaning: 完全的
+    level: N3
+  - word: 平凡
+    reading: へいぼん
+    meaning: 平凡的
+    level: N3
+  - word: 共通
+    reading: きょうつう
+    meaning: 共通的
+    level: N3
+  - word: 同様
+    reading: どうよう
+    meaning: 同樣的
+    level: N3
+  - word: 別
+    reading: べつ
+    meaning: 另外、別的
+    level: N3
+  - word: 多様
+    reading: たよう
+    meaning: 多樣的
+    level: N3
+  - word: 平和
+    reading: へいわ
+    meaning: 和平的
+    level: N3
+  - word: 贅沢
+    reading: ぜいたく
+    meaning: 奢侈的
+    level: N3
+  - word: 質素
+    reading: しっそ
+    meaning: 樸素的
+    level: N3
+  - word: 無事
+    reading: ぶじ
+    meaning: 平安的
+    level: N3
+  - word: 丁重
+    reading: ていちょう
+    meaning: 鄭重的
+    level: N3
+  - word: 失礼
+    reading: しつれい
+    meaning: 失禮的
+    level: N3
+  - word: 恐らく
+    reading: おそらく
+    meaning: 恐怕、大概
+    level: N3
+  - word: 実に
+    reading: じつに
+    meaning: 實在、著實
+    level: N3
+  - word: ちっとも
+    reading: ちっとも
+    meaning: 一點也（不）
+    level: N3
+  - word: 少しも
+    reading: すこしも
+    meaning: 一點也（不）
+    level: N3
+  - word: 全く
+    reading: まったく
+    meaning: 完全
+    level: N3
+  - word: 相変わらず
+    reading: あいかわらず
+    meaning: 依舊
+    level: N3
+  - word: 確かに
+    reading: たしかに
+    meaning: 確實
+    level: N3
+  - word: 果たして
+    reading: はたして
+    meaning: 果然
+    level: N3
+  - word: 案外
+    reading: あんがい
+    meaning: 意外地
+    level: N3
+  - word: 思い切り
+    reading: おもいきり
+    meaning: 盡情地
+    level: N3
+  - word: 思わず
+    reading: おもわず
+    meaning: 不禁、不自覺地
+    level: N3
+  - word: つい
+    reading: つい
+    meaning: 不小心、無意中
+    level: N3
+  - word: うっかり
+    reading: うっかり
+    meaning: 不小心、粗心
+    level: N3
+  - word: 偶に
+    reading: たまに
+    meaning: 偶爾
+    level: N3
+  - word: しばしば
+    reading: しばしば
+    meaning: 經常
+    level: N3
+  - word: 度々
+    reading: たびたび
+    meaning: 屢次
+    level: N3
+  - word: 一々
+    reading: いちいち
+    meaning: 一一、每個都
+    level: N3
+  - word: 次々
+    reading: つぎつぎ
+    meaning: 一個接一個
+    level: N3
+  - word: そのうち
+    reading: そのうち
+    meaning: 不久、過陣子
+    level: N3
+  - word: いずれ
+    reading: いずれ
+    meaning: 早晚
+    level: N3
+  - word: やがて
+    reading: やがて
+    meaning: 不久
+    level: N3
+  - word: 今更
+    reading: いまさら
+    meaning: 事到如今
+    level: N3
+  - word: 先ほど
+    reading: さきほど
+    meaning: 剛才
+    level: N3
+  - word: 後ほど
+    reading: のちほど
+    meaning: 稍後
+    level: N3
+  - word: すっかり
+    reading: すっかり
+    meaning: 完全地
+    level: N3
+  - word: はっきり
+    reading: はっきり
+    meaning: 清楚地
+    level: N3
+  - word: しっかり
+    reading: しっかり
+    meaning: 確實地、牢牢
+    level: N3
+  - word: ちゃんと
+    reading: ちゃんと
+    meaning: 好好地
+    level: N3
+  - word: きちんと
+    reading: きちんと
+    meaning: 整齊地、按時
+    level: N3
+  - word: そっくり
+    reading: そっくり
+    meaning: 一模一樣
+    level: N3
+  - word: そのまま
+    reading: そのまま
+    meaning: 就那樣
+    level: N3
+  - word: わざと
+    reading: わざと
+    meaning: 故意地
+    level: N3
+  - word: わざわざ
+    reading: わざわざ
+    meaning: 特意
+    level: N3
+  - word: どうか
+    reading: どうか
+    meaning: 請、拜託
+    level: N3
+  - word: いよいよ
+    reading: いよいよ
+    meaning: 終於、愈發
+    level: N3
+  - word: ついに
+    reading: ついに
+    meaning: 終於、到底
+    level: N3
+  - word: さらに
+    reading: さらに
+    meaning: 此外、更加
+    level: N3
+  - word: しかも
+    reading: しかも
+    meaning: 而且
+    level: N3
+  - word: せっかく
+    reading: せっかく
+    meaning: 特意、難得
+    level: N3
+  - word: 少なくとも
+    reading: すくなくとも
+    meaning: 至少
+    level: N3
+  - word: まさか
+    reading: まさか
+    meaning: 難道、怎麼會
+    level: N3
+  - word: まさに
+    reading: まさに
+    meaning: 正是
+    level: N3
+  - word: のんびり
+    reading: のんびり
+    meaning: 悠閒地
+    level: N3
+  - word: ぴったり
+    reading: ぴったり
+    meaning: 剛剛好、緊貼
+    level: N3
+  - word: ぎりぎり
+    reading: ぎりぎり
+    meaning: 勉強、剛好
+    level: N3
+  - word: たっぷり
+    reading: たっぷり
+    meaning: 滿滿地
+    level: N3
+  - word: もっぱら
+    reading: もっぱら
+    meaning: 專門、專心
+    level: N3
+  - word: いかにも
+    reading: いかにも
+    meaning: 實在、的確
+    level: N3
+  - word: なかなか
+    reading: なかなか
+    meaning: 相當、難以
+    level: N3
+  - word: どうやら
+    reading: どうやら
+    meaning: 看來、似乎
+    level: N3
+  - word: 一体
+    reading: いったい
+    meaning: 到底、究竟
+    level: N3
+  - word: 大した
+    reading: たいした
+    meaning: 了不起的、大不了的
+    level: N3
+  - word: 大して
+    reading: たいして
+    meaning: （不）太
+    level: N3
+  - word: 殆ど
+    reading: ほとんど
+    meaning: 幾乎
+    level: N3
+  - word: 主に
+    reading: おもに
+    meaning: 主要地
+    level: N3
+  - word: 直接
+    reading: ちょくせつ
+    meaning: 直接
+    level: N3
+  - word: 間接
+    reading: かんせつ
+    meaning: 間接
+    level: N3
+  - word: 次第に
+    reading: しだいに
+    meaning: 漸漸
+    level: N3
+  - word: 徐々に
+    reading: じょじょに
+    meaning: 慢慢地
+    level: N3
+  - word: 次第
+    reading: しだい
+    meaning: 看情況、取決於
+    level: N3
+  - word: 自然に
+    reading: しぜんに
+    meaning: 自然地
+    level: N3
+  - word: 結局
+    reading: けっきょく
+    meaning: 結果、最後
+    level: N3
+  - word: とにかく
+    reading: とにかく
+    meaning: 總之
+    level: N3
+  - word: ともかく
+    reading: ともかく
+    meaning: 姑且不論
+    level: N3
+  - word: ちなみに
+    reading: ちなみに
+    meaning: 順帶一提
+    level: N3
+  - word: なるほど
+    reading: なるほど
+    meaning: 原來如此
+    level: N3
+  - word: どうせ
+    reading: どうせ
+    meaning: 反正
+    level: N3
+  - word: 何とか
+    reading: なんとか
+    meaning: 設法、勉強
+    level: N3
+  - word: 何と
+    reading: なんと
+    meaning: 多麼、什麼
+    level: N3
+  - word: 余り
+    reading: あまり
+    meaning: 太、過度
+    level: N3
+  - word: 随分
+    reading: ずいぶん
+    meaning: 相當、很
+    level: N3
+  - word: わりと
+    reading: わりと
+    meaning: 比較、相對
+    level: N3
+  - word: 比較的
+    reading: ひかくてき
+    meaning: 比較
+    level: N3
+  - word: 本当に
+    reading: ほんとうに
+    meaning: 真的
+    level: N3
+  - word: 実際
+    reading: じっさい
+    meaning: 實際
+    level: N3
+  - word: 実際に
+    reading: じっさいに
+    meaning: 實際上
+    level: N3
+  - word: キラキラ
+    reading: キラキラ
+    meaning: 閃閃發光
+    level: N3
+  - word: ピカピカ
+    reading: ピカピカ
+    meaning: 亮閃閃
+    level: N3
+  - word: ガタガタ
+    reading: ガタガタ
+    meaning: 喀噠喀噠、搖晃
+    level: N3
+  - word: ドキドキ
+    reading: ドキドキ
+    meaning: 心跳怦怦
+    level: N3
+  - word: ハラハラ
+    reading: ハラハラ
+    meaning: 捏把冷汗
+    level: N3
+  - word: イライラ
+    reading: イライラ
+    meaning: 煩躁
+    level: N3
+  - word: ニコニコ
+    reading: ニコニコ
+    meaning: 笑嘻嘻
+    level: N3
+  - word: ぽかぽか
+    reading: ぽかぽか
+    meaning: 暖呼呼
+    level: N3
+  - word: じめじめ
+    reading: じめじめ
+    meaning: 潮濕、鬱悶
+    level: N3
+  - word: すっきり
+    reading: すっきり
+    meaning: 舒暢、清爽
+    level: N3
+  - word: がっかり
+    reading: がっかり
+    meaning: 失望
+    level: N3
+  - word: すらすら
+    reading: すらすら
+    meaning: 流利地
+    level: N3
+  - word: ふらふら
+    reading: ふらふら
+    meaning: 搖搖晃晃
+    level: N3
+  - word: ぶかぶか
+    reading: ぶかぶか
+    meaning: 寬鬆
+    level: N3
+  - word: ぎゅうぎゅう
+    reading: ぎゅうぎゅう
+    meaning: 擠得滿滿
+    level: N3
+  - word: だらだら
+    reading: だらだら
+    meaning: 懶散、拖拖拉拉
+    level: N3
+  - word: ばたばた
+    reading: ばたばた
+    meaning: 忙亂、啪嗒
+    level: N3
+  - word: ごろごろ
+    reading: ごろごろ
+    meaning: 滾動、打滾、閒著
+    level: N3
+  - word: くるくる
+    reading: くるくる
+    meaning: 轉圈圈
+    level: N3
+  - word: ぱっと
+    reading: ぱっと
+    meaning: 突然
+    level: N3
+  - word: さっと
+    reading: さっと
+    meaning: 迅速地
+    level: N3
+  - word: じっと
+    reading: じっと
+    meaning: 靜靜地、凝視
+    level: N3
+  - word: ぐったり
+    reading: ぐったり
+    meaning: 精疲力盡
+    level: N3
+  - word: さっぱり
+    reading: さっぱり
+    meaning: 清爽、完全（不）
+    level: N3
+  - word: うとうと
+    reading: うとうと
+    meaning: 打瞌睡
+    level: N3
+  - word: ぶつぶつ
+    reading: ぶつぶつ
+    meaning: 嘟囔、抱怨
+    level: N3
+  - word: こつこつ
+    reading: こつこつ
+    meaning: 勤勤懇懇
+    level: N3
+  - word: がんがん
+    reading: がんがん
+    meaning: 劇烈疼痛、咚咚
+    level: N3
+  - word: ふわふわ
+    reading: ふわふわ
+    meaning: 蓬鬆、輕飄
+    level: N3
+  - word: もちもち
+    reading: もちもち
+    meaning: Q彈
+    level: N3
+  - word: さらさら
+    reading: さらさら
+    meaning: 滑順、沙沙
+    level: N3
+  - word: つるつる
+    reading: つるつる
+    meaning: 光滑
+    level: N3
+  - word: ざらざら
+    reading: ざらざら
+    meaning: 粗糙
+    level: N3
+  - word: べとべと
+    reading: べとべと
+    meaning: 黏糊糊
+    level: N3
+  - word: ぐちゃぐちゃ
+    reading: ぐちゃぐちゃ
+    meaning: 亂七八糟
+    level: N3
+  - word: わいわい
+    reading: わいわい
+    meaning: 熱鬧吵鬧
+    level: N3
+  - word: くよくよ
+    reading: くよくよ
+    meaning: 鑽牛角尖
+    level: N3
+  - word: ぐるぐる
+    reading: ぐるぐる
+    meaning: 轉圈圈
+    level: N3
+  - word: ドンドン
+    reading: ドンドン
+    meaning: 咚咚（敲門）、不斷地
+    level: N3
+  - word: こそこそ
+    reading: こそこそ
+    meaning: 偷偷地
+    level: N3
+  - word: ぺらぺら
+    reading: ぺらぺら
+    meaning: 流利地、薄薄的
+    level: N3
+  - word: ぶつぶつ言う
+    reading: ぶつぶついう
+    meaning: 嘀咕
+    level: N3
+  - word: ぶるぶる
+    reading: ぶるぶる
+    meaning: 顫抖
+    level: N3
+  - word: ぐるぐる回る
+    reading: ぐるぐるまわる
+    meaning: 團團轉
+    level: N3
+  - word: アンケート
+    reading: アンケート
+    meaning: 問卷
+    level: N3
+  - word: キャンセル
+    reading: キャンセル
+    meaning: 取消
+    level: N3
+  - word: クレジットカード
+    reading: クレジットカード
+    meaning: 信用卡
+    level: N3
+  - word: コンテスト
+    reading: コンテスト
+    meaning: 競賽
+    level: N3
+  - word: サイン
+    reading: サイン
+    meaning: 簽名、信號
+    level: N3
+  - word: シーズン
+    reading: シーズン
+    meaning: 季節、賽季
+    level: N3
+  - word: シーツ
+    reading: シーツ
+    meaning: 床單
+    level: N3
+  - word: ジーンズ
+    reading: ジーンズ
+    meaning: 牛仔褲
+    level: N3
+  - word: シリーズ
+    reading: シリーズ
+    meaning: 系列
+    level: N3
+  - word: スタート
+    reading: スタート
+    meaning: 開始
+    level: N3
+  - word: スマートフォン
+    reading: スマートフォン
+    meaning: 智慧型手機
+    level: N3
+  - word: スマホ
+    reading: スマホ
+    meaning: 智慧型手機（口語）
+    level: N3
+  - word: セット
+    reading: セット
+    meaning: 一套、設定
+    level: N3
+  - word: チャンネル
+    reading: チャンネル
+    meaning: 頻道
+    level: N3
+  - word: チケット
+    reading: チケット
+    meaning: 票
+    level: N3
+  - word: ドライブ
+    reading: ドライブ
+    meaning: 兜風
+    level: N3
+  - word: トラック
+    reading: トラック
+    meaning: 卡車
+    level: N3
+  - word: ノック
+    reading: ノック
+    meaning: 敲門
+    level: N3
+  - word: バイト
+    reading: バイト
+    meaning: 打工
+    level: N3
+  - word: パート
+    reading: パート
+    meaning: 兼職、部分
+    level: N3
+  - word: パンフレット
+    reading: パンフレット
+    meaning: 宣傳冊
+    level: N3
+  - word: ファスナー
+    reading: ファスナー
+    meaning: 拉鍊
+    level: N3
+  - word: フロント
+    reading: フロント
+    meaning: 前台、前面
+    level: N3
+  - word: プリンター
+    reading: プリンター
+    meaning: 印表機
+    level: N3
+  - word: ブレーキ
+    reading: ブレーキ
+    meaning: 煞車
+    level: N3
+  - word: ヘリコプター
+    reading: ヘリコプター
+    meaning: 直升機
+    level: N3
+  - word: ベル
+    reading: ベル
+    meaning: 鈴
+    level: N3
+  - word: ポスター
+    reading: ポスター
+    meaning: 海報
+    level: N3
+  - word: ポスト
+    reading: ポスト
+    meaning: 郵筒、職位
+    level: N3
+  - word: マイク
+    reading: マイク
+    meaning: 麥克風
+    level: N3
+  - word: マナー
+    reading: マナー
+    meaning: 禮儀
+    level: N3
+  - word: ミス
+    reading: ミス
+    meaning: 錯誤
+    level: N3
+  - word: メニュー
+    reading: メニュー
+    meaning: 菜單
+    level: N3
+  - word: モニター
+    reading: モニター
+    meaning: 螢幕、監視器
+    level: N3
+  - word: ラッシュアワー
+    reading: ラッシュアワー
+    meaning: 尖峰時間
+    level: N3
+  - word: リーダー
+    reading: リーダー
+    meaning: 領導人
+    level: N3
+  - word: ロケット
+    reading: ロケット
+    meaning: 火箭
+    level: N3
+  - word: ロビー
+    reading: ロビー
+    meaning: 大廳
+    level: N3
+  - word: アイロン
+    reading: アイロン
+    meaning: 熨斗
+    level: N3
+  - word: アルバム
+    reading: アルバム
+    meaning: 相簿、專輯
+    level: N3
+  - word: アクセス
+    reading: アクセス
+    meaning: 存取、交通方式
+    level: N3
+  - word: アピール
+    reading: アピール
+    meaning: 訴求、宣傳
+    level: N3
+  - word: アルバイト
+    reading: アルバイト
+    meaning: 打工
+    level: N3
+  - word: エンジン
+    reading: エンジン
+    meaning: 引擎
+    level: N3
+  - word: カーブ
+    reading: カーブ
+    meaning: 彎道
+    level: N3
+  - word: カタログ
+    reading: カタログ
+    meaning: 型錄
+    level: N3
+  - word: カッコいい
+    reading: カッコいい
+    meaning: 帥氣的
+    level: N3
+  - word: カバー
+    reading: カバー
+    meaning: 封面、涵蓋
+    level: N3
+  - word: ガイドブック
+    reading: ガイドブック
+    meaning: 導覽手冊
+    level: N3
+  - word: キッチン
+    reading: キッチン
+    meaning: 廚房
+    level: N3
+  - word: コース
+    reading: コース
+    meaning: 路線、課程
+    level: N3
+  - word: コメント
+    reading: コメント
+    meaning: 評論
+    level: N3
+  - word: コレクション
+    reading: コレクション
+    meaning: 收藏
+    level: N3
+  - word: ジャンル
+    reading: ジャンル
+    meaning: 類別
+    level: N3
+  - word: ショック
+    reading: ショック
+    meaning: 震驚
+    level: N3
+  - word: ショッピング
+    reading: ショッピング
+    meaning: 購物
+    level: N3
+  - word: ストップ
+    reading: ストップ
+    meaning: 停止
+    level: N3
+  - word: センス
+    reading: センス
+    meaning: 品味、判斷力
+    level: N3
+  - word: チーズ
+    reading: チーズ
+    meaning: 起司
+    level: N3
+  - word: チーフ
+    reading: チーフ
+    meaning: 主管
+    level: N3
+  - word: テーマ
+    reading: テーマ
+    meaning: 主題
+    level: N3
+  - word: デート
+    reading: デート
+    meaning: 約會
+    level: N3
+  - word: デモ
+    reading: デモ
+    meaning: 示威、展示
+    level: N3
+  - word: トップ
+    reading: トップ
+    meaning: 頂端、第一
+    level: N3
+  - word: ドラマチック
+    reading: ドラマチック
+    meaning: 戲劇性的
+    level: N3
+  - word: ナンバー
+    reading: ナンバー
+    meaning: 號碼
+    level: N3
+  - word: バッテリー
+    reading: バッテリー
+    meaning: 電池
+    level: N3
+  - word: バランス
+    reading: バランス
+    meaning: 平衡
+    level: N3
+  - word: パンク
+    reading: パンク
+    meaning: 爆胎
+    level: N3
+  - word: ピクニック
+    reading: ピクニック
+    meaning: 野餐
+    level: N3
+  - word: ビジネス
+    reading: ビジネス
+    meaning: 商業
+    level: N3
+  - word: ビタミン
+    reading: ビタミン
+    meaning: 維生素
+    level: N3
+  - word: フリー
+    reading: フリー
+    meaning: 自由、免費
+    level: N3
+  - word: プライベート
+    reading: プライベート
+    meaning: 私人的
+    level: N3
+  - word: プラン
+    reading: プラン
+    meaning: 計畫
+    level: N3
+  - word: プレッシャー
+    reading: プレッシャー
+    meaning: 壓力
+    level: N3
+  - word: ペア
+    reading: ペア
+    meaning: 一對
+    level: N3
+  - word: ボーナス
+    reading: ボーナス
+    meaning: 獎金
+    level: N3
+  - word: ポイント
+    reading: ポイント
+    meaning: 點、要點
+    level: N3
+  - word: マスク
+    reading: マスク
+    meaning: 口罩
+    level: N3
+  - word: メンバー
+    reading: メンバー
+    meaning: 成員
+    level: N3
+  - word: ルーム
+    reading: ルーム
+    meaning: 房間
+    level: N3
+  - word: レッスン
+    reading: レッスン
+    meaning: 課程
+    level: N3
+  - word: ログイン
+    reading: ログイン
+    meaning: 登入
+    level: N3
+  - word: なお
+    reading: なお
+    meaning: 另外、尚且
+    level: N3
+  - word: ただし
+    reading: ただし
+    meaning: 但是、不過
+    level: N3
+  - word: もっとも
+    reading: もっとも
+    meaning: 不過、話雖如此
+    level: N3
+  - word: ただ
+    reading: ただ
+    meaning: 只是、不過
+    level: N3
+  - word: したがって
+    reading: したがって
+    meaning: 因此
+    level: N3
+  - word: よって
+    reading: よって
+    meaning: 所以
+    level: N3
+  - word: そのため
+    reading: そのため
+    meaning: 因此
+    level: N3
+  - word: そこで
+    reading: そこで
+    meaning: 於是、那麼
+    level: N3
+  - word: すなわち
+    reading: すなわち
+    meaning: 也就是說
+    level: N3
+  - word: さて
+    reading: さて
+    meaning: 那麼、話說
+    level: N3
+  - word: あるいは
+    reading: あるいは
+    meaning: 或者
+    level: N3
+  - word: 及び
+    reading: および
+    meaning: 以及
+    level: N3
+  - word: 並びに
+    reading: ならびに
+    meaning: 並、和
+    level: N3
+  - word: その上
+    reading: そのうえ
+    meaning: 而且、再加上
+    level: N3
+  - word: あらゆる
+    reading: あらゆる
+    meaning: 所有的
+    level: N3
+  - word: 大きな
+    reading: おおきな
+    meaning: 大的
+    level: N3
+  - word: 小さな
+    reading: ちいさな
+    meaning: 小的
+    level: N3
+  - word: いろいろ
+    reading: いろいろ
+    meaning: 各式各樣
+    level: N3
+  - word: 色々な
+    reading: いろいろな
+    meaning: 各式各樣的
+    level: N3
+  - word: その他
+    reading: そのた
+    meaning: 其他
+    level: N3
+  - word: 大抵
+    reading: たいてい
+    meaning: 大致、多半
+    level: N3
+  - word: 全員
+    reading: ぜんいん
+    meaning: 全體
+    level: N3
+  - word: お互い
+    reading: おたがい
+    meaning: 相互
+    level: N3
+  - word: 以内
+    reading: いない
+    meaning: 以內
+    level: N3
+  - word: 以降
+    reading: いこう
+    meaning: 以後
+    level: N3
+  - word: 最終
+    reading: さいしゅう
+    meaning: 最終
+    level: N3
+  - word: この間
+    reading: このあいだ
+    meaning: 前幾天
+    level: N3
+  - word: その間
+    reading: そのあいだ
+    meaning: 那段期間
+    level: N3
+  - word: 先日
+    reading: せんじつ
+    meaning: 前幾天
+    level: N3
+  - word: 近頃
+    reading: ちかごろ
+    meaning: 近來
+    level: N3
+  - word: 当日
+    reading: とうじつ
+    meaning: 當天
+    level: N3
+  - word: 翌日
+    reading: よくじつ
+    meaning: 隔天
+    level: N3
+  - word: 前日
+    reading: ぜんじつ
+    meaning: 前一天
+    level: N3

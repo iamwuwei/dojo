@@ -2,6 +2,7 @@ import type { VocabularyQuestion } from "../types";
 import { buildVocabFromYaml } from "./vocab-builder";
 import verbsYaml from "./learning-n3-verbs.yml?raw";
 import nounsYaml from "./learning-n3-nouns.yml?raw";
+import othersYaml from "./learning-n3-others.yml?raw";
 
 // Hand-crafted N3 questions kept verbatim so existing mastery progress
 // (n3-v-001..n3-v-010) doesn't reset.
@@ -109,12 +110,15 @@ const handcrafted: VocabularyQuestion[] = [
 ];
 
 // Distractors stay within their own POS pool so a verb question's wrong
-// answers are also verbs (and same for nouns) — keeps the quiz tight.
+// answers are also verbs (and same for nouns / adj-adv-katakana) — keeps
+// the quiz tight.
 const verbsFromYaml = buildVocabFromYaml(verbsYaml, "n3-vv-");
 const nounsFromYaml = buildVocabFromYaml(nounsYaml, "n3-vn-");
+const othersFromYaml = buildVocabFromYaml(othersYaml, "n3-vo-");
 
 export const n3VocabularyQuestions: VocabularyQuestion[] = [
   ...handcrafted,
   ...verbsFromYaml,
   ...nounsFromYaml,
+  ...othersFromYaml,
 ];

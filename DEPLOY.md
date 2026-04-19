@@ -102,7 +102,7 @@ create trigger user_mistakes_touch_updated_at
 -- ─── Mastery：每題答對次數，>=3 視為已掌握，之後不再出題 ───
 create table public.user_mastery (
   user_id    uuid primary key references auth.users(id) on delete cascade,
-  mastery    jsonb not null default '{}'::jsonb,  -- { "v1": 2, "g3": 3, ... }
+  mastery    jsonb not null default '{}'::jsonb,  -- { "combo": { "v1": 2 }, "timed": { "g3": 1 } }
   updated_at timestamptz not null default now()
 );
 

@@ -10,6 +10,10 @@ export interface AuthUser {
   email: string;
 }
 
+// Mastery is tracked per game mode so finishing one mode doesn't drain
+// the other. Each mode has its own questionId → consecutive-ish correct count.
+export type MasteryByMode = Record<GameMode, Record<string, number>>;
+
 interface GameState {
   // Navigation
   screen: Screen;
@@ -26,10 +30,10 @@ interface GameState {
   // Mistake book (persisted)
   mistakes: MistakeEntry[];
 
-  // Mastery: questionId → consecutive-ish correct count.
-  // count >= MASTERY_THRESHOLD means the question stops appearing.
-  // A wrong answer decrements by 1 (floor 0), so one slip doesn't undo it.
-  correctCounts: Record<string, number>;
+  // Per-mode mastery: count >= MASTERY_THRESHOLD means the question stops
+  // appearing IN THAT MODE. A wrong answer decrements by 1 (floor 0), so
+  // one slip doesn't undo it.
+  correctCounts: MasteryByMode;
 
   // Auth state
   user: AuthUser | null;
@@ -62,6 +66,25 @@ interface GameState {
 
 export const MASTERY_THRESHOLD = 3;
 
+const EMPTY_MASTERY: MasteryByMode = { combo: {}, timed: {} };
+
+// Accept either the legacy flat shape ({ id: count }) or the new
+// per-mode shape ({ combo: { id: count }, timed: { id: count } }).
+// Legacy flat data is treated as combo-mode progress.
+function normalizeMastery(raw: unknown): MasteryByMode {
+  if (!raw || typeof raw !== "object") return { combo: {}, timed: {} };
+  const obj = raw as Record<string, unknown>;
+  const values = Object.values(obj);
+  const isFlat = values.length > 0 && values.every((v) => typeof v === "number");
+  if (isFlat) {
+    return { combo: obj as Record<string, number>, timed: {} };
+  }
+  return {
+    combo: (obj.combo as Record<string, number>) ?? {},
+    timed: (obj.timed as Record<string, number>) ?? {},
+  };
+}
+
 export const useGameStore = create<GameState>()(
   persist(
     (set, get) => ({
@@ -74,7 +97,7 @@ export const useGameStore = create<GameState>()(
       correct: 0,
       wrong: 0,
       mistakes: [],
-      correctCounts: {},
+      correctCounts: EMPTY_MASTERY,
       user: null,
       authLoading: true,
 
@@ -115,9 +138,14 @@ export const useGameStore = create<GameState>()(
           correct: get().correct + 1,
         };
         if (questionId) {
+          const mode: GameMode = get().mode ?? "combo";
+          const modeCounts = get().correctCounts[mode];
           updates.correctCounts = {
             ...get().correctCounts,
-            [questionId]: (get().correctCounts[questionId] ?? 0) + 1,
+            [mode]: {
+              ...modeCounts,
+              [questionId]: (modeCounts[questionId] ?? 0) + 1,
+            },
           };
         }
         set(updates);
@@ -128,15 +156,20 @@ export const useGameStore = create<GameState>()(
 
       addWrong: async (question, userAnswer) => {
         const existing = get().mistakes.find((m) => m.question.id === question.id);
-        const prevCount = get().correctCounts[question.id] ?? 0;
-        const nextCounts = { ...get().correctCounts };
+        const mode: GameMode = get().mode ?? "combo";
+        const modeCounts = get().correctCounts[mode];
+        const prevCount = modeCounts[question.id] ?? 0;
+        const nextModeCounts = { ...modeCounts };
         if (prevCount > 0) {
-          nextCounts[question.id] = prevCount - 1;
+          nextModeCounts[question.id] = prevCount - 1;
         }
         set({
           combo: 0,
           wrong: get().wrong + 1,
-          correctCounts: nextCounts,
+          correctCounts: {
+            ...get().correctCounts,
+            [mode]: nextModeCounts,
+          },
           mistakes: existing
             ? get().mistakes.map((m) =>
                 m.question.id === question.id
@@ -154,11 +187,13 @@ export const useGameStore = create<GameState>()(
         }
       },
 
-      isMastered: (questionId) =>
-        (get().correctCounts[questionId] ?? 0) >= MASTERY_THRESHOLD,
+      isMastered: (questionId) => {
+        const mode: GameMode = get().mode ?? "combo";
+        return (get().correctCounts[mode][questionId] ?? 0) >= MASTERY_THRESHOLD;
+      },
 
       resetMastery: async () => {
-        set({ correctCounts: {} });
+        set({ correctCounts: { combo: {}, timed: {} } });
         await get().saveMasteryRemote();
       },
 
@@ -278,11 +313,15 @@ export const useGameStore = create<GameState>()(
           .single();
 
         if (!error && data?.mastery) {
-          set({ correctCounts: data.mastery as Record<string, number> });
+          set({ correctCounts: normalizeMastery(data.mastery) });
           return;
         }
 
-        if (Object.keys(get().correctCounts).length > 0) {
+        const local = get().correctCounts;
+        if (
+          Object.keys(local.combo).length > 0 ||
+          Object.keys(local.timed).length > 0
+        ) {
           await get().saveMasteryRemote();
         }
       },
@@ -307,6 +346,12 @@ export const useGameStore = create<GameState>()(
         mistakes: state.mistakes,
         correctCounts: state.correctCounts,
       }),
+      // Migrate legacy flat correctCounts shape rehydrated from localStorage.
+      onRehydrateStorage: () => (state) => {
+        if (state) {
+          state.correctCounts = normalizeMastery(state.correctCounts);
+        }
+      },
     }
   )
 );

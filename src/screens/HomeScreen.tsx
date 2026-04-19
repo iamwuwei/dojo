@@ -41,7 +41,10 @@ export function HomeScreen() {
   const user = useGameStore((s) => s.user);
   const signOut = useGameStore((s) => s.signOut);
 
-  const masteredCount = Object.values(correctCounts).filter(
+  const masteredCombo = Object.values(correctCounts.combo).filter(
+    (n) => n >= MASTERY_THRESHOLD
+  ).length;
+  const masteredTimed = Object.values(correctCounts.timed).filter(
     (n) => n >= MASTERY_THRESHOLD
   ).length;
 
@@ -80,6 +83,30 @@ export function HomeScreen() {
         <SpeechBubble className="mb-4 sm:mb-6 max-w-[220px] sm:max-w-none">
           <span className="text-sm sm:text-base">{greeting}</span>
         </SpeechBubble>
+      </section>
+
+      {/* マスター進捗 — 兩個模式分開計算 */}
+      <section className="mb-6">
+        <div className="pixel-border bg-mint/40 shadow-pixel p-4">
+          <div className="font-display text-sm text-ink mb-3">
+            🏅 マスター進捗
+          </div>
+          <div className="space-y-3">
+            <MasteryRow
+              label="🔥 コンボ"
+              done={masteredCombo}
+              total={TOTAL_QUESTIONS}
+            />
+            <MasteryRow
+              label="⏱ タイムアタック"
+              done={masteredTimed}
+              total={TOTAL_QUESTIONS}
+            />
+          </div>
+          <p className="text-[11px] text-ink/60 mt-3 leading-snug">
+            兩個模式各自獨立。連續答對 {MASTERY_THRESHOLD} 次的題目就會在「該模式」收起來不再出現，答錯一次扣 1 次。
+          </p>
+        </div>
       </section>
 
       {/* 模式選擇 */}
@@ -124,7 +151,7 @@ export function HomeScreen() {
       </section>
 
       {/* 錯題本入口 */}
-      <section className="space-y-3">
+      <section>
         <button
           onClick={openMistakes}
           className="pixel-btn pixel-border bg-beret text-white shadow-pixel w-full p-3 font-display text-sm flex items-center justify-between"
@@ -134,30 +161,6 @@ export function HomeScreen() {
             {mistakes.length} 題
           </span>
         </button>
-
-        <div className="pixel-border bg-mint/40 shadow-pixelSm p-3">
-          <div className="flex items-center justify-between font-display text-xs text-ink mb-2">
-            <span>🏅 マスター進捗</span>
-            <span>
-              {masteredCount} / {TOTAL_QUESTIONS}
-            </span>
-          </div>
-          <div className="h-2 bg-white pixel-border overflow-hidden">
-            <div
-              className="h-full bg-mintDark transition-all"
-              style={{
-                width: `${
-                  TOTAL_QUESTIONS === 0
-                    ? 0
-                    : Math.round((masteredCount / TOTAL_QUESTIONS) * 100)
-                }%`,
-              }}
-            />
-          </div>
-          <p className="text-[10px] text-ink/60 mt-2 leading-snug">
-            連續答對 {MASTERY_THRESHOLD} 次的題目就會收起來，不再出現。答錯一次扣 1 次。
-          </p>
-        </div>
       </section>
 
       <footer className="mt-8 text-center text-xs text-ink/50">
@@ -174,6 +177,35 @@ interface ModeCardProps {
   sub: string;
   desc: string;
   icon: string;
+}
+
+function MasteryRow({
+  label,
+  done,
+  total,
+}: {
+  label: string;
+  done: number;
+  total: number;
+}) {
+  const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+  return (
+    <div>
+      <div className="flex items-center justify-between text-xs text-ink mb-1">
+        <span className="font-display">{label}</span>
+        <span>
+          {done}{" "}
+          <span className="text-ink/60">/ {total}</span>
+        </span>
+      </div>
+      <div className="h-2.5 bg-white pixel-border overflow-hidden">
+        <div
+          className="h-full bg-mintDark transition-all"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+    </div>
+  );
 }
 
 function ModeCard({ active, onClick, title, sub, desc, icon }: ModeCardProps) {

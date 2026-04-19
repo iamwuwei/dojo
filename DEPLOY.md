@@ -98,9 +98,29 @@ $$;
 create trigger user_mistakes_touch_updated_at
   before update on public.user_mistakes
   for each row execute function public.touch_updated_at();
+
+-- ─── Mastery：每題答對次數，>=3 視為已掌握，之後不再出題 ───
+create table public.user_mastery (
+  user_id    uuid primary key references auth.users(id) on delete cascade,
+  mastery    jsonb not null default '{}'::jsonb,  -- { "v1": 2, "g3": 3, ... }
+  updated_at timestamptz not null default now()
+);
+
+alter table public.user_mastery enable row level security;
+
+create policy "own rows select" on public.user_mastery
+  for select using (auth.uid() = user_id);
+create policy "own rows insert" on public.user_mastery
+  for insert with check (auth.uid() = user_id);
+create policy "own rows update" on public.user_mastery
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create trigger user_mastery_touch_updated_at
+  before update on public.user_mastery
+  for each row execute function public.touch_updated_at();
 ```
 
-跑完到 **Table Editor** 應該看得到 `user_mistakes` 表。
+跑完到 **Table Editor** 應該看得到 `user_mistakes` 和 `user_mastery` 兩張表。
 
 ### 驗證 RLS
 

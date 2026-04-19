@@ -37,7 +37,7 @@ export function ChoiceQuiz({
   mode,
   timedSeconds = 60,
 }: ChoiceQuizProps) {
-  // 打亂題目順序
+  // 打亂題目順序（已掌握的題目在 caller 已被過濾掉）
   const [queue] = useState(() => shuffle(questions));
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
@@ -61,7 +61,7 @@ export function ChoiceQuiz({
     setSelected(optIdx);
     const correct = optIdx === currentQ.answer;
     if (correct) {
-      addCorrect(currentPoints);
+      addCorrect(currentPoints, currentQ.id);
       setFlash("success");
       setDogMood(combo + 1 >= 3 ? "excited" : "happy");
     } else {
@@ -86,6 +86,10 @@ export function ChoiceQuiz({
 
   function handleTimeUp() {
     endQuiz();
+  }
+
+  if (queue.length === 0) {
+    return <AllMasteredScreen title={title} onHome={goHome} />;
   }
 
   if (done) {
@@ -181,6 +185,34 @@ export function ChoiceQuiz({
           </button>
         </div>
       )}
+    </div>
+  );
+}
+
+export function AllMasteredScreen({
+  title,
+  onHome,
+}: {
+  title: string;
+  onHome: () => void;
+}) {
+  return (
+    <div className="min-h-screen px-4 py-8 max-w-xl mx-auto flex flex-col items-center justify-center">
+      <div className="pixel-border bg-white shadow-pixel p-6 text-center">
+        <PixelDog mood="proud" size={120} className="mx-auto mb-3" />
+        <h2 className="font-display text-base text-ink mb-2">{title}</h2>
+        <p className="text-sm text-ink/80 mb-1">全部の問題をマスター！🎉</p>
+        <p className="text-xs text-ink/60 mb-4">
+          這個題型的題目你都已經連續答對 3 次了。<br />
+          答錯一次會把分數扣回 2 次，題目就會再出現。
+        </p>
+        <button
+          onClick={onHome}
+          className="pixel-btn pixel-border bg-beret text-white shadow-pixel px-5 py-3 font-display text-sm"
+        >
+          ← 戻る
+        </button>
+      </div>
     </div>
   );
 }

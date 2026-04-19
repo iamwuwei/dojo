@@ -26,6 +26,11 @@ interface GameState {
   // Mistake book (persisted)
   mistakes: MistakeEntry[];
 
+  // Mastery: questionId → consecutive-ish correct count.
+  // count >= MASTERY_THRESHOLD means the question stops appearing.
+  // A wrong answer decrements by 1 (floor 0), so one slip doesn't undo it.
+  correctCounts: Record<string, number>;
+
   // Auth state
   user: AuthUser | null;
   authLoading: boolean;
@@ -36,11 +41,14 @@ interface GameState {
   endQuiz: () => void;
   openMistakes: () => void;
 
-  addCorrect: (points: number) => void;
+  addCorrect: (points: number, questionId?: string) => void;
   addWrong: (question: AnyQuestion, userAnswer: string) => Promise<void>;
 
   clearMistakes: () => Promise<void>;
   removeMistake: (id: string) => Promise<void>;
+
+  isMastered: (questionId: string) => boolean;
+  resetMastery: () => Promise<void>;
 
   signUp: (email: string, password: string) => Promise<string | undefined>;
   signIn: (email: string, password: string) => Promise<string | undefined>;
@@ -48,7 +56,11 @@ interface GameState {
   loadUser: () => Promise<void>;
   loadMistakesRemote: () => Promise<void>;
   saveMistakesRemote: () => Promise<void>;
+  loadMasteryRemote: () => Promise<void>;
+  saveMasteryRemote: () => Promise<void>;
 }
+
+export const MASTERY_THRESHOLD = 3;
 
 export const useGameStore = create<GameState>()(
   persist(
@@ -62,6 +74,7 @@ export const useGameStore = create<GameState>()(
       correct: 0,
       wrong: 0,
       mistakes: [],
+      correctCounts: {},
       user: null,
       authLoading: true,
 
@@ -93,21 +106,37 @@ export const useGameStore = create<GameState>()(
 
       openMistakes: () => set({ screen: "mistakes" }),
 
-      addCorrect: (points) => {
+      addCorrect: (points, questionId) => {
         const newCombo = get().combo + 1;
-        set({
+        const updates: Partial<GameState> = {
           score: get().score + points,
           combo: newCombo,
           maxCombo: Math.max(get().maxCombo, newCombo),
           correct: get().correct + 1,
-        });
+        };
+        if (questionId) {
+          updates.correctCounts = {
+            ...get().correctCounts,
+            [questionId]: (get().correctCounts[questionId] ?? 0) + 1,
+          };
+        }
+        set(updates);
+        if (questionId) {
+          void get().saveMasteryRemote();
+        }
       },
 
       addWrong: async (question, userAnswer) => {
         const existing = get().mistakes.find((m) => m.question.id === question.id);
+        const prevCount = get().correctCounts[question.id] ?? 0;
+        const nextCounts = { ...get().correctCounts };
+        if (prevCount > 0) {
+          nextCounts[question.id] = prevCount - 1;
+        }
         set({
           combo: 0,
           wrong: get().wrong + 1,
+          correctCounts: nextCounts,
           mistakes: existing
             ? get().mistakes.map((m) =>
                 m.question.id === question.id
@@ -120,6 +149,17 @@ export const useGameStore = create<GameState>()(
               ],
         });
         await get().saveMistakesRemote();
+        if (prevCount > 0) {
+          await get().saveMasteryRemote();
+        }
+      },
+
+      isMastered: (questionId) =>
+        (get().correctCounts[questionId] ?? 0) >= MASTERY_THRESHOLD,
+
+      resetMastery: async () => {
+        set({ correctCounts: {} });
+        await get().saveMasteryRemote();
       },
 
       clearMistakes: async () => {
@@ -140,7 +180,10 @@ export const useGameStore = create<GameState>()(
 
         if (data?.user) {
           set({ user: { id: data.user.id, email: data.user.email ?? "" } });
-          await get().loadMistakesRemote();
+          await Promise.all([
+            get().loadMistakesRemote(),
+            get().loadMasteryRemote(),
+          ]);
         }
 
         return undefined;
@@ -157,7 +200,10 @@ export const useGameStore = create<GameState>()(
 
         if (data?.user) {
           set({ user: { id: data.user.id, email: data.user.email ?? "" } });
-          await get().loadMistakesRemote();
+          await Promise.all([
+            get().loadMistakesRemote(),
+            get().loadMasteryRemote(),
+          ]);
         }
 
         return undefined;
@@ -181,7 +227,10 @@ export const useGameStore = create<GameState>()(
 
         const user = data.session.user;
         set({ user: { id: user.id, email: user.email ?? "" }, authLoading: false });
-        await get().loadMistakesRemote();
+        await Promise.all([
+          get().loadMistakesRemote(),
+          get().loadMasteryRemote(),
+        ]);
       },
 
       loadMistakesRemote: async () => {
@@ -217,10 +266,47 @@ export const useGameStore = create<GameState>()(
           console.warn("Supabase mistake sync failed:", error.message);
         }
       },
+
+      loadMasteryRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { data, error } = await supabase
+          .from("user_mastery")
+          .select("mastery")
+          .eq("user_id", user.id)
+          .single();
+
+        if (!error && data?.mastery) {
+          set({ correctCounts: data.mastery as Record<string, number> });
+          return;
+        }
+
+        if (Object.keys(get().correctCounts).length > 0) {
+          await get().saveMasteryRemote();
+        }
+      },
+
+      saveMasteryRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { error } = await supabase.from("user_mastery").upsert({
+          user_id: user.id,
+          mastery: get().correctCounts,
+        });
+
+        if (error) {
+          console.warn("Supabase mastery sync failed:", error.message);
+        }
+      },
     }),
     {
       name: "n3-dojo-storage",
-      partialize: (state) => ({ mistakes: state.mistakes }),
+      partialize: (state) => ({
+        mistakes: state.mistakes,
+        correctCounts: state.correctCounts,
+      }),
     }
   )
 );

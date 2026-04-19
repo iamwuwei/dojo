@@ -3,6 +3,7 @@ import { useGameStore } from "../store/useGameStore";
 import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScoreBar } from "../components/ScoreBar";
+import { AllMasteredScreen } from "../components/ChoiceQuiz";
 import { sentenceQuestions } from "../data/sentence";
 import type { DogMood, SentenceMatchQuestion } from "../types";
 
@@ -18,10 +19,17 @@ function shuffle<T>(arr: T[]): T[] {
 export function SentenceMatch() {
   const mode = useGameStore((s) => s.mode) ?? "combo";
   const { score, combo, addCorrect, addWrong, endQuiz, goHome } = useGameStore();
+  const isMastered = useGameStore((s) => s.isMastered);
 
-  const [queue] = useState(() => shuffle(sentenceQuestions));
+  const [queue] = useState(() =>
+    shuffle(sentenceQuestions.filter((q) => !isMastered(q.id)))
+  );
   const [idx, setIdx] = useState(0);
   const q = queue[idx];
+
+  if (queue.length === 0) {
+    return <AllMasteredScreen title="文型マッチ" onHome={goHome} />;
+  }
 
   // 當前配對：pairs[leftIdx] = rightIdx (在 rights 陣列裡的 index)
   const [pairs, setPairs] = useState<Record<number, number>>({});
@@ -85,7 +93,7 @@ export function SentenceMatch() {
     const allRight = correctCount === q.lefts.length;
     if (allRight) {
       const points = 400 + combo * 20;
-      addCorrect(points);
+      addCorrect(points, q.id);
       setFlash("success");
       setDogMood("excited");
     } else {

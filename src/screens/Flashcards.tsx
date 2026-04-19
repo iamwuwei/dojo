@@ -3,6 +3,7 @@ import { useGameStore } from "../store/useGameStore";
 import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScoreBar } from "../components/ScoreBar";
+import { AllMasteredScreen } from "../components/ChoiceQuiz";
 import { flashcards } from "../data/flashcards";
 import type { DogMood } from "../types";
 
@@ -18,18 +19,25 @@ function shuffle<T>(arr: T[]): T[] {
 export function Flashcards() {
   const mode = useGameStore((s) => s.mode) ?? "combo";
   const { score, combo, addCorrect, addWrong, endQuiz, goHome } = useGameStore();
+  const isMastered = useGameStore((s) => s.isMastered);
 
-  const [queue] = useState(() => shuffle(flashcards));
+  const [queue] = useState(() =>
+    shuffle(flashcards.filter((c) => !isMastered(c.id)))
+  );
   const [idx, setIdx] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [dogMood, setDogMood] = useState<DogMood>("idle");
   const [flash, setFlash] = useState<"success" | "danger" | null>(null);
 
+  if (queue.length === 0) {
+    return <AllMasteredScreen title="フラッシュカード" onHome={goHome} />;
+  }
+
   const card = queue[idx];
   const isLast = idx >= queue.length - 1;
 
   function handleKnow() {
-    addCorrect(80 + combo * 8);
+    addCorrect(80 + combo * 8, card.id);
     setDogMood(combo + 1 >= 3 ? "excited" : "happy");
     setFlash("success");
     setTimeout(() => setFlash(null), 300);

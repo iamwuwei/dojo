@@ -1,8 +1,18 @@
 import { useState } from "react";
-import { useGameStore } from "../store/useGameStore";
+import { useGameStore, MASTERY_THRESHOLD } from "../store/useGameStore";
 import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
+import { vocabularyQuestions } from "../data/vocabulary";
+import { grammarQuestions } from "../data/grammar";
+import { sentenceQuestions } from "../data/sentence";
+import { flashcards } from "../data/flashcards";
 import type { GameMode, QuizType } from "../types";
+
+const TOTAL_QUESTIONS =
+  vocabularyQuestions.length +
+  grammarQuestions.length +
+  sentenceQuestions.length +
+  flashcards.length;
 
 const QUIZ_TYPES: Array<{
   key: QuizType;
@@ -27,8 +37,13 @@ export function HomeScreen() {
   const startQuiz = useGameStore((s) => s.startQuiz);
   const openMistakes = useGameStore((s) => s.openMistakes);
   const mistakes = useGameStore((s) => s.mistakes);
+  const correctCounts = useGameStore((s) => s.correctCounts);
   const user = useGameStore((s) => s.user);
   const signOut = useGameStore((s) => s.signOut);
+
+  const masteredCount = Object.values(correctCounts).filter(
+    (n) => n >= MASTERY_THRESHOLD
+  ).length;
 
   const [selectedMode, setSelectedMode] = useState<GameMode>("combo");
   const [greeting] = useState(
@@ -109,7 +124,7 @@ export function HomeScreen() {
       </section>
 
       {/* 錯題本入口 */}
-      <section>
+      <section className="space-y-3">
         <button
           onClick={openMistakes}
           className="pixel-btn pixel-border bg-beret text-white shadow-pixel w-full p-3 font-display text-sm flex items-center justify-between"
@@ -119,6 +134,30 @@ export function HomeScreen() {
             {mistakes.length} 題
           </span>
         </button>
+
+        <div className="pixel-border bg-mint/40 shadow-pixelSm p-3">
+          <div className="flex items-center justify-between font-display text-xs text-ink mb-2">
+            <span>🏅 マスター進捗</span>
+            <span>
+              {masteredCount} / {TOTAL_QUESTIONS}
+            </span>
+          </div>
+          <div className="h-2 bg-white pixel-border overflow-hidden">
+            <div
+              className="h-full bg-mintDark transition-all"
+              style={{
+                width: `${
+                  TOTAL_QUESTIONS === 0
+                    ? 0
+                    : Math.round((masteredCount / TOTAL_QUESTIONS) * 100)
+                }%`,
+              }}
+            />
+          </div>
+          <p className="text-[10px] text-ink/60 mt-2 leading-snug">
+            連續答對 {MASTERY_THRESHOLD} 次的題目就會收起來，不再出現。答錯一次扣 1 次。
+          </p>
+        </div>
       </section>
 
       <footer className="mt-8 text-center text-xs text-ink/50">

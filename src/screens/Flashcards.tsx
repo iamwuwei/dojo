@@ -4,6 +4,7 @@ import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScoreBar } from "../components/ScoreBar";
 import { AllMasteredScreen } from "../components/ChoiceQuiz";
+import { MasteryBadge } from "../components/MasteryBadge";
 import {
   RoundIntro,
   RoundCleared,
@@ -41,6 +42,7 @@ export function Flashcards() {
   const { score, combo, correct, wrong, addCorrect, addWrong, endQuiz, goHome } =
     useGameStore();
   const isMastered = useGameStore((s) => s.isMastered);
+  const correctCounts = useGameStore((s) => s.correctCounts);
 
   const [pool] = useState(() =>
     shuffle(flashcards.filter((c) => !isMastered(c.id)))
@@ -284,10 +286,13 @@ export function Flashcards() {
               {card.back}
             </div>
             {card.example && (
-              <div className="text-xs text-ink/70 text-center max-w-sm leading-relaxed px-2">
+              <div className="text-xs text-ink/70 text-center max-w-sm leading-relaxed px-2 mb-2">
                 {card.example}
               </div>
             )}
+            <MasteryBadge
+              count={correctCounts[isTimed ? "timed" : "combo"][card.id] ?? 0}
+            />
           </div>
         </div>
       </div>

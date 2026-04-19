@@ -3,6 +3,7 @@ import { useGameStore } from "../store/useGameStore";
 import { PixelDog } from "./PixelDog";
 import { SpeechBubble } from "./SpeechBubble";
 import { ScoreBar } from "./ScoreBar";
+import { MasteryBadge } from "./MasteryBadge";
 import {
   RoundIntro,
   RoundCleared,
@@ -72,6 +73,7 @@ export function ChoiceQuiz({ title, questions, mode, quizType }: ChoiceQuizProps
 
   const { score, combo, correct, wrong, addCorrect, addWrong, endQuiz, goHome } =
     useGameStore();
+  const correctCounts = useGameStore((s) => s.correctCounts);
 
   // Active queue for the current screen.
   // - Combo: the whole pool.
@@ -264,9 +266,18 @@ export function ChoiceQuiz({ title, questions, mode, quizType }: ChoiceQuizProps
 
       <div className="flex items-end gap-2 mb-3">
         <PixelDog mood={dogMood} size={70} className="shrink-0" />
-        {showExplain && currentQ.explanation && (
+        {showExplain && (
           <SpeechBubble className="flex-1 mb-2 min-w-0">
-            <div className="text-xs leading-relaxed">{currentQ.explanation}</div>
+            {currentQ.explanation && (
+              <div className="text-xs leading-relaxed mb-1">
+                {currentQ.explanation}
+              </div>
+            )}
+            <MasteryBadge
+              count={
+                correctCounts[isTimed ? "timed" : "combo"][currentQ.id] ?? 0
+              }
+            />
           </SpeechBubble>
         )}
       </div>

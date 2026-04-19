@@ -4,6 +4,7 @@ import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScoreBar } from "../components/ScoreBar";
 import { AllMasteredScreen } from "../components/ChoiceQuiz";
+import { MasteryBadge } from "../components/MasteryBadge";
 import {
   RoundIntro,
   RoundCleared,
@@ -41,6 +42,7 @@ export function SentenceMatch() {
   const { score, combo, correct, wrong, addCorrect, addWrong, endQuiz, goHome } =
     useGameStore();
   const isMastered = useGameStore((s) => s.isMastered);
+  const correctCounts = useGameStore((s) => s.correctCounts);
 
   const [pool] = useState(() =>
     shuffle(sentenceQuestions.filter((q) => !isMastered(q.id)))
@@ -369,7 +371,12 @@ export function SentenceMatch() {
 
       {checked && (
         <div className="pixel-border bg-cream shadow-pixel p-4 mb-4 animate-pop">
-          <div className="font-display text-xs text-ink mb-2">正解と訳：</div>
+          <div className="flex items-center justify-between mb-2 gap-2">
+            <div className="font-display text-xs text-ink">正解と訳：</div>
+            <MasteryBadge
+              count={correctCounts[isTimed ? "timed" : "combo"][q.id] ?? 0}
+            />
+          </div>
           <ul className="space-y-1 text-sm text-ink/90">
             {q.translations.map((t, i) => (
               <li key={i} className="leading-relaxed">

@@ -10,6 +10,14 @@ import {
 import { grammarQuestions } from "../data/grammar";
 import { sentenceQuestions } from "../data/sentence";
 import { flashcards } from "../data/flashcards";
+import {
+  daysSinceLast,
+  last7Dates,
+  liveCurrentStreak,
+  streakGreeting,
+  streakMood,
+  todayISO,
+} from "../lib/streak";
 import type { GameMode, QuizType } from "../types";
 
 const TOTAL_QUESTIONS =
@@ -30,19 +38,14 @@ const QUIZ_TYPES: Array<{
   { key: "flashcard", label: "フラッシュ", sub: "閃卡翻面", emoji: "🎴" },
 ];
 
-const GREETINGS = [
-  "今日も一緒にがんばろうね！",
-  "合格まであと少し、ファイト！",
-  "今日はどの修行にする？",
-  "わんわん！練習の時間だよ！",
-];
-
 export function HomeScreen() {
   const startQuiz = useGameStore((s) => s.startQuiz);
   const openMistakes = useGameStore((s) => s.openMistakes);
   const openVocabLevelPicker = useGameStore((s) => s.openVocabLevelPicker);
   const mistakes = useGameStore((s) => s.mistakes);
   const correctCounts = useGameStore((s) => s.correctCounts);
+  const streak = useGameStore((s) => s.streak);
+  const records = useGameStore((s) => s.records);
   const user = useGameStore((s) => s.user);
   const signOut = useGameStore((s) => s.signOut);
 
@@ -64,10 +67,15 @@ export function HomeScreen() {
     return { level, total: ids.size, combo, timed };
   });
 
+  const today = todayISO();
+  const liveStreak = liveCurrentStreak(streak, today);
+  const recent7 = last7Dates(today);
+  const practiceSet = new Set(streak.last30);
+  const sinceLast = daysSinceLast(streak.lastDate, today);
+
   const [selectedMode, setSelectedMode] = useState<GameMode>("combo");
-  const [greeting] = useState(
-    () => GREETINGS[Math.floor(Math.random() * GREETINGS.length)]
-  );
+  const greeting = streakGreeting(liveStreak, sinceLast);
+  const dogMood = streakMood(liveStreak, sinceLast);
 
   return (
     <div className="min-h-screen px-4 sm:px-5 py-5 pb-10 max-w-3xl mx-auto">
@@ -95,10 +103,59 @@ export function HomeScreen() {
 
       {/* 狗狗歡迎區 */}
       <section className="flex items-end justify-center gap-2 sm:gap-3 mb-5 sm:mb-6">
-        <PixelDog mood="happy" size={110} className="shrink-0" />
+        <PixelDog mood={dogMood} size={110} className="shrink-0" />
         <SpeechBubble className="mb-4 sm:mb-6 max-w-[220px] sm:max-w-none">
           <span className="text-sm sm:text-base">{greeting}</span>
         </SpeechBubble>
+      </section>
+
+      {/* 每日打卡 + 累計分數 */}
+      <section className="mb-6">
+        <div className="pixel-border bg-cream/60 shadow-pixel p-4">
+          <div className="flex items-center justify-between mb-3 gap-2 flex-wrap">
+            <div className="font-display text-sm text-ink">
+              🔥 連続 <span className="text-base">{liveStreak}</span> 日
+              <span className="text-ink/60 text-xs ml-2">
+                最長 {streak.longest} ／ 累計 {streak.totalDays}
+              </span>
+            </div>
+            <div className="font-display text-xs text-ink">
+              累計スコア{" "}
+              <span className="text-base text-beret">
+                {records.lifetimeScore.toLocaleString()}
+              </span>
+            </div>
+          </div>
+          <div className="grid grid-cols-7 gap-1.5">
+            {recent7
+              .slice()
+              .reverse()
+              .map((d) => {
+                const isToday = d === today;
+                const did = practiceSet.has(d);
+                const dayLabel = d.slice(8); // DD
+                return (
+                  <div
+                    key={d}
+                    className={`text-center pixel-border py-1.5 ${
+                      did
+                        ? "bg-mintDark text-white"
+                        : isToday
+                        ? "bg-white text-ink/70"
+                        : "bg-white/60 text-ink/40"
+                    }`}
+                  >
+                    <div className="text-[9px] leading-none font-display">
+                      {dayLabel}
+                    </div>
+                    <div className="text-[10px] mt-0.5">
+                      {did ? "✓" : isToday ? "·" : "·"}
+                    </div>
+                  </div>
+                );
+              })}
+          </div>
+        </div>
       </section>
 
       {/* マスター進捗 — 兩個模式分開計算 */}
@@ -173,12 +230,11 @@ export function HomeScreen() {
         <h2 className="font-display text-sm text-ink mb-2">練習内容</h2>
         <div className="grid grid-cols-2 gap-3">
           {QUIZ_TYPES.map((q) => {
-            // Vocabulary needs a level pick first; everything else jumps
-            // straight in.
             const handleClick =
               q.key === "vocabulary"
                 ? openVocabLevelPicker
                 : () => startQuiz(q.key, selectedMode);
+            const best = records.byQuiz[q.key]?.[selectedMode];
             return (
               <button
                 key={q.key}
@@ -188,6 +244,11 @@ export function HomeScreen() {
                 <div className="text-2xl mb-1">{q.emoji}</div>
                 <div className="font-display text-sm text-ink">{q.label}</div>
                 <div className="text-xs text-ink/70 mt-1">{q.sub}</div>
+                {best && (best.bestCombo > 0 || best.bestScore > 0) && (
+                  <div className="text-[10px] text-ink/60 mt-2 font-display">
+                    Best ⚡{best.bestCombo} ／ {best.bestScore.toLocaleString()}
+                  </div>
+                )}
               </button>
             );
           })}

@@ -118,9 +118,49 @@ create policy "own rows update" on public.user_mastery
 create trigger user_mastery_touch_updated_at
   before update on public.user_mastery
   for each row execute function public.touch_updated_at();
+
+-- ─── Streak：每日打卡記錄 ───
+create table public.user_streak (
+  user_id    uuid primary key references auth.users(id) on delete cascade,
+  streak     jsonb not null default '{"current":0,"longest":0,"totalDays":0,"lastDate":null,"last30":[]}'::jsonb,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.user_streak enable row level security;
+
+create policy "own rows select" on public.user_streak
+  for select using (auth.uid() = user_id);
+create policy "own rows insert" on public.user_streak
+  for insert with check (auth.uid() = user_id);
+create policy "own rows update" on public.user_streak
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create trigger user_streak_touch_updated_at
+  before update on public.user_streak
+  for each row execute function public.touch_updated_at();
+
+-- ─── Records：累計總分 + 每題型 / 每模式的個人紀錄 ───
+create table public.user_records (
+  user_id    uuid primary key references auth.users(id) on delete cascade,
+  records    jsonb not null default '{"lifetimeScore":0,"byQuiz":{}}'::jsonb,
+  updated_at timestamptz not null default now()
+);
+
+alter table public.user_records enable row level security;
+
+create policy "own rows select" on public.user_records
+  for select using (auth.uid() = user_id);
+create policy "own rows insert" on public.user_records
+  for insert with check (auth.uid() = user_id);
+create policy "own rows update" on public.user_records
+  for update using (auth.uid() = user_id) with check (auth.uid() = user_id);
+
+create trigger user_records_touch_updated_at
+  before update on public.user_records
+  for each row execute function public.touch_updated_at();
 ```
 
-跑完到 **Table Editor** 應該看得到 `user_mistakes` 和 `user_mastery` 兩張表。
+跑完到 **Table Editor** 應該看得到 `user_mistakes`, `user_mastery`, `user_streak`, `user_records` 四張表。
 
 ### 驗證 RLS
 

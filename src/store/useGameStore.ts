@@ -3,6 +3,8 @@ import { persist } from "zustand/middleware";
 import { supabase } from "../lib/supabaseClient";
 import type { QuizType, GameMode, MistakeEntry, AnyQuestion } from "../types";
 import type { VocabLevel } from "../data/vocabulary";
+import { bumpStreak, EMPTY_STREAK, todayISO } from "../lib/streak";
+import type { DailyStreak } from "../lib/streak";
 
 export type Screen = "home" | "playing" | "result" | "mistakes" | "vocabLevel";
 
@@ -17,6 +19,34 @@ export interface AuthUser {
 // Mastery is tracked per game mode so finishing one mode doesn't drain
 // the other. Each mode has its own questionId → consecutive-ish correct count.
 export type MasteryByMode = Record<GameMode, Record<string, number>>;
+
+export interface QuizRecord {
+  bestCombo: number;
+  bestScore: number;
+}
+
+export type RecordsByQuizMode = Partial<
+  Record<QuizType, Partial<Record<GameMode, QuizRecord>>>
+>;
+
+export interface UserRecords {
+  lifetimeScore: number; // never resets, accumulates every correct answer
+  byQuiz: RecordsByQuizMode;
+}
+
+export const EMPTY_RECORDS: UserRecords = {
+  lifetimeScore: 0,
+  byQuiz: {},
+};
+
+// Returned by endQuiz so the result screen can show "新記録!" badges.
+export interface SessionOutcome {
+  newBestCombo: boolean;
+  newBestScore: boolean;
+  prevRecord: QuizRecord;
+  finalCombo: number;
+  finalScore: number;
+}
 
 interface GameState {
   // Navigation
@@ -42,6 +72,16 @@ interface GameState {
   // User's last picked vocabulary level (persisted so it sticks across visits).
   vocabLevel: VocabLevelChoice;
 
+  // Daily check-in streak — current/longest/totalDays/lastDate/last30.
+  streak: DailyStreak;
+
+  // Lifetime cumulative score + per quiz/mode personal bests.
+  records: UserRecords;
+
+  // Last finished session's outcome — set by endQuiz, read by ResultScreen
+  // for "新記録!" celebration. Cleared on goHome.
+  lastOutcome: SessionOutcome | null;
+
   // Auth state
   user: AuthUser | null;
   authLoading: boolean;
@@ -63,6 +103,9 @@ interface GameState {
   isMastered: (questionId: string) => boolean;
   resetMastery: () => Promise<void>;
 
+  markPracticeToday: () => void;
+  recordEnd: () => void;
+
   signUp: (email: string, password: string) => Promise<string | undefined>;
   signIn: (email: string, password: string) => Promise<string | undefined>;
   signOut: () => Promise<string | undefined>;
@@ -71,6 +114,10 @@ interface GameState {
   saveMistakesRemote: () => Promise<void>;
   loadMasteryRemote: () => Promise<void>;
   saveMasteryRemote: () => Promise<void>;
+  loadStreakRemote: () => Promise<void>;
+  saveStreakRemote: () => Promise<void>;
+  loadRecordsRemote: () => Promise<void>;
+  saveRecordsRemote: () => Promise<void>;
 }
 
 export const MASTERY_THRESHOLD = 3;
@@ -108,6 +155,9 @@ export const useGameStore = create<GameState>()(
       mistakes: [],
       correctCounts: EMPTY_MASTERY,
       vocabLevel: "all",
+      streak: EMPTY_STREAK,
+      records: EMPTY_RECORDS,
+      lastOutcome: null,
       user: null,
       authLoading: true,
 
@@ -121,6 +171,7 @@ export const useGameStore = create<GameState>()(
           maxCombo: 0,
           correct: 0,
           wrong: 0,
+          lastOutcome: null,
         }),
 
       startQuiz: (type, mode) =>
@@ -135,7 +186,10 @@ export const useGameStore = create<GameState>()(
           wrong: 0,
         }),
 
-      endQuiz: () => set({ screen: "result" }),
+      endQuiz: () => {
+        get().recordEnd();
+        set({ screen: "result" });
+      },
 
       openMistakes: () => set({ screen: "mistakes" }),
 
@@ -150,6 +204,10 @@ export const useGameStore = create<GameState>()(
           combo: newCombo,
           maxCombo: Math.max(get().maxCombo, newCombo),
           correct: get().correct + 1,
+          records: {
+            ...get().records,
+            lifetimeScore: get().records.lifetimeScore + points,
+          },
         };
         if (questionId) {
           const mode: GameMode = get().mode ?? "combo";
@@ -163,6 +221,8 @@ export const useGameStore = create<GameState>()(
           };
         }
         set(updates);
+        get().markPracticeToday();
+        void get().saveRecordsRemote();
         if (questionId) {
           void get().saveMasteryRemote();
         }
@@ -196,6 +256,7 @@ export const useGameStore = create<GameState>()(
               ],
         });
         await get().saveMistakesRemote();
+        get().markPracticeToday();
         if (prevCount > 0) {
           await get().saveMasteryRemote();
         }
@@ -209,6 +270,54 @@ export const useGameStore = create<GameState>()(
       resetMastery: async () => {
         set({ correctCounts: { combo: {}, timed: {} } });
         await get().saveMasteryRemote();
+      },
+
+      markPracticeToday: () => {
+        const today = todayISO();
+        const prev = get().streak;
+        if (prev.lastDate === today) return; // already marked
+        const next = bumpStreak(prev, today);
+        set({ streak: next });
+        void get().saveStreakRemote();
+      },
+
+      recordEnd: () => {
+        const { quizType, mode, maxCombo, score, records } = get();
+        if (!quizType || !mode) {
+          set({ lastOutcome: null });
+          return;
+        }
+        const prevByQuiz = records.byQuiz[quizType] ?? {};
+        const prevRecord: QuizRecord = prevByQuiz[mode] ?? {
+          bestCombo: 0,
+          bestScore: 0,
+        };
+        const newBestCombo = maxCombo > prevRecord.bestCombo;
+        const newBestScore = score > prevRecord.bestScore;
+        const nextRecord: QuizRecord = {
+          bestCombo: Math.max(prevRecord.bestCombo, maxCombo),
+          bestScore: Math.max(prevRecord.bestScore, score),
+        };
+        set({
+          records: {
+            ...records,
+            byQuiz: {
+              ...records.byQuiz,
+              [quizType]: {
+                ...prevByQuiz,
+                [mode]: nextRecord,
+              },
+            },
+          },
+          lastOutcome: {
+            newBestCombo,
+            newBestScore,
+            prevRecord,
+            finalCombo: maxCombo,
+            finalScore: score,
+          },
+        });
+        void get().saveRecordsRemote();
       },
 
       clearMistakes: async () => {
@@ -232,6 +341,8 @@ export const useGameStore = create<GameState>()(
           await Promise.all([
             get().loadMistakesRemote(),
             get().loadMasteryRemote(),
+            get().loadStreakRemote(),
+            get().loadRecordsRemote(),
           ]);
         }
 
@@ -252,6 +363,8 @@ export const useGameStore = create<GameState>()(
           await Promise.all([
             get().loadMistakesRemote(),
             get().loadMasteryRemote(),
+            get().loadStreakRemote(),
+            get().loadRecordsRemote(),
           ]);
         }
 
@@ -353,6 +466,79 @@ export const useGameStore = create<GameState>()(
           console.warn("Supabase mastery sync failed:", error.message);
         }
       },
+
+      loadStreakRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { data, error } = await supabase
+          .from("user_streak")
+          .select("streak")
+          .eq("user_id", user.id)
+          .single();
+
+        if (!error && data?.streak) {
+          set({ streak: { ...EMPTY_STREAK, ...(data.streak as DailyStreak) } });
+          return;
+        }
+
+        if (get().streak.totalDays > 0) {
+          await get().saveStreakRemote();
+        }
+      },
+
+      saveStreakRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { error } = await supabase.from("user_streak").upsert({
+          user_id: user.id,
+          streak: get().streak,
+        });
+
+        if (error) {
+          console.warn("Supabase streak sync failed:", error.message);
+        }
+      },
+
+      loadRecordsRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { data, error } = await supabase
+          .from("user_records")
+          .select("records")
+          .eq("user_id", user.id)
+          .single();
+
+        if (!error && data?.records) {
+          set({
+            records: {
+              ...EMPTY_RECORDS,
+              ...(data.records as UserRecords),
+            },
+          });
+          return;
+        }
+
+        if (get().records.lifetimeScore > 0) {
+          await get().saveRecordsRemote();
+        }
+      },
+
+      saveRecordsRemote: async () => {
+        const user = get().user;
+        if (!user) return;
+
+        const { error } = await supabase.from("user_records").upsert({
+          user_id: user.id,
+          records: get().records,
+        });
+
+        if (error) {
+          console.warn("Supabase records sync failed:", error.message);
+        }
+      },
     }),
     {
       name: "n3-dojo-storage",
@@ -360,6 +546,8 @@ export const useGameStore = create<GameState>()(
         mistakes: state.mistakes,
         correctCounts: state.correctCounts,
         vocabLevel: state.vocabLevel,
+        streak: state.streak,
+        records: state.records,
       }),
       // Migrate legacy flat correctCounts shape rehydrated from localStorage.
       onRehydrateStorage: () => (state) => {

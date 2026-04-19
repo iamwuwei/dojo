@@ -8,9 +8,14 @@ body,
   min-height: 100%;
 }
 
-html,
-body {
+/* 只在 html 防止水平滾動，body 保留 default 避免與 overflow-y
+   互相 promote 成 auto 而把垂直滾動鎖在 body 內層。 */
+html {
   overflow-x: hidden;
+  max-width: 100%;
+}
+
+body {
   max-width: 100%;
 }
 

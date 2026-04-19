@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { useGameStore } from "./store/useGameStore";
 import { HomeScreen } from "./screens/HomeScreen";
 import { VocabularyQuiz } from "./screens/VocabularyQuiz";
+import { VocabLevelPicker } from "./screens/VocabLevelPicker";
 import { GrammarQuiz } from "./screens/GrammarQuiz";
 import { SentenceMatch } from "./screens/SentenceMatch";
 import { Flashcards } from "./screens/Flashcards";
@@ -37,6 +38,7 @@ export default function App() {
   return (
     <div className="scanlines">
       {screen === "home" && <HomeScreen />}
+      {screen === "vocabLevel" && <VocabLevelPicker />}
       {screen === "mistakes" && <MistakeBook />}
       {screen === "result" && <ResultScreen />}
       {screen === "playing" && quizType === "vocabulary" && <VocabularyQuiz />}

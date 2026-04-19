@@ -1,12 +1,16 @@
 import { useGameStore } from "../store/useGameStore";
 import { ChoiceQuiz } from "../components/ChoiceQuiz";
-import { vocabularyQuestions } from "../data/vocabulary";
+import { vocabularyByLevel, vocabularyQuestions } from "../data/vocabulary";
 
 export function VocabularyQuiz() {
   const mode = useGameStore((s) => s.mode) ?? "combo";
   const isMastered = useGameStore((s) => s.isMastered);
+  const vocabLevel = useGameStore((s) => s.vocabLevel);
 
-  const adapted = vocabularyQuestions
+  const levelPool =
+    vocabLevel === "all" ? vocabularyQuestions : vocabularyByLevel[vocabLevel];
+
+  const adapted = levelPool
     .filter((q) => !isMastered(q.id))
     .map((q) => ({
       id: q.id,
@@ -17,9 +21,12 @@ export function VocabularyQuiz() {
       raw: q,
     }));
 
+  const title =
+    vocabLevel === "all" ? "単語クイズ" : `単語クイズ・${vocabLevel}`;
+
   return (
     <ChoiceQuiz
-      title="単語クイズ"
+      title={title}
       questions={adapted}
       mode={mode}
       quizType="vocabulary"

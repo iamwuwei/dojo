@@ -1,0 +1,2397 @@
+# ===================================================================
+# JLPT N4 單字列表（共 597 詞）
+# 分級依據：舊日檢出題基準（舊 4 級=N5、舊 3 級=N4）、
+#           JLPT Sensei / Jisho.org / TRY! 系列交叉比對
+# ⚠️ JLPT 官方不公開語彙清單，分級為民間共識
+# 本檔為 learning.yml 擴充，已避免與既有 N5 主檔重複
+# ===================================================================
+
+vocabulary:
+  - word: 親
+    reading: おや
+    meaning: 父母
+    level: N4
+  - word: 夫
+    reading: おっと
+    meaning: 丈夫
+    level: N4
+  - word: 妻
+    reading: つま
+    meaning: 妻子
+    level: N4
+  - word: 孫
+    reading: まご
+    meaning: 孫子
+    level: N4
+  - word: 伯父
+    reading: おじ
+    meaning: 伯父
+    level: N4
+  - word: 伯母
+    reading: おば
+    meaning: 伯母
+    level: N4
+  - word: 従兄弟
+    reading: いとこ
+    meaning: 堂表兄弟姊妹
+    level: N4
+  - word: 甥
+    reading: おい
+    meaning: 外甥
+    level: N4
+  - word: 姪
+    reading: めい
+    meaning: 外甥女
+    level: N4
+  - word: 恋人
+    reading: こいびと
+    meaning: 戀人
+    level: N4
+  - word: 彼氏
+    reading: かれし
+    meaning: 男友
+    level: N4
+  - word: 先輩
+    reading: せんぱい
+    meaning: 前輩
+    level: N4
+  - word: 後輩
+    reading: こうはい
+    meaning: 後輩
+    level: N4
+  - word: 同僚
+    reading: どうりょう
+    meaning: 同事
+    level: N4
+  - word: 客
+    reading: きゃく
+    meaning: 客人
+    level: N4
+  - word: お客さん
+    reading: おきゃくさん
+    meaning: 客人（敬）
+    level: N4
+  - word: 若者
+    reading: わかもの
+    meaning: 年輕人
+    level: N4
+  - word: 赤ちゃん
+    reading: あかちゃん
+    meaning: 嬰兒
+    level: N4
+  - word: 親戚
+    reading: しんせき
+    meaning: 親戚
+    level: N4
+  - word: 隣人
+    reading: りんじん
+    meaning: 鄰居
+    level: N4
+  - word: 以後
+    reading: いご
+    meaning: 之後
+    level: N4
+  - word: 以前
+    reading: いぜん
+    meaning: 以前
+    level: N4
+  - word: 最後
+    reading: さいご
+    meaning: 最後
+    level: N4
+  - word: 最初
+    reading: さいしょ
+    meaning: 最初
+    level: N4
+  - word: 久しぶり
+    reading: ひさしぶり
+    meaning: 好久不見
+    level: N4
+  - word: 頃
+    reading: ころ
+    meaning: 時候
+    level: N4
+  - word: 期間
+    reading: きかん
+    meaning: 期間
+    level: N4
+  - word: 時期
+    reading: じき
+    meaning: 時期
+    level: N4
+  - word: 過去
+    reading: かこ
+    meaning: 過去
+    level: N4
+  - word: 現在
+    reading: げんざい
+    meaning: 現在
+    level: N4
+  - word: 未来
+    reading: みらい
+    meaning: 未來
+    level: N4
+  - word: 真夜中
+    reading: まよなか
+    meaning: 半夜
+    level: N4
+  - word: 間
+    reading: あいだ
+    meaning: 之間、期間
+    level: N4
+  - word: 終わり
+    reading: おわり
+    meaning: 結尾
+    level: N4
+  - word: 途中
+    reading: とちゅう
+    meaning: 途中、中途
+    level: N4
+  - word: 次
+    reading: つぎ
+    meaning: 下一個
+    level: N4
+  - word: 先
+    reading: さき
+    meaning: 先、前面
+    level: N4
+  - word: 最近
+    reading: さいきん
+    meaning: 最近
+    level: N4
+  - word: 郊外
+    reading: こうがい
+    meaning: 郊外
+    level: N4
+  - word: 都会
+    reading: とかい
+    meaning: 都會
+    level: N4
+  - word: 田舎
+    reading: いなか
+    meaning: 鄉下
+    level: N4
+  - word: 地方
+    reading: ちほう
+    meaning: 地方
+    level: N4
+  - word: 県
+    reading: けん
+    meaning: 縣
+    level: N4
+  - word: 都
+    reading: と
+    meaning: 都
+    level: N4
+  - word: 州
+    reading: しゅう
+    meaning: 州
+    level: N4
+  - word: 島
+    reading: しま
+    meaning: 島
+    level: N4
+  - word: 森
+    reading: もり
+    meaning: 森林
+    level: N4
+  - word: 林
+    reading: はやし
+    meaning: 樹林
+    level: N4
+  - word: 岩
+    reading: いわ
+    meaning: 岩石
+    level: N4
+  - word: 石
+    reading: いし
+    meaning: 石頭
+    level: N4
+  - word: 砂
+    reading: すな
+    meaning: 沙
+    level: N4
+  - word: 土
+    reading: つち
+    meaning: 土
+    level: N4
+  - word: 地面
+    reading: じめん
+    meaning: 地面
+    level: N4
+  - word: 台風
+    reading: たいふう
+    meaning: 颱風
+    level: N4
+  - word: 嵐
+    reading: あらし
+    meaning: 暴風雨
+    level: N4
+  - word: 場所
+    reading: ばしょ
+    meaning: 場所
+    level: N4
+  - word: 裏
+    reading: うら
+    meaning: 後面、背面
+    level: N4
+  - word: 表
+    reading: おもて
+    meaning: 正面、表面
+    level: N4
+  - word: 周り
+    reading: まわり
+    meaning: 周圍
+    level: N4
+  - word: 端
+    reading: はし
+    meaning: 邊緣、末端
+    level: N4
+  - word: 真ん中
+    reading: まんなか
+    meaning: 正中間
+    level: N4
+  - word: 方向
+    reading: ほうこう
+    meaning: 方向
+    level: N4
+  - word: 向こう
+    reading: むこう
+    meaning: 對面、那邊
+    level: N4
+  - word: 遠く
+    reading: とおく
+    meaning: 遠處
+    level: N4
+  - word: 近所
+    reading: きんじょ
+    meaning: 附近
+    level: N4
+  - word: 辺
+    reading: へん
+    meaning: 附近、一帶
+    level: N4
+  - word: 中学校
+    reading: ちゅうがっこう
+    meaning: 國中
+    level: N4
+  - word: 小学校
+    reading: しょうがっこう
+    meaning: 小學
+    level: N4
+  - word: 幼稚園
+    reading: ようちえん
+    meaning: 幼稚園
+    level: N4
+  - word: 生徒
+    reading: せいと
+    meaning: 學生（中小學）
+    level: N4
+  - word: 数学
+    reading: すうがく
+    meaning: 數學
+    level: N4
+  - word: 地理
+    reading: ちり
+    meaning: 地理
+    level: N4
+  - word: 物理
+    reading: ぶつり
+    meaning: 物理
+    level: N4
+  - word: 化学
+    reading: かがく
+    meaning: 化學
+    level: N4
+  - word: 文学
+    reading: ぶんがく
+    meaning: 文學
+    level: N4
+  - word: 国語
+    reading: こくご
+    meaning: 國語
+    level: N4
+  - word: 大学院
+    reading: だいがくいん
+    meaning: 研究所
+    level: N4
+  - word: 学部
+    reading: がくぶ
+    meaning: 學系
+    level: N4
+  - word: 専門
+    reading: せんもん
+    meaning: 專門、專業
+    level: N4
+  - word: 研究
+    reading: けんきゅう
+    meaning: 研究
+    level: N4
+  - word: 講義
+    reading: こうぎ
+    meaning: 講課
+    level: N4
+  - word: 講座
+    reading: こうざ
+    meaning: 講座
+    level: N4
+  - word: レポート
+    reading: レポート
+    meaning: 報告
+    level: N4
+  - word: 論文
+    reading: ろんぶん
+    meaning: 論文
+    level: N4
+  - word: 作文
+    reading: さくぶん
+    meaning: 作文
+    level: N4
+  - word: 教科書
+    reading: きょうかしょ
+    meaning: 教科書
+    level: N4
+  - word: テキスト
+    reading: テキスト
+    meaning: 教材
+    level: N4
+  - word: 黒板
+    reading: こくばん
+    meaning: 黑板
+    level: N4
+  - word: 図書室
+    reading: としょしつ
+    meaning: 圖書室
+    level: N4
+  - word: 学問
+    reading: がくもん
+    meaning: 學問
+    level: N4
+  - word: 宿題
+    reading: しゅくだい
+    meaning: 作業
+    level: N4
+  - word: 試験
+    reading: しけん
+    meaning: 考試
+    level: N4
+  - word: 質問
+    reading: しつもん
+    meaning: 問題、提問
+    level: N4
+  - word: 意見
+    reading: いけん
+    meaning: 意見
+    level: N4
+  - word: 賛成
+    reading: さんせい
+    meaning: 贊成
+    level: N4
+  - word: 反対
+    reading: はんたい
+    meaning: 反對
+    level: N4
+  - word: アイデア
+    reading: アイデア
+    meaning: 想法
+    level: N4
+  - word: 理由
+    reading: りゆう
+    meaning: 理由
+    level: N4
+  - word: 原因
+    reading: げんいん
+    meaning: 原因
+    level: N4
+  - word: 結果
+    reading: けっか
+    meaning: 結果
+    level: N4
+  - word: 結論
+    reading: けつろん
+    meaning: 結論
+    level: N4
+  - word: 事実
+    reading: じじつ
+    meaning: 事實
+    level: N4
+  - word: 記録
+    reading: きろく
+    meaning: 記錄
+    level: N4
+  - word: 暗記
+    reading: あんき
+    meaning: 背誦
+    level: N4
+  - word: 知識
+    reading: ちしき
+    meaning: 知識
+    level: N4
+  - word: 基礎
+    reading: きそ
+    meaning: 基礎
+    level: N4
+  - word: 応用
+    reading: おうよう
+    meaning: 應用
+    level: N4
+  - word: 例
+    reading: れい
+    meaning: 例子
+    level: N4
+  - word: 例えば
+    reading: たとえば
+    meaning: 例如
+    level: N4
+  - word: 経験
+    reading: けいけん
+    meaning: 經驗
+    level: N4
+  - word: 習慣
+    reading: しゅうかん
+    meaning: 習慣
+    level: N4
+  - word: 社長
+    reading: しゃちょう
+    meaning: 社長
+    level: N4
+  - word: 部長
+    reading: ぶちょう
+    meaning: 部長
+    level: N4
+  - word: 課長
+    reading: かちょう
+    meaning: 課長
+    level: N4
+  - word: 部下
+    reading: ぶか
+    meaning: 部下
+    level: N4
+  - word: 上司
+    reading: じょうし
+    meaning: 上司
+    level: N4
+  - word: 出張
+    reading: しゅっちょう
+    meaning: 出差
+    level: N4
+  - word: ミーティング
+    reading: ミーティング
+    meaning: 會議
+    level: N4
+  - word: 打ち合わせ
+    reading: うちあわせ
+    meaning: 事前討論
+    level: N4
+  - word: 日程
+    reading: にってい
+    meaning: 日程
+    level: N4
+  - word: 出勤
+    reading: しゅっきん
+    meaning: 上班
+    level: N4
+  - word: 通勤
+    reading: つうきん
+    meaning: 通勤
+    level: N4
+  - word: 休憩
+    reading: きゅうけい
+    meaning: 休息
+    level: N4
+  - word: 担当
+    reading: たんとう
+    meaning: 負責
+    level: N4
+  - word: 失敗
+    reading: しっぱい
+    meaning: 失敗
+    level: N4
+  - word: 成功
+    reading: せいこう
+    meaning: 成功
+    level: N4
+  - word: 目的
+    reading: もくてき
+    meaning: 目的
+    level: N4
+  - word: 方法
+    reading: ほうほう
+    meaning: 方法
+    level: N4
+  - word: 書類
+    reading: しょるい
+    meaning: 文件
+    level: N4
+  - word: 名刺
+    reading: めいし
+    meaning: 名片
+    level: N4
+  - word: 資格
+    reading: しかく
+    meaning: 資格
+    level: N4
+  - word: 予定
+    reading: よてい
+    meaning: 預計、計畫
+    level: N4
+  - word: 約束
+    reading: やくそく
+    meaning: 約定
+    level: N4
+  - word: 運転
+    reading: うんてん
+    meaning: 駕駛
+    level: N4
+  - word: 運転手
+    reading: うんてんしゅ
+    meaning: 司機
+    level: N4
+  - word: 乗り換え
+    reading: のりかえ
+    meaning: 換車
+    level: N4
+  - word: 乗り物
+    reading: のりもの
+    meaning: 交通工具
+    level: N4
+  - word: バス停
+    reading: バスてい
+    meaning: 公車站
+    level: N4
+  - word: 駐車場
+    reading: ちゅうしゃじょう
+    meaning: 停車場
+    level: N4
+  - word: 歩道
+    reading: ほどう
+    meaning: 人行道
+    level: N4
+  - word: 交差点
+    reading: こうさてん
+    meaning: 十字路口
+    level: N4
+  - word: 橋
+    reading: はし
+    meaning: 橋
+    level: N4
+  - word: トンネル
+    reading: トンネル
+    meaning: 隧道
+    level: N4
+  - word: 違反
+    reading: いはん
+    meaning: 違反
+    level: N4
+  - word: スピード
+    reading: スピード
+    meaning: 速度
+    level: N4
+  - word: 高速道路
+    reading: こうそくどうろ
+    meaning: 高速公路
+    level: N4
+  - word: ガソリン
+    reading: ガソリン
+    meaning: 汽油
+    level: N4
+  - word: タイヤ
+    reading: タイヤ
+    meaning: 輪胎
+    level: N4
+  - word: 港
+    reading: みなと
+    meaning: 港口
+    level: N4
+  - word: 駅前
+    reading: えきまえ
+    meaning: 車站前
+    level: N4
+  - word: ホーム
+    reading: ホーム
+    meaning: 月台
+    level: N4
+  - word: 改札
+    reading: かいさつ
+    meaning: 剪票口
+    level: N4
+  - word: 案内
+    reading: あんない
+    meaning: 介紹、帶路
+    level: N4
+  - word: 屋根
+    reading: やね
+    meaning: 屋頂
+    level: N4
+  - word: 壁
+    reading: かべ
+    meaning: 牆
+    level: N4
+  - word: 床
+    reading: ゆか
+    meaning: 地板
+    level: N4
+  - word: 天井
+    reading: てんじょう
+    meaning: 天花板
+    level: N4
+  - word: 階段
+    reading: かいだん
+    meaning: 樓梯
+    level: N4
+  - word: エレベーター
+    reading: エレベーター
+    meaning: 電梯
+    level: N4
+  - word: エスカレーター
+    reading: エスカレーター
+    meaning: 手扶梯
+    level: N4
+  - word: 押入れ
+    reading: おしいれ
+    meaning: 壁櫥
+    level: N4
+  - word: 洗面所
+    reading: せんめんじょ
+    meaning: 洗手間
+    level: N4
+  - word: 家具
+    reading: かぐ
+    meaning: 家具
+    level: N4
+  - word: 本棚
+    reading: ほんだな
+    meaning: 書櫃
+    level: N4
+  - word: 引き出し
+    reading: ひきだし
+    meaning: 抽屜
+    level: N4
+  - word: 箪笥
+    reading: たんす
+    meaning: 衣櫃
+    level: N4
+  - word: 布団
+    reading: ふとん
+    meaning: 被子
+    level: N4
+  - word: 枕
+    reading: まくら
+    meaning: 枕頭
+    level: N4
+  - word: 毛布
+    reading: もうふ
+    meaning: 毛毯
+    level: N4
+  - word: カーテン
+    reading: カーテン
+    meaning: 窗簾
+    level: N4
+  - word: 絨毯
+    reading: じゅうたん
+    meaning: 地毯
+    level: N4
+  - word: スリッパ
+    reading: スリッパ
+    meaning: 拖鞋
+    level: N4
+  - word: 歯磨き粉
+    reading: はみがきこ
+    meaning: 牙膏
+    level: N4
+  - word: シャンプー
+    reading: シャンプー
+    meaning: 洗髮精
+    level: N4
+  - word: ゴミ
+    reading: ゴミ
+    meaning: 垃圾
+    level: N4
+  - word: ゴミ箱
+    reading: ゴミばこ
+    meaning: 垃圾桶
+    level: N4
+  - word: 食事
+    reading: しょくじ
+    meaning: 用餐
+    level: N4
+  - word: 食べ物
+    reading: たべもの
+    meaning: 食物
+    level: N4
+  - word: 飲み物
+    reading: のみもの
+    meaning: 飲料
+    level: N4
+  - word: お弁当
+    reading: おべんとう
+    meaning: 便當
+    level: N4
+  - word: お昼
+    reading: おひる
+    meaning: 午餐
+    level: N4
+  - word: デザート
+    reading: デザート
+    meaning: 甜點
+    level: N4
+  - word: ケーキ
+    reading: ケーキ
+    meaning: 蛋糕
+    level: N4
+  - word: アイスクリーム
+    reading: アイスクリーム
+    meaning: 冰淇淋
+    level: N4
+  - word: チョコレート
+    reading: チョコレート
+    meaning: 巧克力
+    level: N4
+  - word: カレー
+    reading: カレー
+    meaning: 咖哩
+    level: N4
+  - word: ラーメン
+    reading: ラーメン
+    meaning: 拉麵
+    level: N4
+  - word: うどん
+    reading: うどん
+    meaning: 烏龍麵
+    level: N4
+  - word: そば
+    reading: そば
+    meaning: 蕎麥麵
+    level: N4
+  - word: 寿司
+    reading: すし
+    meaning: 壽司
+    level: N4
+  - word: 天ぷら
+    reading: てんぷら
+    meaning: 天婦羅
+    level: N4
+  - word: 刺身
+    reading: さしみ
+    meaning: 生魚片
+    level: N4
+  - word: スープ
+    reading: スープ
+    meaning: 湯
+    level: N4
+  - word: サラダ
+    reading: サラダ
+    meaning: 沙拉
+    level: N4
+  - word: ソース
+    reading: ソース
+    meaning: 醬汁
+    level: N4
+  - word: サンドイッチ
+    reading: サンドイッチ
+    meaning: 三明治
+    level: N4
+  - word: ハンバーガー
+    reading: ハンバーガー
+    meaning: 漢堡
+    level: N4
+  - word: ピザ
+    reading: ピザ
+    meaning: 披薩
+    level: N4
+  - word: 焼肉
+    reading: やきにく
+    meaning: 燒肉
+    level: N4
+  - word: フルーツ
+    reading: フルーツ
+    meaning: 水果
+    level: N4
+  - word: 苺
+    reading: いちご
+    meaning: 草莓
+    level: N4
+  - word: ブドウ
+    reading: ぶどう
+    meaning: 葡萄
+    level: N4
+  - word: 桃
+    reading: もも
+    meaning: 桃子
+    level: N4
+  - word: メロン
+    reading: メロン
+    meaning: 哈密瓜
+    level: N4
+  - word: キャベツ
+    reading: キャベツ
+    meaning: 高麗菜
+    level: N4
+  - word: 人参
+    reading: にんじん
+    meaning: 紅蘿蔔
+    level: N4
+  - word: 大根
+    reading: だいこん
+    meaning: 白蘿蔔
+    level: N4
+  - word: キュウリ
+    reading: キュウリ
+    meaning: 黃瓜
+    level: N4
+  - word: トマト
+    reading: トマト
+    meaning: 番茄
+    level: N4
+  - word: 玉ねぎ
+    reading: たまねぎ
+    meaning: 洋蔥
+    level: N4
+  - word: じゃがいも
+    reading: じゃがいも
+    meaning: 馬鈴薯
+    level: N4
+  - word: きのこ
+    reading: きのこ
+    meaning: 菇類
+    level: N4
+  - word: 米
+    reading: こめ
+    meaning: 米
+    level: N4
+  - word: 麦
+    reading: むぎ
+    meaning: 麥
+    level: N4
+  - word: 豆
+    reading: まめ
+    meaning: 豆
+    level: N4
+  - word: パスタ
+    reading: パスタ
+    meaning: 義大利麵
+    level: N4
+  - word: 箸
+    reading: はし
+    meaning: 筷子
+    level: N4
+  - word: スプーン
+    reading: スプーン
+    meaning: 湯匙
+    level: N4
+  - word: ナイフ
+    reading: ナイフ
+    meaning: 刀
+    level: N4
+  - word: フォーク
+    reading: フォーク
+    meaning: 叉子
+    level: N4
+  - word: 皿
+    reading: さら
+    meaning: 盤子
+    level: N4
+  - word: コップ
+    reading: コップ
+    meaning: 杯子
+    level: N4
+  - word: 茶碗
+    reading: ちゃわん
+    meaning: 飯碗
+    level: N4
+  - word: グラス
+    reading: グラス
+    meaning: 玻璃杯
+    level: N4
+  - word: 鍋
+    reading: なべ
+    meaning: 鍋子
+    level: N4
+  - word: フライパン
+    reading: フライパン
+    meaning: 平底鍋
+    level: N4
+  - word: 電子レンジ
+    reading: でんしレンジ
+    meaning: 微波爐
+    level: N4
+  - word: 下着
+    reading: したぎ
+    meaning: 內衣
+    level: N4
+  - word: 水着
+    reading: みずぎ
+    meaning: 泳裝
+    level: N4
+  - word: スーツ
+    reading: スーツ
+    meaning: 西裝
+    level: N4
+  - word: 着物
+    reading: きもの
+    meaning: 和服
+    level: N4
+  - word: 浴衣
+    reading: ゆかた
+    meaning: 浴衣
+    level: N4
+  - word: 制服
+    reading: せいふく
+    meaning: 制服
+    level: N4
+  - word: 手袋
+    reading: てぶくろ
+    meaning: 手套
+    level: N4
+  - word: マフラー
+    reading: マフラー
+    meaning: 圍巾
+    level: N4
+  - word: ベルト
+    reading: ベルト
+    meaning: 皮帶
+    level: N4
+  - word: 指輪
+    reading: ゆびわ
+    meaning: 戒指
+    level: N4
+  - word: イヤリング
+    reading: イヤリング
+    meaning: 耳環
+    level: N4
+  - word: ネックレス
+    reading: ネックレス
+    meaning: 項鍊
+    level: N4
+  - word: 腕時計
+    reading: うでどけい
+    meaning: 手錶
+    level: N4
+  - word: バッグ
+    reading: バッグ
+    meaning: 包
+    level: N4
+  - word: リュック
+    reading: リュック
+    meaning: 背包
+    level: N4
+  - word: サングラス
+    reading: サングラス
+    meaning: 墨鏡
+    level: N4
+  - word: 髪
+    reading: かみ
+    meaning: 頭髮
+    level: N4
+  - word: 腕
+    reading: うで
+    meaning: 手臂
+    level: N4
+  - word: 指
+    reading: ゆび
+    meaning: 手指
+    level: N4
+  - word: 肩
+    reading: かた
+    meaning: 肩膀
+    level: N4
+  - word: 胸
+    reading: むね
+    meaning: 胸
+    level: N4
+  - word: 背中
+    reading: せなか
+    meaning: 背
+    level: N4
+  - word: お腹
+    reading: おなか
+    meaning: 肚子
+    level: N4
+  - word: 腰
+    reading: こし
+    meaning: 腰
+    level: N4
+  - word: 膝
+    reading: ひざ
+    meaning: 膝
+    level: N4
+  - word: 足首
+    reading: あしくび
+    meaning: 腳踝
+    level: N4
+  - word: 爪
+    reading: つめ
+    meaning: 指甲
+    level: N4
+  - word: 血
+    reading: ち
+    meaning: 血
+    level: N4
+  - word: 骨
+    reading: ほね
+    meaning: 骨頭
+    level: N4
+  - word: 身体
+    reading: しんたい
+    meaning: 身體
+    level: N4
+  - word: 健康
+    reading: けんこう
+    meaning: 健康
+    level: N4
+  - word: 病気
+    reading: びょうき
+    meaning: 疾病
+    level: N4
+  - word: 怪我
+    reading: けが
+    meaning: 受傷
+    level: N4
+  - word: 風邪
+    reading: かぜ
+    meaning: 感冒
+    level: N4
+  - word: 熱
+    reading: ねつ
+    meaning: 發燒、熱
+    level: N4
+  - word: 頭痛
+    reading: ずつう
+    meaning: 頭痛
+    level: N4
+  - word: 痛み
+    reading: いたみ
+    meaning: 疼痛
+    level: N4
+  - word: 咳
+    reading: せき
+    meaning: 咳嗽
+    level: N4
+  - word: 薬
+    reading: くすり
+    meaning: 藥
+    level: N4
+  - word: 注射
+    reading: ちゅうしゃ
+    meaning: 打針
+    level: N4
+  - word: 手術
+    reading: しゅじゅつ
+    meaning: 手術
+    level: N4
+  - word: 検査
+    reading: けんさ
+    meaning: 檢查
+    level: N4
+  - word: 歯医者
+    reading: はいしゃ
+    meaning: 牙醫
+    level: N4
+  - word: 看護師
+    reading: かんごし
+    meaning: 護理師
+    level: N4
+  - word: 運動
+    reading: うんどう
+    meaning: 運動
+    level: N4
+  - word: ダイエット
+    reading: ダイエット
+    meaning: 減肥
+    level: N4
+  - word: 気持ち
+    reading: きもち
+    meaning: 心情
+    level: N4
+  - word: 気分
+    reading: きぶん
+    meaning: 情緒
+    level: N4
+  - word: 心
+    reading: こころ
+    meaning: 心
+    level: N4
+  - word: 嬉しい
+    reading: うれしい
+    meaning: 高興
+    level: N4
+  - word: 悲しい
+    reading: かなしい
+    meaning: 悲傷
+    level: N4
+  - word: 寂しい
+    reading: さびしい
+    meaning: 寂寞
+    level: N4
+  - word: 怖い
+    reading: こわい
+    meaning: 可怕
+    level: N4
+  - word: 恥ずかしい
+    reading: はずかしい
+    meaning: 害羞、丟臉
+    level: N4
+  - word: 羨ましい
+    reading: うらやましい
+    meaning: 羨慕
+    level: N4
+  - word: 面倒
+    reading: めんどう
+    meaning: 麻煩（ナ形）
+    level: N4
+  - word: 不思議
+    reading: ふしぎ
+    meaning: 不可思議（ナ形）
+    level: N4
+  - word: 安心
+    reading: あんしん
+    meaning: 安心
+    level: N4
+  - word: 心配
+    reading: しんぱい
+    meaning: 擔心
+    level: N4
+  - word: 笑顔
+    reading: えがお
+    meaning: 笑容
+    level: N4
+  - word: 涙
+    reading: なみだ
+    meaning: 眼淚
+    level: N4
+  - word: 動かす
+    reading: うごかす
+    meaning: 移動（他）
+    level: N4
+  - word: 動く
+    reading: うごく
+    meaning: 動（自）
+    level: N4
+  - word: 止める
+    reading: とめる
+    meaning: 停止（他）
+    level: N4
+  - word: 止まる
+    reading: とまる
+    meaning: 停下（自）
+    level: N4
+  - word: 始まる
+    reading: はじまる
+    meaning: 開始（自）
+    level: N4
+  - word: 続ける
+    reading: つづける
+    meaning: 繼續
+    level: N4
+  - word: 変える
+    reading: かえる
+    meaning: 改變（他）
+    level: N4
+  - word: 変わる
+    reading: かわる
+    meaning: 改變（自）
+    level: N4
+  - word: 育てる
+    reading: そだてる
+    meaning: 養育
+    level: N4
+  - word: 育つ
+    reading: そだつ
+    meaning: 成長
+    level: N4
+  - word: 数える
+    reading: かぞえる
+    meaning: 數
+    level: N4
+  - word: 計る
+    reading: はかる
+    meaning: 測量
+    level: N4
+  - word: 試す
+    reading: ためす
+    meaning: 嘗試
+    level: N4
+  - word: 調べる
+    reading: しらべる
+    meaning: 調查
+    level: N4
+  - word: 見つける
+    reading: みつける
+    meaning: 找到
+    level: N4
+  - word: 見つかる
+    reading: みつかる
+    meaning: 被找到
+    level: N4
+  - word: 利用する
+    reading: りようする
+    meaning: 利用
+    level: N4
+  - word: 守る
+    reading: まもる
+    meaning: 保護、遵守
+    level: N4
+  - word: 破る
+    reading: やぶる
+    meaning: 弄破
+    level: N4
+  - word: 直す
+    reading: なおす
+    meaning: 修理
+    level: N4
+  - word: 直る
+    reading: なおる
+    meaning: 修好
+    level: N4
+  - word: 壊す
+    reading: こわす
+    meaning: 弄壞
+    level: N4
+  - word: 壊れる
+    reading: こわれる
+    meaning: 壞掉
+    level: N4
+  - word: 落とす
+    reading: おとす
+    meaning: 弄掉
+    level: N4
+  - word: 落ちる
+    reading: おちる
+    meaning: 掉
+    level: N4
+  - word: 交換する
+    reading: こうかんする
+    meaning: 交換
+    level: N4
+  - word: 戻す
+    reading: もどす
+    meaning: 放回
+    level: N4
+  - word: 受ける
+    reading: うける
+    meaning: 接受
+    level: N4
+  - word: 届ける
+    reading: とどける
+    meaning: 送達
+    level: N4
+  - word: 届く
+    reading: とどく
+    meaning: 抵達
+    level: N4
+  - word: 迎える
+    reading: むかえる
+    meaning: 迎接
+    level: N4
+  - word: 訪ねる
+    reading: たずねる
+    meaning: 拜訪
+    level: N4
+  - word: 誘う
+    reading: さそう
+    meaning: 邀請
+    level: N4
+  - word: 答える
+    reading: こたえる
+    meaning: 回答
+    level: N4
+  - word: 尋ねる
+    reading: たずねる
+    meaning: 詢問
+    level: N4
+  - word: 頼む
+    reading: たのむ
+    meaning: 拜託
+    level: N4
+  - word: 断る
+    reading: ことわる
+    meaning: 拒絕
+    level: N4
+  - word: 叱る
+    reading: しかる
+    meaning: 責備
+    level: N4
+  - word: 注意する
+    reading: ちゅういする
+    meaning: 注意、警告
+    level: N4
+  - word: 驚く
+    reading: おどろく
+    meaning: 驚訝
+    level: N4
+  - word: 決まる
+    reading: きまる
+    meaning: 決定（自）
+    level: N4
+  - word: 間違える
+    reading: まちがえる
+    meaning: 弄錯
+    level: N4
+  - word: 忘れる
+    reading: わすれる
+    meaning: 忘記
+    level: N4
+  - word: 思い出す
+    reading: おもいだす
+    meaning: 想起
+    level: N4
+  - word: 思い出
+    reading: おもいで
+    meaning: 回憶
+    level: N4
+  - word: 急ぐ
+    reading: いそぐ
+    meaning: 趕快
+    level: N4
+  - word: 手伝う
+    reading: てつだう
+    meaning: 幫忙
+    level: N4
+  - word: 決める
+    reading: きめる
+    meaning: 決定
+    level: N4
+  - word: 捨てる
+    reading: すてる
+    meaning: 丟棄
+    level: N4
+  - word: 集める
+    reading: あつめる
+    meaning: 收集
+    level: N4
+  - word: 伝える
+    reading: つたえる
+    meaning: 傳達
+    level: N4
+  - word: 比べる
+    reading: くらべる
+    meaning: 比較
+    level: N4
+  - word: 選ぶ
+    reading: えらぶ
+    meaning: 選擇
+    level: N4
+  - word: 払う
+    reading: はらう
+    meaning: 付錢
+    level: N4
+  - word: 探す
+    reading: さがす
+    meaning: 尋找
+    level: N4
+  - word: 連れる
+    reading: つれる
+    meaning: 帶領（人）
+    level: N4
+  - word: 間に合う
+    reading: まにあう
+    meaning: 趕得上
+    level: N4
+  - word: 褒める
+    reading: ほめる
+    meaning: 稱讚
+    level: N4
+  - word: 助ける
+    reading: たすける
+    meaning: 幫助
+    level: N4
+  - word: 諦める
+    reading: あきらめる
+    meaning: 放棄
+    level: N4
+  - word: 疲れる
+    reading: つかれる
+    meaning: 疲累
+    level: N4
+  - word: 慣れる
+    reading: なれる
+    meaning: 習慣
+    level: N4
+  - word: 遅れる
+    reading: おくれる
+    meaning: 遲到
+    level: N4
+  - word: 頑張る
+    reading: がんばる
+    meaning: 努力
+    level: N4
+  - word: 申し込む
+    reading: もうしこむ
+    meaning: 申請
+    level: N4
+  - word: 引っ越す
+    reading: ひっこす
+    meaning: 搬家
+    level: N4
+  - word: 別れる
+    reading: わかれる
+    meaning: 分開、分手
+    level: N4
+  - word: 付き合う
+    reading: つきあう
+    meaning: 交往、陪伴
+    level: N4
+  - word: 足す
+    reading: たす
+    meaning: 添加
+    level: N4
+  - word: 残る
+    reading: のこる
+    meaning: 剩下（自）
+    level: N4
+  - word: 残す
+    reading: のこす
+    meaning: 留下（他）
+    level: N4
+  - word: 入学する
+    reading: にゅうがくする
+    meaning: 入學
+    level: N4
+  - word: 卒業する
+    reading: そつぎょうする
+    meaning: 畢業
+    level: N4
+  - word: 出席する
+    reading: しゅっせきする
+    meaning: 出席
+    level: N4
+  - word: 欠席する
+    reading: けっせきする
+    meaning: 缺席
+    level: N4
+  - word: 遅刻する
+    reading: ちこくする
+    meaning: 遲到
+    level: N4
+  - word: 注文する
+    reading: ちゅうもんする
+    meaning: 點餐、訂購
+    level: N4
+  - word: 予約する
+    reading: よやくする
+    meaning: 預約
+    level: N4
+  - word: 見学する
+    reading: けんがくする
+    meaning: 參觀
+    level: N4
+  - word: 参加する
+    reading: さんかする
+    meaning: 參加
+    level: N4
+  - word: 集まる
+    reading: あつまる
+    meaning: 聚集
+    level: N4
+  - word: 踊る
+    reading: おどる
+    meaning: 跳舞
+    level: N4
+  - word: 歌う
+    reading: うたう
+    meaning: 唱歌
+    level: N4
+  - word: 弾く
+    reading: ひく
+    meaning: 彈（樂器）
+    level: N4
+  - word: 釣る
+    reading: つる
+    meaning: 釣（魚）
+    level: N4
+  - word: 磨く
+    reading: みがく
+    meaning: 刷、磨
+    level: N4
+  - word: 沸かす
+    reading: わかす
+    meaning: 燒開（水）
+    level: N4
+  - word: 沸く
+    reading: わく
+    meaning: 沸騰
+    level: N4
+  - word: 冷える
+    reading: ひえる
+    meaning: 變冷
+    level: N4
+  - word: 焼く
+    reading: やく
+    meaning: 燒、烤
+    level: N4
+  - word: 焼ける
+    reading: やける
+    meaning: 烤好
+    level: N4
+  - word: 炊く
+    reading: たく
+    meaning: 煮（飯）
+    level: N4
+  - word: 混ぜる
+    reading: まぜる
+    meaning: 混合
+    level: N4
+  - word: 塗る
+    reading: ぬる
+    meaning: 塗抹
+    level: N4
+  - word: 描く
+    reading: かく
+    meaning: 畫
+    level: N4
+  - word: 植える
+    reading: うえる
+    meaning: 種植
+    level: N4
+  - word: 伝わる
+    reading: つたわる
+    meaning: 傳達（自）
+    level: N4
+  - word: 話しかける
+    reading: はなしかける
+    meaning: 搭話
+    level: N4
+  - word: 返事する
+    reading: へんじする
+    meaning: 回覆
+    level: N4
+  - word: 説明する
+    reading: せつめいする
+    meaning: 說明
+    level: N4
+  - word: 紹介する
+    reading: しょうかいする
+    meaning: 介紹
+    level: N4
+  - word: 通訳する
+    reading: つうやくする
+    meaning: 口譯
+    level: N4
+  - word: 翻訳する
+    reading: ほんやくする
+    meaning: 翻譯
+    level: N4
+  - word: 確認する
+    reading: かくにんする
+    meaning: 確認
+    level: N4
+  - word: 連絡する
+    reading: れんらくする
+    meaning: 聯絡
+    level: N4
+  - word: 相談する
+    reading: そうだんする
+    meaning: 商量
+    level: N4
+  - word: 出発する
+    reading: しゅっぱつする
+    meaning: 出發
+    level: N4
+  - word: 到着する
+    reading: とうちゃくする
+    meaning: 抵達
+    level: N4
+  - word: 準備する
+    reading: じゅんびする
+    meaning: 準備
+    level: N4
+  - word: 用意する
+    reading: よういする
+    meaning: 準備好
+    level: N4
+  - word: 片付ける
+    reading: かたづける
+    meaning: 整理
+    level: N4
+  - word: 掃除する
+    reading: そうじする
+    meaning: 打掃
+    level: N4
+  - word: 固い
+    reading: かたい
+    meaning: 硬的、堅固的
+    level: N4
+  - word: 丸い
+    reading: まるい
+    meaning: 圓的
+    level: N4
+  - word: 四角い
+    reading: しかくい
+    meaning: 方的
+    level: N4
+  - word: 深い
+    reading: ふかい
+    meaning: 深的
+    level: N4
+  - word: 浅い
+    reading: あさい
+    meaning: 淺的
+    level: N4
+  - word: 厚い
+    reading: あつい
+    meaning: 厚的
+    level: N4
+  - word: 薄い
+    reading: うすい
+    meaning: 薄的、淡的
+    level: N4
+  - word: 正しい
+    reading: ただしい
+    meaning: 正確的
+    level: N4
+  - word: 偉い
+    reading: えらい
+    meaning: 了不起的
+    level: N4
+  - word: すごい
+    reading: すごい
+    meaning: 厲害的
+    level: N4
+  - word: うるさい
+    reading: うるさい
+    meaning: 吵的、囉嗦的
+    level: N4
+  - word: 珍しい
+    reading: めずらしい
+    meaning: 稀有的
+    level: N4
+  - word: 怪しい
+    reading: あやしい
+    meaning: 可疑的
+    level: N4
+  - word: 苦しい
+    reading: くるしい
+    meaning: 痛苦的
+    level: N4
+  - word: 大変
+    reading: たいへん
+    meaning: 辛苦、嚴重
+    level: N4
+  - word: 十分
+    reading: じゅうぶん
+    meaning: 充分
+    level: N4
+  - word: 特別
+    reading: とくべつ
+    meaning: 特別
+    level: N4
+  - word: 丁寧
+    reading: ていねい
+    meaning: 恭敬、仔細
+    level: N4
+  - word: 安全
+    reading: あんぜん
+    meaning: 安全
+    level: N4
+  - word: 危険
+    reading: きけん
+    meaning: 危險
+    level: N4
+  - word: 不安
+    reading: ふあん
+    meaning: 不安
+    level: N4
+  - word: 真面目
+    reading: まじめ
+    meaning: 認真
+    level: N4
+  - word: 正直
+    reading: しょうじき
+    meaning: 誠實
+    level: N4
+  - word: 熱心
+    reading: ねっしん
+    meaning: 熱心
+    level: N4
+  - word: 立派
+    reading: りっぱ
+    meaning: 氣派、出色
+    level: N4
+  - word: 素敵
+    reading: すてき
+    meaning: 美好
+    level: N4
+  - word: 残念
+    reading: ざんねん
+    meaning: 遺憾
+    level: N4
+  - word: 適当
+    reading: てきとう
+    meaning: 適當、隨便
+    level: N4
+  - word: 自由
+    reading: じゆう
+    meaning: 自由
+    level: N4
+  - word: 必要
+    reading: ひつよう
+    meaning: 必要
+    level: N4
+  - word: 無駄
+    reading: むだ
+    meaning: 徒勞、白費
+    level: N4
+  - word: 確か
+    reading: たしか
+    meaning: 確實、好像
+    level: N4
+  - word: 主
+    reading: おも
+    meaning: 主要的
+    level: N4
+  - word: 変
+    reading: へん
+    meaning: 奇怪
+    level: N4
+  - word: 豪華
+    reading: ごうか
+    meaning: 豪華
+    level: N4
+  - word: 楽
+    reading: らく
+    meaning: 輕鬆、舒服
+    level: N4
+  - word: 盛ん
+    reading: さかん
+    meaning: 興盛
+    level: N4
+  - word: たぶん
+    reading: たぶん
+    meaning: 大概
+    level: N4
+  - word: もちろん
+    reading: もちろん
+    meaning: 當然
+    level: N4
+  - word: ちょうど
+    reading: ちょうど
+    meaning: 剛好
+    level: N4
+  - word: とうとう
+    reading: とうとう
+    meaning: 終於
+    level: N4
+  - word: だんだん
+    reading: だんだん
+    meaning: 漸漸
+    level: N4
+  - word: ほとんど
+    reading: ほとんど
+    meaning: 幾乎
+    level: N4
+  - word: もうすぐ
+    reading: もうすぐ
+    meaning: 即將
+    level: N4
+  - word: やはり
+    reading: やはり
+    meaning: 果然
+    level: N4
+  - word: やっぱり
+    reading: やっぱり
+    meaning: 果然（口語）
+    level: N4
+  - word: ぜひ
+    reading: ぜひ
+    meaning: 務必
+    level: N4
+  - word: 特に
+    reading: とくに
+    meaning: 尤其
+    level: N4
+  - word: 実は
+    reading: じつは
+    meaning: 其實
+    level: N4
+  - word: もし
+    reading: もし
+    meaning: 如果
+    level: N4
+  - word: たとえ
+    reading: たとえ
+    meaning: 即使
+    level: N4
+  - word: 必ず
+    reading: かならず
+    meaning: 一定
+    level: N4
+  - word: 絶対
+    reading: ぜったい
+    meaning: 絕對
+    level: N4
+  - word: 決して
+    reading: けっして
+    meaning: 絕不
+    level: N4
+  - word: 一度
+    reading: いちど
+    meaning: 一次
+    level: N4
+  - word: もう一度
+    reading: もういちど
+    meaning: 再一次
+    level: N4
+  - word: しばらく
+    reading: しばらく
+    meaning: 一陣子
+    level: N4
+  - word: そろそろ
+    reading: そろそろ
+    meaning: 差不多該
+    level: N4
+  - word: できるだけ
+    reading: できるだけ
+    meaning: 儘可能
+    level: N4
+  - word: どんどん
+    reading: どんどん
+    meaning: 不斷地
+    level: N4
+  - word: それに
+    reading: それに
+    meaning: 而且
+    level: N4
+  - word: または
+    reading: または
+    meaning: 或者
+    level: N4
+  - word: それとも
+    reading: それとも
+    meaning: 還是
+    level: N4
+  - word: けれども
+    reading: けれども
+    meaning: 可是
+    level: N4
+  - word: ところが
+    reading: ところが
+    meaning: 然而
+    level: N4
+  - word: ところで
+    reading: ところで
+    meaning: 對了（轉話題）
+    level: N4
+  - word: つまり
+    reading: つまり
+    meaning: 也就是說
+    level: N4
+  - word: それで
+    reading: それで
+    meaning: 然後
+    level: N4
+  - word: ですから
+    reading: ですから
+    meaning: 所以
+    level: N4
+  - word: すると
+    reading: すると
+    meaning: 於是
+    level: N4
+  - word: 形
+    reading: かたち
+    meaning: 形狀
+    level: N4
+  - word: 味
+    reading: あじ
+    meaning: 味道
+    level: N4
+  - word: 音
+    reading: おと
+    meaning: 聲音（物）
+    level: N4
+  - word: 世界
+    reading: せかい
+    meaning: 世界
+    level: N4
+  - word: 地図
+    reading: ちず
+    meaning: 地圖
+    level: N4
+  - word: 種類
+    reading: しゅるい
+    meaning: 種類
+    level: N4
+  - word: 自分
+    reading: じぶん
+    meaning: 自己
+    level: N4
+  - word: 他人
+    reading: たにん
+    meaning: 他人
+    level: N4
+  - word: みんな
+    reading: みんな
+    meaning: 大家
+    level: N4
+  - word: 一人
+    reading: ひとり
+    meaning: 一個人
+    level: N4
+  - word: 二人
+    reading: ふたり
+    meaning: 兩個人
+    level: N4
+  - word: 自分自身
+    reading: じぶんじしん
+    meaning: 自己本身
+    level: N4
+  - word: 全部
+    reading: ぜんぶ
+    meaning: 全部
+    level: N4
+  - word: 一部
+    reading: いちぶ
+    meaning: 一部分
+    level: N4
+  - word: 半分
+    reading: はんぶん
+    meaning: 一半
+    level: N4
+  - word: 両方
+    reading: りょうほう
+    meaning: 兩邊
+    level: N4
+  - word: 片方
+    reading: かたほう
+    meaning: 一邊
+    level: N4
+  - word: 数
+    reading: かず
+    meaning: 數
+    level: N4
+  - word: 量
+    reading: りょう
+    meaning: 量
+    level: N4
+  - word: 分量
+    reading: ぶんりょう
+    meaning: 分量
+    level: N4
+  - word: 程度
+    reading: ていど
+    meaning: 程度
+    level: N4
+  - word: ぐらい
+    reading: ぐらい
+    meaning: 左右
+    level: N4
+  - word: 以上
+    reading: いじょう
+    meaning: 以上
+    level: N4
+  - word: 以下
+    reading: いか
+    meaning: 以下
+    level: N4
+  - word: 以外
+    reading: いがい
+    meaning: 以外
+    level: N4
+  - word: 他
+    reading: ほか
+    meaning: 其他
+    level: N4
+  - word: 毎
+    reading: まい
+    meaning: 每
+    level: N4
+  - word: 〜中
+    reading: じゅう
+    meaning: 整個〜（時間、空間）
+    level: N4
+  - word: 〜中
+    reading: ちゅう
+    meaning: 〜之中
+    level: N4
+  - word: 品物
+    reading: しなもの
+    meaning: 物品
+    level: N4
+  - word: 荷物
+    reading: にもつ
+    meaning: 行李
+    level: N4
+  - word: プレゼント
+    reading: プレゼント
+    meaning: 禮物
+    level: N4
+  - word: お土産
+    reading: おみやげ
+    meaning: 土產
+    level: N4
+  - word: 記念
+    reading: きねん
+    meaning: 紀念
+    level: N4
+  - word: 記念日
+    reading: きねんび
+    meaning: 紀念日
+    level: N4
+  - word: 誕生日
+    reading: たんじょうび
+    meaning: 生日
+    level: N4
+  - word: お祝い
+    reading: おいわい
+    meaning: 祝賀
+    level: N4
+  - word: お見舞い
+    reading: おみまい
+    meaning: 探病
+    level: N4
+  - word: 花見
+    reading: はなみ
+    meaning: 賞花
+    level: N4
+  - word: 花火
+    reading: はなび
+    meaning: 煙火
+    level: N4
+  - word: 祭り
+    reading: まつり
+    meaning: 祭典
+    level: N4
+  - word: イベント
+    reading: イベント
+    meaning: 活動
+    level: N4
+  - word: コンサート
+    reading: コンサート
+    meaning: 演唱會
+    level: N4
+  - word: 試合
+    reading: しあい
+    meaning: 比賽
+    level: N4
+  - word: 大会
+    reading: たいかい
+    meaning: 大會、大賽
+    level: N4
+  - word: 発表会
+    reading: はっぴょうかい
+    meaning: 發表會
+    level: N4
+  - word: 展覧会
+    reading: てんらんかい
+    meaning: 展覽
+    level: N4
+  - word: 会場
+    reading: かいじょう
+    meaning: 會場
+    level: N4
+  - word: 趣味
+    reading: しゅみ
+    meaning: 興趣
+    level: N4
+  - word: 夢
+    reading: ゆめ
+    meaning: 夢、夢想
+    level: N4
+  - word: 希望
+    reading: きぼう
+    meaning: 希望
+    level: N4
+  - word: チャンス
+    reading: チャンス
+    meaning: 機會
+    level: N4
+  - word: サービス
+    reading: サービス
+    meaning: 服務
+    level: N4
+  - word: キロ
+    reading: キロ
+    meaning: 公斤／公里
+    level: N4
+  - word: メートル
+    reading: メートル
+    meaning: 公尺
+    level: N4
+  - word: センチ
+    reading: センチ
+    meaning: 公分
+    level: N4
+  - word: リットル
+    reading: リットル
+    meaning: 公升
+    level: N4
+  - word: グラム
+    reading: グラム
+    meaning: 公克
+    level: N4
+  - word: 円
+    reading: えん
+    meaning: 日圓
+    level: N4
+  - word: ドル
+    reading: ドル
+    meaning: 美金
+    level: N4
+  - word: 階
+    reading: かい
+    meaning: 樓
+    level: N4
+  - word: 回
+    reading: かい
+    meaning: 次（次數）
+    level: N4
+  - word: 度
+    reading: ど
+    meaning: 度
+    level: N4
+  - word: 倍
+    reading: ばい
+    meaning: 倍
+    level: N4
+  - word: 番
+    reading: ばん
+    meaning: 號、順序
+    level: N4
+  - word: 号
+    reading: ごう
+    meaning: 號
+    level: N4
+  - word: ページ
+    reading: ページ
+    meaning: 頁
+    level: N4
+  - word: 値段
+    reading: ねだん
+    meaning: 價格
+    level: N4
+  - word: 価格
+    reading: かかく
+    meaning: 價格
+    level: N4
+  - word: 料金
+    reading: りょうきん
+    meaning: 費用
+    level: N4
+  - word: 税金
+    reading: ぜいきん
+    meaning: 稅金
+    level: N4
+  - word: お釣り
+    reading: おつり
+    meaning: 找零
+    level: N4
+  - word: レジ
+    reading: レジ
+    meaning: 收銀台
+    level: N4
+  - word: レシート
+    reading: レシート
+    meaning: 收據
+    level: N4
+  - word: 領収書
+    reading: りょうしゅうしょ
+    meaning: 收據
+    level: N4
+  - word: カード
+    reading: カード
+    meaning: 卡片
+    level: N4
+  - word: 現金
+    reading: げんきん
+    meaning: 現金
+    level: N4
+  - word: 小銭
+    reading: こぜに
+    meaning: 零錢
+    level: N4
+  - word: お札
+    reading: おさつ
+    meaning: 紙鈔
+    level: N4
+  - word: 貯金
+    reading: ちょきん
+    meaning: 存款
+    level: N4
+  - word: セール
+    reading: セール
+    meaning: 特賣
+    level: N4
+  - word: 割引
+    reading: わりびき
+    meaning: 折扣
+    level: N4
+  - word: 無料
+    reading: むりょう
+    meaning: 免費
+    level: N4
+  - word: 有料
+    reading: ゆうりょう
+    meaning: 付費
+    level: N4
+  - word: 自然
+    reading: しぜん
+    meaning: 自然
+    level: N4
+  - word: 環境
+    reading: かんきょう
+    meaning: 環境
+    level: N4
+  - word: 空気
+    reading: くうき
+    meaning: 空氣
+    level: N4
+  - word: 温度
+    reading: おんど
+    meaning: 溫度
+    level: N4
+  - word: 気温
+    reading: きおん
+    meaning: 氣溫
+    level: N4
+  - word: 湿度
+    reading: しつど
+    meaning: 濕度
+    level: N4
+  - word: 地震
+    reading: じしん
+    meaning: 地震
+    level: N4
+  - word: 火事
+    reading: かじ
+    meaning: 火災
+    level: N4
+  - word: 事故
+    reading: じこ
+    meaning: 事故
+    level: N4
+  - word: 災害
+    reading: さいがい
+    meaning: 災害
+    level: N4
+  - word: 社会
+    reading: しゃかい
+    meaning: 社會
+    level: N4
+  - word: 歴史
+    reading: れきし
+    meaning: 歷史
+    level: N4
+  - word: 文化
+    reading: ぶんか
+    meaning: 文化
+    level: N4
+  - word: 政治
+    reading: せいじ
+    meaning: 政治
+    level: N4
+  - word: 経済
+    reading: けいざい
+    meaning: 經濟
+    level: N4
+  - word: ニュース
+    reading: ニュース
+    meaning: 新聞
+    level: N4
+  - word: 情報
+    reading: じょうほう
+    meaning: 資訊
+    level: N4
+  - word: 技術
+    reading: ぎじゅつ
+    meaning: 技術
+    level: N4
+  - word: 科学
+    reading: かがく
+    meaning: 科學
+    level: N4
+  - word: 産業
+    reading: さんぎょう
+    meaning: 產業
+    level: N4
+  - word: 生活
+    reading: せいかつ
+    meaning: 生活
+    level: N4
+  - word: 人生
+    reading: じんせい
+    meaning: 人生
+    level: N4
+  - word: 家庭
+    reading: かてい
+    meaning: 家庭
+    level: N4
+  - word: 生きる
+    reading: いきる
+    meaning: 活
+    level: N4
+  - word: 亡くなる
+    reading: なくなる
+    meaning: 去世
+    level: N4
+  - word: 気に入る
+    reading: きにいる
+    meaning: 中意、喜歡
+    level: N4
+  - word: 恥をかく
+    reading: はじをかく
+    meaning: 丟臉
+    level: N4
+  - word: 気をつける
+    reading: きをつける
+    meaning: 小心
+    level: N4
+  - word: 役に立つ
+    reading: やくにたつ
+    meaning: 有用
+    level: N4
+  - word: 興味がある
+    reading: きょうみがある
+    meaning: 有興趣
+    level: N4
+  - word: 自信がある
+    reading: じしんがある
+    meaning: 有自信
+    level: N4
+  - word: 嫌がる
+    reading: いやがる
+    meaning: 討厭（他人）
+    level: N4
+  - word: 心配する
+    reading: しんぱいする
+    meaning: 擔心
+    level: N4
+  - word: 安心する
+    reading: あんしんする
+    meaning: 放心
+    level: N4
+  - word: 感動する
+    reading: かんどうする
+    meaning: 感動
+    level: N4
+  - word: 緊張する
+    reading: きんちょうする
+    meaning: 緊張
+    level: N4
+  - word: 集中する
+    reading: しゅうちゅうする
+    meaning: 集中
+    level: N4
+  - word: 努力する
+    reading: どりょくする
+    meaning: 努力
+    level: N4
+  - word: 失敗する
+    reading: しっぱいする
+    meaning: 失敗
+    level: N4
+  - word: 成功する
+    reading: せいこうする
+    meaning: 成功
+    level: N4
+  - word: 合格する
+    reading: ごうかくする
+    meaning: 合格
+    level: N4
+  - word: 入院する
+    reading: にゅういんする
+    meaning: 住院
+    level: N4
+  - word: 退院する
+    reading: たいいんする
+    meaning: 出院
+    level: N4

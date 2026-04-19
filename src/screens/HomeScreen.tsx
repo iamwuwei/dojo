@@ -2,7 +2,11 @@ import { useState } from "react";
 import { useGameStore, MASTERY_THRESHOLD } from "../store/useGameStore";
 import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
-import { vocabularyQuestions } from "../data/vocabulary";
+import {
+  vocabularyQuestions,
+  vocabularyByLevel,
+  VOCAB_LEVELS,
+} from "../data/vocabulary";
 import { grammarQuestions } from "../data/grammar";
 import { sentenceQuestions } from "../data/sentence";
 import { flashcards } from "../data/flashcards";
@@ -36,6 +40,7 @@ const GREETINGS = [
 export function HomeScreen() {
   const startQuiz = useGameStore((s) => s.startQuiz);
   const openMistakes = useGameStore((s) => s.openMistakes);
+  const openVocabLevelPicker = useGameStore((s) => s.openVocabLevelPicker);
   const mistakes = useGameStore((s) => s.mistakes);
   const correctCounts = useGameStore((s) => s.correctCounts);
   const user = useGameStore((s) => s.user);
@@ -47,6 +52,17 @@ export function HomeScreen() {
   const masteredTimed = Object.values(correctCounts.timed).filter(
     (n) => n >= MASTERY_THRESHOLD
   ).length;
+
+  const vocabLevelStats = VOCAB_LEVELS.map((level) => {
+    const ids = new Set(vocabularyByLevel[level].map((q) => q.id));
+    const combo = Object.entries(correctCounts.combo).filter(
+      ([id, n]) => n >= MASTERY_THRESHOLD && ids.has(id)
+    ).length;
+    const timed = Object.entries(correctCounts.timed).filter(
+      ([id, n]) => n >= MASTERY_THRESHOLD && ids.has(id)
+    ).length;
+    return { level, total: ids.size, combo, timed };
+  });
 
   const [selectedMode, setSelectedMode] = useState<GameMode>("combo");
   const [greeting] = useState(
@@ -103,6 +119,26 @@ export function HomeScreen() {
               total={TOTAL_QUESTIONS}
             />
           </div>
+
+          {/* 単語のレベル別細分 */}
+          <div className="mt-4 pt-3 border-t-2 border-ink/10">
+            <div className="font-display text-xs text-ink/70 mb-2">
+              📚 単語（レベル別）
+            </div>
+            <div className="space-y-2">
+              {vocabLevelStats.map((s) => (
+                <div
+                  key={s.level}
+                  className="grid grid-cols-[40px_1fr_1fr] gap-2 items-center text-[11px]"
+                >
+                  <span className="font-display text-ink">{s.level}</span>
+                  <MasteryMini label="🔥" done={s.combo} total={s.total} />
+                  <MasteryMini label="⏱" done={s.timed} total={s.total} />
+                </div>
+              ))}
+            </div>
+          </div>
+
           <p className="text-[11px] text-ink/60 mt-3 leading-snug">
             兩個模式各自獨立。連續答對 {MASTERY_THRESHOLD} 次的題目就會在「該模式」收起來不再出現，答錯一次扣 1 次。
           </p>
@@ -136,17 +172,25 @@ export function HomeScreen() {
       <section className="mb-6">
         <h2 className="font-display text-sm text-ink mb-2">練習内容</h2>
         <div className="grid grid-cols-2 gap-3">
-          {QUIZ_TYPES.map((q) => (
-            <button
-              key={q.key}
-              onClick={() => startQuiz(q.key, selectedMode)}
-              className="pixel-btn pixel-border bg-white hover:bg-cream shadow-pixel p-4 text-left transition-colors"
-            >
-              <div className="text-2xl mb-1">{q.emoji}</div>
-              <div className="font-display text-sm text-ink">{q.label}</div>
-              <div className="text-xs text-ink/70 mt-1">{q.sub}</div>
-            </button>
-          ))}
+          {QUIZ_TYPES.map((q) => {
+            // Vocabulary needs a level pick first; everything else jumps
+            // straight in.
+            const handleClick =
+              q.key === "vocabulary"
+                ? openVocabLevelPicker
+                : () => startQuiz(q.key, selectedMode);
+            return (
+              <button
+                key={q.key}
+                onClick={handleClick}
+                className="pixel-btn pixel-border bg-white hover:bg-cream shadow-pixel p-4 text-left transition-colors"
+              >
+                <div className="text-2xl mb-1">{q.emoji}</div>
+                <div className="font-display text-sm text-ink">{q.label}</div>
+                <div className="text-xs text-ink/70 mt-1">{q.sub}</div>
+              </button>
+            );
+          })}
         </div>
       </section>
 
@@ -204,6 +248,32 @@ function MasteryRow({
           style={{ width: `${pct}%` }}
         />
       </div>
+    </div>
+  );
+}
+
+function MasteryMini({
+  label,
+  done,
+  total,
+}: {
+  label: string;
+  done: number;
+  total: number;
+}) {
+  const pct = total === 0 ? 0 : Math.round((done / total) * 100);
+  return (
+    <div className="flex items-center gap-1.5 min-w-0">
+      <span className="shrink-0">{label}</span>
+      <div className="h-1.5 bg-white pixel-border flex-1 overflow-hidden">
+        <div
+          className="h-full bg-mintDark transition-all"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+      <span className="shrink-0 text-ink/70 tabular-nums">
+        {done}/{total}
+      </span>
     </div>
   );
 }

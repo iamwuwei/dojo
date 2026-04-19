@@ -2,8 +2,12 @@ import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { supabase } from "../lib/supabaseClient";
 import type { QuizType, GameMode, MistakeEntry, AnyQuestion } from "../types";
+import type { VocabLevel } from "../data/vocabulary";
 
-export type Screen = "home" | "playing" | "result" | "mistakes";
+export type Screen = "home" | "playing" | "result" | "mistakes" | "vocabLevel";
+
+// "all" means no level filter; otherwise a specific JLPT tier.
+export type VocabLevelChoice = "all" | VocabLevel;
 
 export interface AuthUser {
   id: string;
@@ -35,6 +39,9 @@ interface GameState {
   // one slip doesn't undo it.
   correctCounts: MasteryByMode;
 
+  // User's last picked vocabulary level (persisted so it sticks across visits).
+  vocabLevel: VocabLevelChoice;
+
   // Auth state
   user: AuthUser | null;
   authLoading: boolean;
@@ -44,6 +51,8 @@ interface GameState {
   startQuiz: (type: QuizType, mode: GameMode) => void;
   endQuiz: () => void;
   openMistakes: () => void;
+  openVocabLevelPicker: () => void;
+  setVocabLevel: (level: VocabLevelChoice) => void;
 
   addCorrect: (points: number, questionId?: string) => void;
   addWrong: (question: AnyQuestion, userAnswer: string) => Promise<void>;
@@ -98,6 +107,7 @@ export const useGameStore = create<GameState>()(
       wrong: 0,
       mistakes: [],
       correctCounts: EMPTY_MASTERY,
+      vocabLevel: "all",
       user: null,
       authLoading: true,
 
@@ -128,6 +138,10 @@ export const useGameStore = create<GameState>()(
       endQuiz: () => set({ screen: "result" }),
 
       openMistakes: () => set({ screen: "mistakes" }),
+
+      openVocabLevelPicker: () => set({ screen: "vocabLevel" }),
+
+      setVocabLevel: (level) => set({ vocabLevel: level }),
 
       addCorrect: (points, questionId) => {
         const newCombo = get().combo + 1;
@@ -345,6 +359,7 @@ export const useGameStore = create<GameState>()(
       partialize: (state) => ({
         mistakes: state.mistakes,
         correctCounts: state.correctCounts,
+        vocabLevel: state.vocabLevel,
       }),
       // Migrate legacy flat correctCounts shape rehydrated from localStorage.
       onRehydrateStorage: () => (state) => {

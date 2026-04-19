@@ -1,0 +1,2260 @@
+# ===================================================================
+# JLPT N5 單字列表（共 563 詞）
+# 分級依據：舊日檢出題基準（舊 4 級=N5、舊 3 級=N4）、
+#           JLPT Sensei / Jisho.org / TRY! 系列交叉比對
+# ⚠️ JLPT 官方不公開語彙清單，分級為民間共識
+# ===================================================================
+
+vocabulary:
+  - word: 私
+    reading: わたし
+    meaning: 我
+    level: N5
+  - word: 僕
+    reading: ぼく
+    meaning: 我（男性自稱）
+    level: N5
+  - word: あなた
+    reading: あなた
+    meaning: 你
+    level: N5
+  - word: 彼
+    reading: かれ
+    meaning: 他
+    level: N5
+  - word: 彼女
+    reading: かのじょ
+    meaning: 她
+    level: N5
+  - word: これ
+    reading: これ
+    meaning: 這個
+    level: N5
+  - word: それ
+    reading: それ
+    meaning: 那個
+    level: N5
+  - word: あれ
+    reading: あれ
+    meaning: 那個（遠）
+    level: N5
+  - word: どれ
+    reading: どれ
+    meaning: 哪個
+    level: N5
+  - word: この
+    reading: この
+    meaning: 這個…
+    level: N5
+  - word: その
+    reading: その
+    meaning: 那個…
+    level: N5
+  - word: あの
+    reading: あの
+    meaning: 那個…（遠）
+    level: N5
+  - word: どの
+    reading: どの
+    meaning: 哪個…
+    level: N5
+  - word: ここ
+    reading: ここ
+    meaning: 這裡
+    level: N5
+  - word: そこ
+    reading: そこ
+    meaning: 那裡
+    level: N5
+  - word: あそこ
+    reading: あそこ
+    meaning: 那裡（遠）
+    level: N5
+  - word: どこ
+    reading: どこ
+    meaning: 哪裡
+    level: N5
+  - word: こちら
+    reading: こちら
+    meaning: 這邊
+    level: N5
+  - word: そちら
+    reading: そちら
+    meaning: 那邊
+    level: N5
+  - word: あちら
+    reading: あちら
+    meaning: 那邊（遠）
+    level: N5
+  - word: どちら
+    reading: どちら
+    meaning: 哪邊、哪一個（禮貌）
+    level: N5
+  - word: 誰
+    reading: だれ
+    meaning: 誰
+    level: N5
+  - word: 何
+    reading: なに
+    meaning: 什麼
+    level: N5
+  - word: いつ
+    reading: いつ
+    meaning: 何時
+    level: N5
+  - word: いくら
+    reading: いくら
+    meaning: 多少錢
+    level: N5
+  - word: いくつ
+    reading: いくつ
+    meaning: 幾個、幾歲
+    level: N5
+  - word: どう
+    reading: どう
+    meaning: 怎麼樣
+    level: N5
+  - word: どうして
+    reading: どうして
+    meaning: 為什麼
+    level: N5
+  - word: なぜ
+    reading: なぜ
+    meaning: 為什麼
+    level: N5
+  - word: 父
+    reading: ちち
+    meaning: 家父
+    level: N5
+  - word: 母
+    reading: はは
+    meaning: 家母
+    level: N5
+  - word: 兄
+    reading: あに
+    meaning: 哥哥（自稱）
+    level: N5
+  - word: 姉
+    reading: あね
+    meaning: 姐姐（自稱）
+    level: N5
+  - word: 弟
+    reading: おとうと
+    meaning: 弟弟
+    level: N5
+  - word: 妹
+    reading: いもうと
+    meaning: 妹妹
+    level: N5
+  - word: 家族
+    reading: かぞく
+    meaning: 家人
+    level: N5
+  - word: お父さん
+    reading: おとうさん
+    meaning: 父親
+    level: N5
+  - word: お母さん
+    reading: おかあさん
+    meaning: 母親
+    level: N5
+  - word: お兄さん
+    reading: おにいさん
+    meaning: 哥哥（敬）
+    level: N5
+  - word: お姉さん
+    reading: おねえさん
+    meaning: 姐姐（敬）
+    level: N5
+  - word: おじいさん
+    reading: おじいさん
+    meaning: 爺爺
+    level: N5
+  - word: おばあさん
+    reading: おばあさん
+    meaning: 奶奶
+    level: N5
+  - word: おじさん
+    reading: おじさん
+    meaning: 伯伯、叔叔
+    level: N5
+  - word: おばさん
+    reading: おばさん
+    meaning: 姑姑、阿姨
+    level: N5
+  - word: 友達
+    reading: ともだち
+    meaning: 朋友
+    level: N5
+  - word: 人
+    reading: ひと
+    meaning: 人
+    level: N5
+  - word: 男
+    reading: おとこ
+    meaning: 男性
+    level: N5
+  - word: 女
+    reading: おんな
+    meaning: 女性
+    level: N5
+  - word: 男の人
+    reading: おとこのひと
+    meaning: 男人
+    level: N5
+  - word: 女の人
+    reading: おんなのひと
+    meaning: 女人
+    level: N5
+  - word: 男の子
+    reading: おとこのこ
+    meaning: 男孩
+    level: N5
+  - word: 女の子
+    reading: おんなのこ
+    meaning: 女孩
+    level: N5
+  - word: 子供
+    reading: こども
+    meaning: 小孩
+    level: N5
+  - word: 大人
+    reading: おとな
+    meaning: 大人
+    level: N5
+  - word: 一
+    reading: いち
+    meaning: 一
+    level: N5
+  - word: 二
+    reading: に
+    meaning: 二
+    level: N5
+  - word: 三
+    reading: さん
+    meaning: 三
+    level: N5
+  - word: 四
+    reading: よん
+    meaning: 四
+    level: N5
+  - word: 五
+    reading: ご
+    meaning: 五
+    level: N5
+  - word: 六
+    reading: ろく
+    meaning: 六
+    level: N5
+  - word: 七
+    reading: なな
+    meaning: 七
+    level: N5
+  - word: 八
+    reading: はち
+    meaning: 八
+    level: N5
+  - word: 九
+    reading: きゅう
+    meaning: 九
+    level: N5
+  - word: 十
+    reading: じゅう
+    meaning: 十
+    level: N5
+  - word: 百
+    reading: ひゃく
+    meaning: 百
+    level: N5
+  - word: 千
+    reading: せん
+    meaning: 千
+    level: N5
+  - word: 万
+    reading: まん
+    meaning: 萬
+    level: N5
+  - word: ゼロ
+    reading: ゼロ
+    meaning: 零
+    level: N5
+  - word: 半
+    reading: はん
+    meaning: 半
+    level: N5
+  - word: 今
+    reading: いま
+    meaning: 現在
+    level: N5
+  - word: 朝
+    reading: あさ
+    meaning: 早上
+    level: N5
+  - word: 昼
+    reading: ひる
+    meaning: 中午
+    level: N5
+  - word: 夜
+    reading: よる
+    meaning: 晚上
+    level: N5
+  - word: 晩
+    reading: ばん
+    meaning: 晚上
+    level: N5
+  - word: 夕方
+    reading: ゆうがた
+    meaning: 傍晚
+    level: N5
+  - word: 午前
+    reading: ごぜん
+    meaning: 上午
+    level: N5
+  - word: 午後
+    reading: ごご
+    meaning: 下午
+    level: N5
+  - word: 今日
+    reading: きょう
+    meaning: 今天
+    level: N5
+  - word: 明日
+    reading: あした
+    meaning: 明天
+    level: N5
+  - word: 昨日
+    reading: きのう
+    meaning: 昨天
+    level: N5
+  - word: 一昨日
+    reading: おととい
+    meaning: 前天
+    level: N5
+  - word: 明後日
+    reading: あさって
+    meaning: 後天
+    level: N5
+  - word: 毎日
+    reading: まいにち
+    meaning: 每天
+    level: N5
+  - word: 今週
+    reading: こんしゅう
+    meaning: 這週
+    level: N5
+  - word: 先週
+    reading: せんしゅう
+    meaning: 上週
+    level: N5
+  - word: 来週
+    reading: らいしゅう
+    meaning: 下週
+    level: N5
+  - word: 毎週
+    reading: まいしゅう
+    meaning: 每週
+    level: N5
+  - word: 今月
+    reading: こんげつ
+    meaning: 這個月
+    level: N5
+  - word: 先月
+    reading: せんげつ
+    meaning: 上個月
+    level: N5
+  - word: 来月
+    reading: らいげつ
+    meaning: 下個月
+    level: N5
+  - word: 毎月
+    reading: まいつき
+    meaning: 每個月
+    level: N5
+  - word: 今年
+    reading: ことし
+    meaning: 今年
+    level: N5
+  - word: 去年
+    reading: きょねん
+    meaning: 去年
+    level: N5
+  - word: 来年
+    reading: らいねん
+    meaning: 明年
+    level: N5
+  - word: 毎年
+    reading: まいとし
+    meaning: 每年
+    level: N5
+  - word: 時間
+    reading: じかん
+    meaning: 時間
+    level: N5
+  - word: 月曜日
+    reading: げつようび
+    meaning: 星期一
+    level: N5
+  - word: 火曜日
+    reading: かようび
+    meaning: 星期二
+    level: N5
+  - word: 水曜日
+    reading: すいようび
+    meaning: 星期三
+    level: N5
+  - word: 木曜日
+    reading: もくようび
+    meaning: 星期四
+    level: N5
+  - word: 金曜日
+    reading: きんようび
+    meaning: 星期五
+    level: N5
+  - word: 土曜日
+    reading: どようび
+    meaning: 星期六
+    level: N5
+  - word: 日曜日
+    reading: にちようび
+    meaning: 星期日
+    level: N5
+  - word: 一月
+    reading: いちがつ
+    meaning: 一月
+    level: N5
+  - word: 二月
+    reading: にがつ
+    meaning: 二月
+    level: N5
+  - word: 三月
+    reading: さんがつ
+    meaning: 三月
+    level: N5
+  - word: 四月
+    reading: しがつ
+    meaning: 四月
+    level: N5
+  - word: 五月
+    reading: ごがつ
+    meaning: 五月
+    level: N5
+  - word: 六月
+    reading: ろくがつ
+    meaning: 六月
+    level: N5
+  - word: 七月
+    reading: しちがつ
+    meaning: 七月
+    level: N5
+  - word: 八月
+    reading: はちがつ
+    meaning: 八月
+    level: N5
+  - word: 九月
+    reading: くがつ
+    meaning: 九月
+    level: N5
+  - word: 十月
+    reading: じゅうがつ
+    meaning: 十月
+    level: N5
+  - word: 十一月
+    reading: じゅういちがつ
+    meaning: 十一月
+    level: N5
+  - word: 十二月
+    reading: じゅうにがつ
+    meaning: 十二月
+    level: N5
+  - word: 一日
+    reading: ついたち
+    meaning: 一號
+    level: N5
+  - word: 二日
+    reading: ふつか
+    meaning: 二號
+    level: N5
+  - word: 三日
+    reading: みっか
+    meaning: 三號
+    level: N5
+  - word: 四日
+    reading: よっか
+    meaning: 四號
+    level: N5
+  - word: 五日
+    reading: いつか
+    meaning: 五號
+    level: N5
+  - word: 六日
+    reading: むいか
+    meaning: 六號
+    level: N5
+  - word: 七日
+    reading: なのか
+    meaning: 七號
+    level: N5
+  - word: 八日
+    reading: ようか
+    meaning: 八號
+    level: N5
+  - word: 九日
+    reading: ここのか
+    meaning: 九號
+    level: N5
+  - word: 十日
+    reading: とおか
+    meaning: 十號
+    level: N5
+  - word: 二十日
+    reading: はつか
+    meaning: 二十號
+    level: N5
+  - word: 春
+    reading: はる
+    meaning: 春天
+    level: N5
+  - word: 夏
+    reading: なつ
+    meaning: 夏天
+    level: N5
+  - word: 秋
+    reading: あき
+    meaning: 秋天
+    level: N5
+  - word: 冬
+    reading: ふゆ
+    meaning: 冬天
+    level: N5
+  - word: 天気
+    reading: てんき
+    meaning: 天氣
+    level: N5
+  - word: 雨
+    reading: あめ
+    meaning: 雨
+    level: N5
+  - word: 雪
+    reading: ゆき
+    meaning: 雪
+    level: N5
+  - word: 風
+    reading: かぜ
+    meaning: 風
+    level: N5
+  - word: 雲
+    reading: くも
+    meaning: 雲
+    level: N5
+  - word: 晴れ
+    reading: はれ
+    meaning: 晴天
+    level: N5
+  - word: 曇り
+    reading: くもり
+    meaning: 陰天
+    level: N5
+  - word: 暖かい
+    reading: あたたかい
+    meaning: 溫暖的
+    level: N5
+  - word: 涼しい
+    reading: すずしい
+    meaning: 涼爽的
+    level: N5
+  - word: 一つ
+    reading: ひとつ
+    meaning: 一個
+    level: N5
+  - word: 二つ
+    reading: ふたつ
+    meaning: 兩個
+    level: N5
+  - word: 三つ
+    reading: みっつ
+    meaning: 三個
+    level: N5
+  - word: 四つ
+    reading: よっつ
+    meaning: 四個
+    level: N5
+  - word: 五つ
+    reading: いつつ
+    meaning: 五個
+    level: N5
+  - word: 六つ
+    reading: むっつ
+    meaning: 六個
+    level: N5
+  - word: 七つ
+    reading: ななつ
+    meaning: 七個
+    level: N5
+  - word: 八つ
+    reading: やっつ
+    meaning: 八個
+    level: N5
+  - word: 九つ
+    reading: ここのつ
+    meaning: 九個
+    level: N5
+  - word: 体
+    reading: からだ
+    meaning: 身體
+    level: N5
+  - word: 頭
+    reading: あたま
+    meaning: 頭
+    level: N5
+  - word: 顔
+    reading: かお
+    meaning: 臉
+    level: N5
+  - word: 目
+    reading: め
+    meaning: 眼睛
+    level: N5
+  - word: 耳
+    reading: みみ
+    meaning: 耳朵
+    level: N5
+  - word: 鼻
+    reading: はな
+    meaning: 鼻子
+    level: N5
+  - word: 口
+    reading: くち
+    meaning: 嘴巴
+    level: N5
+  - word: 歯
+    reading: は
+    meaning: 牙齒
+    level: N5
+  - word: 首
+    reading: くび
+    meaning: 脖子
+    level: N5
+  - word: 手
+    reading: て
+    meaning: 手
+    level: N5
+  - word: 足
+    reading: あし
+    meaning: 腳
+    level: N5
+  - word: 背
+    reading: せ
+    meaning: 身高、背
+    level: N5
+  - word: 声
+    reading: こえ
+    meaning: 聲音（人）
+    level: N5
+  - word: 水
+    reading: みず
+    meaning: 水
+    level: N5
+  - word: お湯
+    reading: おゆ
+    meaning: 熱水
+    level: N5
+  - word: お茶
+    reading: おちゃ
+    meaning: 茶
+    level: N5
+  - word: 紅茶
+    reading: こうちゃ
+    meaning: 紅茶
+    level: N5
+  - word: コーヒー
+    reading: コーヒー
+    meaning: 咖啡
+    level: N5
+  - word: 牛乳
+    reading: ぎゅうにゅう
+    meaning: 牛奶
+    level: N5
+  - word: ビール
+    reading: ビール
+    meaning: 啤酒
+    level: N5
+  - word: お酒
+    reading: おさけ
+    meaning: 酒
+    level: N5
+  - word: ジュース
+    reading: ジュース
+    meaning: 果汁
+    level: N5
+  - word: ご飯
+    reading: ごはん
+    meaning: 飯
+    level: N5
+  - word: 朝ご飯
+    reading: あさごはん
+    meaning: 早餐
+    level: N5
+  - word: 昼ご飯
+    reading: ひるごはん
+    meaning: 午餐
+    level: N5
+  - word: 晩ご飯
+    reading: ばんごはん
+    meaning: 晚餐
+    level: N5
+  - word: 夕ご飯
+    reading: ゆうごはん
+    meaning: 晚餐
+    level: N5
+  - word: パン
+    reading: パン
+    meaning: 麵包
+    level: N5
+  - word: 卵
+    reading: たまご
+    meaning: 蛋
+    level: N5
+  - word: 肉
+    reading: にく
+    meaning: 肉
+    level: N5
+  - word: 牛肉
+    reading: ぎゅうにく
+    meaning: 牛肉
+    level: N5
+  - word: 豚肉
+    reading: ぶたにく
+    meaning: 豬肉
+    level: N5
+  - word: 鶏肉
+    reading: とりにく
+    meaning: 雞肉
+    level: N5
+  - word: 魚
+    reading: さかな
+    meaning: 魚
+    level: N5
+  - word: 野菜
+    reading: やさい
+    meaning: 蔬菜
+    level: N5
+  - word: 果物
+    reading: くだもの
+    meaning: 水果
+    level: N5
+  - word: りんご
+    reading: りんご
+    meaning: 蘋果
+    level: N5
+  - word: みかん
+    reading: みかん
+    meaning: 橘子
+    level: N5
+  - word: バナナ
+    reading: バナナ
+    meaning: 香蕉
+    level: N5
+  - word: 砂糖
+    reading: さとう
+    meaning: 糖
+    level: N5
+  - word: 塩
+    reading: しお
+    meaning: 鹽
+    level: N5
+  - word: 醤油
+    reading: しょうゆ
+    meaning: 醬油
+    level: N5
+  - word: 料理
+    reading: りょうり
+    meaning: 料理
+    level: N5
+  - word: お菓子
+    reading: おかし
+    meaning: 零食
+    level: N5
+  - word: パーティー
+    reading: パーティー
+    meaning: 派對
+    level: N5
+  - word: レストラン
+    reading: レストラン
+    meaning: 餐廳
+    level: N5
+  - word: 食堂
+    reading: しょくどう
+    meaning: 食堂
+    level: N5
+  - word: 喫茶店
+    reading: きっさてん
+    meaning: 咖啡廳
+    level: N5
+  - word: 家
+    reading: いえ
+    meaning: 家（建築）
+    level: N5
+  - word: 学校
+    reading: がっこう
+    meaning: 學校
+    level: N5
+  - word: 大学
+    reading: だいがく
+    meaning: 大學
+    level: N5
+  - word: 高校
+    reading: こうこう
+    meaning: 高中
+    level: N5
+  - word: 教室
+    reading: きょうしつ
+    meaning: 教室
+    level: N5
+  - word: 図書館
+    reading: としょかん
+    meaning: 圖書館
+    level: N5
+  - word: 病院
+    reading: びょういん
+    meaning: 醫院
+    level: N5
+  - word: 銀行
+    reading: ぎんこう
+    meaning: 銀行
+    level: N5
+  - word: 郵便局
+    reading: ゆうびんきょく
+    meaning: 郵局
+    level: N5
+  - word: 会社
+    reading: かいしゃ
+    meaning: 公司
+    level: N5
+  - word: 駅
+    reading: えき
+    meaning: 車站
+    level: N5
+  - word: 空港
+    reading: くうこう
+    meaning: 機場
+    level: N5
+  - word: 店
+    reading: みせ
+    meaning: 店家
+    level: N5
+  - word: デパート
+    reading: デパート
+    meaning: 百貨公司
+    level: N5
+  - word: スーパー
+    reading: スーパー
+    meaning: 超市
+    level: N5
+  - word: コンビニ
+    reading: コンビニ
+    meaning: 便利商店
+    level: N5
+  - word: 本屋
+    reading: ほんや
+    meaning: 書店
+    level: N5
+  - word: 花屋
+    reading: はなや
+    meaning: 花店
+    level: N5
+  - word: 八百屋
+    reading: やおや
+    meaning: 蔬菜店
+    level: N5
+  - word: 肉屋
+    reading: にくや
+    meaning: 肉店
+    level: N5
+  - word: パン屋
+    reading: パンや
+    meaning: 麵包店
+    level: N5
+  - word: 公園
+    reading: こうえん
+    meaning: 公園
+    level: N5
+  - word: 動物園
+    reading: どうぶつえん
+    meaning: 動物園
+    level: N5
+  - word: 映画館
+    reading: えいがかん
+    meaning: 電影院
+    level: N5
+  - word: 交番
+    reading: こうばん
+    meaning: 派出所
+    level: N5
+  - word: 町
+    reading: まち
+    meaning: 鎮、街道
+    level: N5
+  - word: 村
+    reading: むら
+    meaning: 村
+    level: N5
+  - word: 国
+    reading: くに
+    meaning: 國家
+    level: N5
+  - word: 所
+    reading: ところ
+    meaning: 地方
+    level: N5
+  - word: 部屋
+    reading: へや
+    meaning: 房間
+    level: N5
+  - word: トイレ
+    reading: トイレ
+    meaning: 廁所
+    level: N5
+  - word: お手洗い
+    reading: おてあらい
+    meaning: 洗手間
+    level: N5
+  - word: お風呂
+    reading: おふろ
+    meaning: 浴室
+    level: N5
+  - word: 台所
+    reading: だいどころ
+    meaning: 廚房
+    level: N5
+  - word: 玄関
+    reading: げんかん
+    meaning: 玄關
+    level: N5
+  - word: 庭
+    reading: にわ
+    meaning: 庭院
+    level: N5
+  - word: アパート
+    reading: アパート
+    meaning: 公寓
+    level: N5
+  - word: マンション
+    reading: マンション
+    meaning: 大樓公寓
+    level: N5
+  - word: ホテル
+    reading: ホテル
+    meaning: 飯店
+    level: N5
+  - word: 車
+    reading: くるま
+    meaning: 車
+    level: N5
+  - word: 自動車
+    reading: じどうしゃ
+    meaning: 汽車
+    level: N5
+  - word: 自転車
+    reading: じてんしゃ
+    meaning: 腳踏車
+    level: N5
+  - word: 電車
+    reading: でんしゃ
+    meaning: 電車
+    level: N5
+  - word: 地下鉄
+    reading: ちかてつ
+    meaning: 地鐵
+    level: N5
+  - word: 新幹線
+    reading: しんかんせん
+    meaning: 新幹線
+    level: N5
+  - word: バス
+    reading: バス
+    meaning: 巴士
+    level: N5
+  - word: タクシー
+    reading: タクシー
+    meaning: 計程車
+    level: N5
+  - word: 飛行機
+    reading: ひこうき
+    meaning: 飛機
+    level: N5
+  - word: 船
+    reading: ふね
+    meaning: 船
+    level: N5
+  - word: バイク
+    reading: バイク
+    meaning: 摩托車
+    level: N5
+  - word: 切符
+    reading: きっぷ
+    meaning: 票
+    level: N5
+  - word: 道
+    reading: みち
+    meaning: 路
+    level: N5
+  - word: 信号
+    reading: しんごう
+    meaning: 紅綠燈
+    level: N5
+  - word: 旅行
+    reading: りょこう
+    meaning: 旅行
+    level: N5
+  - word: 散歩
+    reading: さんぽ
+    meaning: 散步
+    level: N5
+  - word: 学生
+    reading: がくせい
+    meaning: 學生
+    level: N5
+  - word: 先生
+    reading: せんせい
+    meaning: 老師
+    level: N5
+  - word: 本
+    reading: ほん
+    meaning: 書
+    level: N5
+  - word: 雑誌
+    reading: ざっし
+    meaning: 雜誌
+    level: N5
+  - word: 新聞
+    reading: しんぶん
+    meaning: 報紙
+    level: N5
+  - word: 辞書
+    reading: じしょ
+    meaning: 辭典
+    level: N5
+  - word: ノート
+    reading: ノート
+    meaning: 筆記本
+    level: N5
+  - word: 鉛筆
+    reading: えんぴつ
+    meaning: 鉛筆
+    level: N5
+  - word: ペン
+    reading: ペン
+    meaning: 筆
+    level: N5
+  - word: 消しゴム
+    reading: けしゴム
+    meaning: 橡皮擦
+    level: N5
+  - word: 紙
+    reading: かみ
+    meaning: 紙
+    level: N5
+  - word: 鞄
+    reading: かばん
+    meaning: 包包
+    level: N5
+  - word: 傘
+    reading: かさ
+    meaning: 傘
+    level: N5
+  - word: 勉強
+    reading: べんきょう
+    meaning: 讀書、學習
+    level: N5
+  - word: 日本語
+    reading: にほんご
+    meaning: 日文
+    level: N5
+  - word: 英語
+    reading: えいご
+    meaning: 英文
+    level: N5
+  - word: 中国語
+    reading: ちゅうごくご
+    meaning: 中文
+    level: N5
+  - word: 言葉
+    reading: ことば
+    meaning: 詞、話
+    level: N5
+  - word: 字
+    reading: じ
+    meaning: 字
+    level: N5
+  - word: 漢字
+    reading: かんじ
+    meaning: 漢字
+    level: N5
+  - word: 問題
+    reading: もんだい
+    meaning: 問題、題目
+    level: N5
+  - word: 答え
+    reading: こたえ
+    meaning: 答案
+    level: N5
+  - word: 意味
+    reading: いみ
+    meaning: 意思
+    level: N5
+  - word: 授業
+    reading: じゅぎょう
+    meaning: 上課
+    level: N5
+  - word: 医者
+    reading: いしゃ
+    meaning: 醫生
+    level: N5
+  - word: 会社員
+    reading: かいしゃいん
+    meaning: 上班族
+    level: N5
+  - word: 店員
+    reading: てんいん
+    meaning: 店員
+    level: N5
+  - word: 駅員
+    reading: えきいん
+    meaning: 站務員
+    level: N5
+  - word: 銀行員
+    reading: ぎんこういん
+    meaning: 銀行員
+    level: N5
+  - word: 警察
+    reading: けいさつ
+    meaning: 警察
+    level: N5
+  - word: 留学生
+    reading: りゅうがくせい
+    meaning: 留學生
+    level: N5
+  - word: 仕事
+    reading: しごと
+    meaning: 工作
+    level: N5
+  - word: 時計
+    reading: とけい
+    meaning: 時鐘、手錶
+    level: N5
+  - word: 電話
+    reading: でんわ
+    meaning: 電話
+    level: N5
+  - word: 携帯
+    reading: けいたい
+    meaning: 手機
+    level: N5
+  - word: カメラ
+    reading: カメラ
+    meaning: 相機
+    level: N5
+  - word: テレビ
+    reading: テレビ
+    meaning: 電視
+    level: N5
+  - word: ラジオ
+    reading: ラジオ
+    meaning: 收音機
+    level: N5
+  - word: パソコン
+    reading: パソコン
+    meaning: 電腦
+    level: N5
+  - word: コンピューター
+    reading: コンピューター
+    meaning: 電腦
+    level: N5
+  - word: 冷蔵庫
+    reading: れいぞうこ
+    meaning: 冰箱
+    level: N5
+  - word: 洗濯機
+    reading: せんたくき
+    meaning: 洗衣機
+    level: N5
+  - word: エアコン
+    reading: エアコン
+    meaning: 冷氣
+    level: N5
+  - word: 電気
+    reading: でんき
+    meaning: 電、電燈
+    level: N5
+  - word: 椅子
+    reading: いす
+    meaning: 椅子
+    level: N5
+  - word: 机
+    reading: つくえ
+    meaning: 桌子
+    level: N5
+  - word: テーブル
+    reading: テーブル
+    meaning: 桌子
+    level: N5
+  - word: ベッド
+    reading: ベッド
+    meaning: 床
+    level: N5
+  - word: ドア
+    reading: ドア
+    meaning: 門
+    level: N5
+  - word: 窓
+    reading: まど
+    meaning: 窗戶
+    level: N5
+  - word: 鍵
+    reading: かぎ
+    meaning: 鑰匙
+    level: N5
+  - word: 石鹸
+    reading: せっけん
+    meaning: 肥皂
+    level: N5
+  - word: タオル
+    reading: タオル
+    meaning: 毛巾
+    level: N5
+  - word: 歯ブラシ
+    reading: はブラシ
+    meaning: 牙刷
+    level: N5
+  - word: 財布
+    reading: さいふ
+    meaning: 錢包
+    level: N5
+  - word: お金
+    reading: おかね
+    meaning: 錢
+    level: N5
+  - word: 手紙
+    reading: てがみ
+    meaning: 信
+    level: N5
+  - word: 切手
+    reading: きって
+    meaning: 郵票
+    level: N5
+  - word: 葉書
+    reading: はがき
+    meaning: 明信片
+    level: N5
+  - word: 服
+    reading: ふく
+    meaning: 衣服
+    level: N5
+  - word: 洋服
+    reading: ようふく
+    meaning: 西式服裝
+    level: N5
+  - word: シャツ
+    reading: シャツ
+    meaning: 襯衫
+    level: N5
+  - word: セーター
+    reading: セーター
+    meaning: 毛衣
+    level: N5
+  - word: コート
+    reading: コート
+    meaning: 外套
+    level: N5
+  - word: ズボン
+    reading: ズボン
+    meaning: 褲子
+    level: N5
+  - word: スカート
+    reading: スカート
+    meaning: 裙子
+    level: N5
+  - word: 靴
+    reading: くつ
+    meaning: 鞋子
+    level: N5
+  - word: 靴下
+    reading: くつした
+    meaning: 襪子
+    level: N5
+  - word: 帽子
+    reading: ぼうし
+    meaning: 帽子
+    level: N5
+  - word: 眼鏡
+    reading: めがね
+    meaning: 眼鏡
+    level: N5
+  - word: ネクタイ
+    reading: ネクタイ
+    meaning: 領帶
+    level: N5
+  - word: ハンカチ
+    reading: ハンカチ
+    meaning: 手帕
+    level: N5
+  - word: 山
+    reading: やま
+    meaning: 山
+    level: N5
+  - word: 川
+    reading: かわ
+    meaning: 河川
+    level: N5
+  - word: 海
+    reading: うみ
+    meaning: 海
+    level: N5
+  - word: 湖
+    reading: みずうみ
+    meaning: 湖
+    level: N5
+  - word: 空
+    reading: そら
+    meaning: 天空
+    level: N5
+  - word: 月
+    reading: つき
+    meaning: 月亮
+    level: N5
+  - word: 星
+    reading: ほし
+    meaning: 星星
+    level: N5
+  - word: 木
+    reading: き
+    meaning: 樹
+    level: N5
+  - word: 花
+    reading: はな
+    meaning: 花
+    level: N5
+  - word: 桜
+    reading: さくら
+    meaning: 櫻花
+    level: N5
+  - word: 犬
+    reading: いぬ
+    meaning: 狗
+    level: N5
+  - word: 猫
+    reading: ねこ
+    meaning: 貓
+    level: N5
+  - word: 鳥
+    reading: とり
+    meaning: 鳥
+    level: N5
+  - word: 動物
+    reading: どうぶつ
+    meaning: 動物
+    level: N5
+  - word: 虫
+    reading: むし
+    meaning: 蟲
+    level: N5
+  - word: 色
+    reading: いろ
+    meaning: 顏色
+    level: N5
+  - word: 赤
+    reading: あか
+    meaning: 紅色
+    level: N5
+  - word: 青
+    reading: あお
+    meaning: 藍色
+    level: N5
+  - word: 黄色
+    reading: きいろ
+    meaning: 黃色
+    level: N5
+  - word: 黒
+    reading: くろ
+    meaning: 黑色
+    level: N5
+  - word: 白
+    reading: しろ
+    meaning: 白色
+    level: N5
+  - word: 緑
+    reading: みどり
+    meaning: 綠色
+    level: N5
+  - word: 茶色
+    reading: ちゃいろ
+    meaning: 棕色
+    level: N5
+  - word: 赤い
+    reading: あかい
+    meaning: 紅的
+    level: N5
+  - word: 青い
+    reading: あおい
+    meaning: 藍的
+    level: N5
+  - word: 黄色い
+    reading: きいろい
+    meaning: 黃的
+    level: N5
+  - word: 黒い
+    reading: くろい
+    meaning: 黑的
+    level: N5
+  - word: 白い
+    reading: しろい
+    meaning: 白的
+    level: N5
+  - word: 行く
+    reading: いく
+    meaning: 去
+    level: N5
+  - word: 来る
+    reading: くる
+    meaning: 來
+    level: N5
+  - word: 帰る
+    reading: かえる
+    meaning: 回去
+    level: N5
+  - word: 戻る
+    reading: もどる
+    meaning: 返回
+    level: N5
+  - word: 入る
+    reading: はいる
+    meaning: 進入
+    level: N5
+  - word: 出る
+    reading: でる
+    meaning: 出去、出現
+    level: N5
+  - word: 出掛ける
+    reading: でかける
+    meaning: 外出
+    level: N5
+  - word: 着く
+    reading: つく
+    meaning: 到達
+    level: N5
+  - word: 歩く
+    reading: あるく
+    meaning: 走路
+    level: N5
+  - word: 走る
+    reading: はしる
+    meaning: 跑
+    level: N5
+  - word: 飛ぶ
+    reading: とぶ
+    meaning: 飛
+    level: N5
+  - word: 泳ぐ
+    reading: およぐ
+    meaning: 游泳
+    level: N5
+  - word: 乗る
+    reading: のる
+    meaning: 搭乘
+    level: N5
+  - word: 降りる
+    reading: おりる
+    meaning: 下（車）
+    level: N5
+  - word: 見る
+    reading: みる
+    meaning: 看
+    level: N5
+  - word: 聞く
+    reading: きく
+    meaning: 聽、問
+    level: N5
+  - word: 読む
+    reading: よむ
+    meaning: 讀
+    level: N5
+  - word: 書く
+    reading: かく
+    meaning: 寫
+    level: N5
+  - word: 話す
+    reading: はなす
+    meaning: 說
+    level: N5
+  - word: 言う
+    reading: いう
+    meaning: 說
+    level: N5
+  - word: 教える
+    reading: おしえる
+    meaning: 教、告知
+    level: N5
+  - word: 習う
+    reading: ならう
+    meaning: 學習
+    level: N5
+  - word: 覚える
+    reading: おぼえる
+    meaning: 記住
+    level: N5
+  - word: 食べる
+    reading: たべる
+    meaning: 吃
+    level: N5
+  - word: 飲む
+    reading: のむ
+    meaning: 喝
+    level: N5
+  - word: 寝る
+    reading: ねる
+    meaning: 睡
+    level: N5
+  - word: 起きる
+    reading: おきる
+    meaning: 起床
+    level: N5
+  - word: 立つ
+    reading: たつ
+    meaning: 站
+    level: N5
+  - word: 座る
+    reading: すわる
+    meaning: 坐
+    level: N5
+  - word: 休む
+    reading: やすむ
+    meaning: 休息、請假
+    level: N5
+  - word: 働く
+    reading: はたらく
+    meaning: 工作
+    level: N5
+  - word: 遊ぶ
+    reading: あそぶ
+    meaning: 玩
+    level: N5
+  - word: 会う
+    reading: あう
+    meaning: 見面
+    level: N5
+  - word: 買う
+    reading: かう
+    meaning: 買
+    level: N5
+  - word: 売る
+    reading: うる
+    meaning: 賣
+    level: N5
+  - word: 使う
+    reading: つかう
+    meaning: 使用
+    level: N5
+  - word: 持つ
+    reading: もつ
+    meaning: 拿、持有
+    level: N5
+  - word: 置く
+    reading: おく
+    meaning: 放
+    level: N5
+  - word: 渡す
+    reading: わたす
+    meaning: 交給
+    level: N5
+  - word: 取る
+    reading: とる
+    meaning: 拿
+    level: N5
+  - word: 作る
+    reading: つくる
+    meaning: 做、製作
+    level: N5
+  - word: 開ける
+    reading: あける
+    meaning: 打開
+    level: N5
+  - word: 閉める
+    reading: しめる
+    meaning: 關
+    level: N5
+  - word: 付ける
+    reading: つける
+    meaning: 打開（電器）、戴
+    level: N5
+  - word: 消す
+    reading: けす
+    meaning: 關掉、擦掉
+    level: N5
+  - word: 入れる
+    reading: いれる
+    meaning: 放入
+    level: N5
+  - word: 出す
+    reading: だす
+    meaning: 拿出
+    level: N5
+  - word: 始める
+    reading: はじめる
+    meaning: 開始
+    level: N5
+  - word: 終わる
+    reading: おわる
+    meaning: 結束
+    level: N5
+  - word: する
+    reading: する
+    meaning: 做
+    level: N5
+  - word: ある
+    reading: ある
+    meaning: 有（無生命）
+    level: N5
+  - word: いる
+    reading: いる
+    meaning: 有（生命）、在
+    level: N5
+  - word: 分かる
+    reading: わかる
+    meaning: 懂、明白
+    level: N5
+  - word: 知る
+    reading: しる
+    meaning: 知道
+    level: N5
+  - word: 思う
+    reading: おもう
+    meaning: 覺得
+    level: N5
+  - word: 好き
+    reading: すき
+    meaning: 喜歡
+    level: N5
+  - word: 嫌い
+    reading: きらい
+    meaning: 討厭
+    level: N5
+  - word: 欲しい
+    reading: ほしい
+    meaning: 想要
+    level: N5
+  - word: 違う
+    reading: ちがう
+    meaning: 不同、不對
+    level: N5
+  - word: 泣く
+    reading: なく
+    meaning: 哭
+    level: N5
+  - word: 笑う
+    reading: わらう
+    meaning: 笑
+    level: N5
+  - word: 怒る
+    reading: おこる
+    meaning: 生氣
+    level: N5
+  - word: 貸す
+    reading: かす
+    meaning: 借出
+    level: N5
+  - word: 借りる
+    reading: かりる
+    meaning: 借入
+    level: N5
+  - word: 返す
+    reading: かえす
+    meaning: 歸還
+    level: N5
+  - word: 送る
+    reading: おくる
+    meaning: 送、寄
+    level: N5
+  - word: 撮る
+    reading: とる
+    meaning: 拍（照）
+    level: N5
+  - word: 切る
+    reading: きる
+    meaning: 切
+    level: N5
+  - word: 洗う
+    reading: あらう
+    meaning: 洗
+    level: N5
+  - word: 着る
+    reading: きる
+    meaning: 穿（上衣）
+    level: N5
+  - word: 履く
+    reading: はく
+    meaning: 穿（褲子、鞋）
+    level: N5
+  - word: 脱ぐ
+    reading: ぬぐ
+    meaning: 脫
+    level: N5
+  - word: 降る
+    reading: ふる
+    meaning: （雨、雪）下
+    level: N5
+  - word: 吹く
+    reading: ふく
+    meaning: 吹
+    level: N5
+  - word: 死ぬ
+    reading: しぬ
+    meaning: 死
+    level: N5
+  - word: 生まれる
+    reading: うまれる
+    meaning: 出生
+    level: N5
+  - word: 住む
+    reading: すむ
+    meaning: 居住
+    level: N5
+  - word: 大きい
+    reading: おおきい
+    meaning: 大的
+    level: N5
+  - word: 小さい
+    reading: ちいさい
+    meaning: 小的
+    level: N5
+  - word: 高い
+    reading: たかい
+    meaning: 高的、貴的
+    level: N5
+  - word: 低い
+    reading: ひくい
+    meaning: 低的
+    level: N5
+  - word: 安い
+    reading: やすい
+    meaning: 便宜的
+    level: N5
+  - word: 新しい
+    reading: あたらしい
+    meaning: 新的
+    level: N5
+  - word: 古い
+    reading: ふるい
+    meaning: 舊的
+    level: N5
+  - word: 良い
+    reading: よい
+    meaning: 好的
+    level: N5
+  - word: 悪い
+    reading: わるい
+    meaning: 壞的
+    level: N5
+  - word: 暑い
+    reading: あつい
+    meaning: （天氣）熱的
+    level: N5
+  - word: 熱い
+    reading: あつい
+    meaning: （物體）燙的
+    level: N5
+  - word: 寒い
+    reading: さむい
+    meaning: 冷的
+    level: N5
+  - word: 冷たい
+    reading: つめたい
+    meaning: （冷飲、東西）冰的
+    level: N5
+  - word: 忙しい
+    reading: いそがしい
+    meaning: 忙碌的
+    level: N5
+  - word: 楽しい
+    reading: たのしい
+    meaning: 快樂的
+    level: N5
+  - word: 面白い
+    reading: おもしろい
+    meaning: 有趣的
+    level: N5
+  - word: つまらない
+    reading: つまらない
+    meaning: 無聊的
+    level: N5
+  - word: 難しい
+    reading: むずかしい
+    meaning: 困難的
+    level: N5
+  - word: 易しい
+    reading: やさしい
+    meaning: 容易的
+    level: N5
+  - word: 優しい
+    reading: やさしい
+    meaning: 溫柔的
+    level: N5
+  - word: 強い
+    reading: つよい
+    meaning: 強的
+    level: N5
+  - word: 弱い
+    reading: よわい
+    meaning: 弱的
+    level: N5
+  - word: 長い
+    reading: ながい
+    meaning: 長的
+    level: N5
+  - word: 短い
+    reading: みじかい
+    meaning: 短的
+    level: N5
+  - word: 太い
+    reading: ふとい
+    meaning: 粗的、胖的
+    level: N5
+  - word: 細い
+    reading: ほそい
+    meaning: 細的、瘦的
+    level: N5
+  - word: 重い
+    reading: おもい
+    meaning: 重的
+    level: N5
+  - word: 軽い
+    reading: かるい
+    meaning: 輕的
+    level: N5
+  - word: 速い
+    reading: はやい
+    meaning: 快的（速度）
+    level: N5
+  - word: 早い
+    reading: はやい
+    meaning: 早的
+    level: N5
+  - word: 遅い
+    reading: おそい
+    meaning: 慢的、晚的
+    level: N5
+  - word: 近い
+    reading: ちかい
+    meaning: 近的
+    level: N5
+  - word: 遠い
+    reading: とおい
+    meaning: 遠的
+    level: N5
+  - word: 明るい
+    reading: あかるい
+    meaning: 明亮的
+    level: N5
+  - word: 暗い
+    reading: くらい
+    meaning: 陰暗的
+    level: N5
+  - word: 広い
+    reading: ひろい
+    meaning: 寬的
+    level: N5
+  - word: 狭い
+    reading: せまい
+    meaning: 窄的
+    level: N5
+  - word: 多い
+    reading: おおい
+    meaning: 多的
+    level: N5
+  - word: 少ない
+    reading: すくない
+    meaning: 少的
+    level: N5
+  - word: 美味しい
+    reading: おいしい
+    meaning: 好吃的
+    level: N5
+  - word: まずい
+    reading: まずい
+    meaning: 難吃的
+    level: N5
+  - word: 甘い
+    reading: あまい
+    meaning: 甜的
+    level: N5
+  - word: 辛い
+    reading: からい
+    meaning: 辣的
+    level: N5
+  - word: 苦い
+    reading: にがい
+    meaning: 苦的
+    level: N5
+  - word: 痛い
+    reading: いたい
+    meaning: 痛的
+    level: N5
+  - word: 眠い
+    reading: ねむい
+    meaning: 睏的
+    level: N5
+  - word: 綺麗
+    reading: きれい
+    meaning: 漂亮的（ナ形）
+    level: N5
+  - word: 可愛い
+    reading: かわいい
+    meaning: 可愛的
+    level: N5
+  - word: 汚い
+    reading: きたない
+    meaning: 髒的
+    level: N5
+  - word: 若い
+    reading: わかい
+    meaning: 年輕的
+    level: N5
+  - word: 元気
+    reading: げんき
+    meaning: 有精神
+    level: N5
+  - word: 静か
+    reading: しずか
+    meaning: 安靜
+    level: N5
+  - word: 賑やか
+    reading: にぎやか
+    meaning: 熱鬧
+    level: N5
+  - word: 便利
+    reading: べんり
+    meaning: 方便
+    level: N5
+  - word: 不便
+    reading: ふべん
+    meaning: 不方便
+    level: N5
+  - word: 簡単
+    reading: かんたん
+    meaning: 簡單
+    level: N5
+  - word: 大丈夫
+    reading: だいじょうぶ
+    meaning: 沒問題
+    level: N5
+  - word: 有名
+    reading: ゆうめい
+    meaning: 有名
+    level: N5
+  - word: 親切
+    reading: しんせつ
+    meaning: 親切
+    level: N5
+  - word: 暇
+    reading: ひま
+    meaning: 空閒
+    level: N5
+  - word: ハンサム
+    reading: ハンサム
+    meaning: 帥
+    level: N5
+  - word: 嫌
+    reading: いや
+    meaning: 討厭、不要
+    level: N5
+  - word: 同じ
+    reading: おなじ
+    meaning: 一樣的
+    level: N5
+  - word: とても
+    reading: とても
+    meaning: 非常
+    level: N5
+  - word: 少し
+    reading: すこし
+    meaning: 一點
+    level: N5
+  - word: ちょっと
+    reading: ちょっと
+    meaning: 有點
+    level: N5
+  - word: よく
+    reading: よく
+    meaning: 經常、很好地
+    level: N5
+  - word: たくさん
+    reading: たくさん
+    meaning: 許多
+    level: N5
+  - word: 大勢
+    reading: おおぜい
+    meaning: 許多（人）
+    level: N5
+  - word: あまり
+    reading: あまり
+    meaning: 不太
+    level: N5
+  - word: 全然
+    reading: ぜんぜん
+    meaning: 完全（不）
+    level: N5
+  - word: もう
+    reading: もう
+    meaning: 已經、再
+    level: N5
+  - word: まだ
+    reading: まだ
+    meaning: 還、尚未
+    level: N5
+  - word: もっと
+    reading: もっと
+    meaning: 更
+    level: N5
+  - word: すぐ
+    reading: すぐ
+    meaning: 馬上
+    level: N5
+  - word: 時々
+    reading: ときどき
+    meaning: 有時
+    level: N5
+  - word: いつも
+    reading: いつも
+    meaning: 總是
+    level: N5
+  - word: 毎朝
+    reading: まいあさ
+    meaning: 每早
+    level: N5
+  - word: 毎晩
+    reading: まいばん
+    meaning: 每晚
+    level: N5
+  - word: 初めて
+    reading: はじめて
+    meaning: 第一次
+    level: N5
+  - word: ゆっくり
+    reading: ゆっくり
+    meaning: 慢慢地
+    level: N5
+  - word: 一緒に
+    reading: いっしょに
+    meaning: 一起
+    level: N5
+  - word: そう
+    reading: そう
+    meaning: 那樣
+    level: N5
+  - word: そして
+    reading: そして
+    meaning: 然後
+    level: N5
+  - word: それから
+    reading: それから
+    meaning: 之後
+    level: N5
+  - word: でも
+    reading: でも
+    meaning: 但是
+    level: N5
+  - word: しかし
+    reading: しかし
+    meaning: 但是（書面）
+    level: N5
+  - word: だから
+    reading: だから
+    meaning: 所以
+    level: N5
+  - word: じゃ
+    reading: じゃ
+    meaning: 那麼
+    level: N5
+  - word: では
+    reading: では
+    meaning: 那麼（禮貌）
+    level: N5
+  - word: おはよう
+    reading: おはよう
+    meaning: 早安
+    level: N5
+  - word: こんにちは
+    reading: こんにちは
+    meaning: 你好
+    level: N5
+  - word: こんばんは
+    reading: こんばんは
+    meaning: 晚安
+    level: N5
+  - word: さようなら
+    reading: さようなら
+    meaning: 再見
+    level: N5
+  - word: ありがとう
+    reading: ありがとう
+    meaning: 謝謝
+    level: N5
+  - word: すみません
+    reading: すみません
+    meaning: 不好意思
+    level: N5
+  - word: ごめんなさい
+    reading: ごめんなさい
+    meaning: 對不起
+    level: N5
+  - word: いただきます
+    reading: いただきます
+    meaning: 開動
+    level: N5
+  - word: ごちそうさま
+    reading: ごちそうさま
+    meaning: 吃飽了
+    level: N5
+  - word: はい
+    reading: はい
+    meaning: 是
+    level: N5
+  - word: いいえ
+    reading: いいえ
+    meaning: 不
+    level: N5
+  - word: 上
+    reading: うえ
+    meaning: 上
+    level: N5
+  - word: 下
+    reading: した
+    meaning: 下
+    level: N5
+  - word: 左
+    reading: ひだり
+    meaning: 左
+    level: N5
+  - word: 右
+    reading: みぎ
+    meaning: 右
+    level: N5
+  - word: 前
+    reading: まえ
+    meaning: 前
+    level: N5
+  - word: 後ろ
+    reading: うしろ
+    meaning: 後
+    level: N5
+  - word: 中
+    reading: なか
+    meaning: 裡面
+    level: N5
+  - word: 外
+    reading: そと
+    meaning: 外面
+    level: N5
+  - word: 隣
+    reading: となり
+    meaning: 隔壁
+    level: N5
+  - word: 横
+    reading: よこ
+    meaning: 旁邊
+    level: N5
+  - word: 側
+    reading: そば
+    meaning: 旁邊
+    level: N5
+  - word: 東
+    reading: ひがし
+    meaning: 東
+    level: N5
+  - word: 西
+    reading: にし
+    meaning: 西
+    level: N5
+  - word: 南
+    reading: みなみ
+    meaning: 南
+    level: N5
+  - word: 北
+    reading: きた
+    meaning: 北
+    level: N5
+  - word: 日本
+    reading: にほん
+    meaning: 日本
+    level: N5
+  - word: アメリカ
+    reading: アメリカ
+    meaning: 美國
+    level: N5
+  - word: 中国
+    reading: ちゅうごく
+    meaning: 中國
+    level: N5
+  - word: 韓国
+    reading: かんこく
+    meaning: 韓國
+    level: N5
+  - word: 台湾
+    reading: たいわん
+    meaning: 台灣
+    level: N5
+  - word: イギリス
+    reading: イギリス
+    meaning: 英國
+    level: N5
+  - word: 音楽
+    reading: おんがく
+    meaning: 音樂
+    level: N5
+  - word: 歌
+    reading: うた
+    meaning: 歌
+    level: N5
+  - word: 映画
+    reading: えいが
+    meaning: 電影
+    level: N5
+  - word: 絵
+    reading: え
+    meaning: 畫
+    level: N5
+  - word: 写真
+    reading: しゃしん
+    meaning: 照片
+    level: N5
+  - word: スポーツ
+    reading: スポーツ
+    meaning: 運動
+    level: N5
+  - word: サッカー
+    reading: サッカー
+    meaning: 足球
+    level: N5
+  - word: 野球
+    reading: やきゅう
+    meaning: 棒球
+    level: N5
+  - word: テニス
+    reading: テニス
+    meaning: 網球
+    level: N5
+  - word: ゲーム
+    reading: ゲーム
+    meaning: 遊戲
+    level: N5
+  - word: 番号
+    reading: ばんごう
+    meaning: 號碼
+    level: N5
+  - word: 名前
+    reading: なまえ
+    meaning: 名字
+    level: N5
+  - word: 住所
+    reading: じゅうしょ
+    meaning: 地址
+    level: N5

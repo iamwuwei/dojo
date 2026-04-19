@@ -1,104 +1,29 @@
 import type { VocabularyQuestion } from "../types";
+import { n5VocabularyQuestions } from "./n5-vocabulary-questions";
+import { n4VocabularyQuestions } from "./n4-vocabulary-questions";
+import { n3VocabularyQuestions } from "./n3-vocabulary-questions";
 
-export const vocabularyQuestions: VocabularyQuestion[] = [
-  {
-    id: "v1",
-    type: "vocabulary",
-    word: "経済",
-    reading: "けいざい",
-    question: "「経済」の正しい読み方はどれですか？",
-    options: ["けいざい", "けいさい", "きょうざい", "きょうさい"],
-    answer: 0,
-    explanation: "「経済」意思是「經濟」，唸作 けいざい。",
-  },
-  {
-    id: "v2",
-    type: "vocabulary",
-    word: "準備",
-    reading: "じゅんび",
-    question: "「出発の準備をする」の「準備」はどんな意味？",
-    options: ["練習", "準備", "計畫", "檢查"],
-    answer: 1,
-    explanation: "「準備」就是中文的「準備」，為出發做好準備。",
-  },
-  {
-    id: "v3",
-    type: "vocabulary",
-    word: "招待",
-    reading: "しょうたい",
-    question: "「友達を招待する」の「招待」の読み方は？",
-    options: ["しょうだい", "しょうたい", "そうたい", "ちょうたい"],
-    answer: 1,
-    explanation: "「招待」＝邀請，讀作 しょうたい。",
-  },
-  {
-    id: "v4",
-    type: "vocabulary",
-    word: "確認",
-    reading: "かくにん",
-    question: "「予約を（　　）する」に最もふさわしい語は？",
-    options: ["確認", "確定", "決定", "予定"],
-    answer: 0,
-    explanation: "「予約を確認する」是固定搭配，意思是確認預約。",
-  },
-  {
-    id: "v5",
-    type: "vocabulary",
-    word: "連絡",
-    reading: "れんらく",
-    question: "「明日までに（　　）してください」最適合填入的詞？",
-    options: ["連続", "連絡", "連休", "連想"],
-    answer: 1,
-    explanation: "「連絡する」意思是「聯絡、通知」。",
-  },
-  {
-    id: "v6",
-    type: "vocabulary",
-    word: "紹介",
-    reading: "しょうかい",
-    question: "「自己紹介」の「紹介」の意味は？",
-    options: ["介紹", "介入", "評價", "推薦信"],
-    answer: 0,
-    explanation: "「紹介」＝介紹。「自己紹介」就是自我介紹。",
-  },
-  {
-    id: "v7",
-    type: "vocabulary",
-    word: "解決",
-    reading: "かいけつ",
-    question: "「問題を（　　）する」に最もふさわしい語は？",
-    options: ["解放", "解消", "解決", "解答"],
-    answer: 2,
-    explanation: "「問題を解決する」是解決問題的固定用法。",
-  },
-  {
-    id: "v8",
-    type: "vocabulary",
-    word: "無理",
-    reading: "むり",
-    question: "「それは（　　）です」想表達「那是不可能的」，最合適的是？",
-    options: ["無料", "無事", "無理", "無視"],
-    answer: 2,
-    explanation: "「無理」＝不可能、勉強。「無理です」＝辦不到。",
-  },
-  {
-    id: "v9",
-    type: "vocabulary",
-    word: "偶然",
-    reading: "ぐうぜん",
-    question: "「駅で（　　）友達に会った」最適合填入？",
-    options: ["突然", "偶然", "当然", "自然"],
-    answer: 1,
-    explanation: "「偶然」＝偶然、碰巧。「偶然会った」＝偶然遇到。",
-  },
-  {
-    id: "v10",
-    type: "vocabulary",
-    word: "得意",
-    reading: "とくい",
-    question: "「料理が（　　）です」想表達「很拿手」，要填入？",
-    options: ["上手", "得意", "好き", "便利"],
-    answer: 1,
-    explanation: "「得意」＝擅長、拿手；與「上手」意思相近但主觀自信更強。",
-  },
-];
+// Finer-grained than JlptLevel used by grammar/sentence (which still bundles
+// N5+N4). Vocabulary gets its own level bucket per JLPT tier.
+export type VocabLevel = "N5" | "N4" | "N3";
+
+export const VOCAB_LEVELS: VocabLevel[] = ["N5", "N4", "N3"];
+
+// Each question id is prefixed (n5-v-###, n4-v-###, n3-v-###) so mastery
+// progress can be bucketed by level via id inspection without a lookup.
+export const vocabularyByLevel: Record<VocabLevel, VocabularyQuestion[]> = {
+  N5: n5VocabularyQuestions,
+  N4: n4VocabularyQuestions,
+  N3: n3VocabularyQuestions,
+};
+
+export const vocabularyQuestions: VocabularyQuestion[] = Object.values(
+  vocabularyByLevel
+).flat();
+
+export function levelOfVocabId(id: string): VocabLevel | null {
+  if (id.startsWith("n5-v-")) return "N5";
+  if (id.startsWith("n4-v-")) return "N4";
+  if (id.startsWith("n3-v-")) return "N3";
+  return null;
+}

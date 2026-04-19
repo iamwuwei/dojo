@@ -17,5 +17,12 @@ export function VocabularyQuiz() {
       raw: q,
     }));
 
-  return <ChoiceQuiz title="単語クイズ" questions={adapted} mode={mode} />;
+  return (
+    <ChoiceQuiz
+      title="単語クイズ"
+      questions={adapted}
+      mode={mode}
+      quizType="vocabulary"
+    />
+  );
 }

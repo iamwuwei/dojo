@@ -1,26 +1,43 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useGameStore } from "../store/useGameStore";
 import { PixelDog } from "./PixelDog";
 import { SpeechBubble } from "./SpeechBubble";
 import { ScoreBar } from "./ScoreBar";
-import type { AnyQuestion, DogMood, GameMode } from "../types";
+import {
+  RoundIntro,
+  RoundCleared,
+  RoundChampion,
+  RoundFailed,
+  NotEnoughQuestions,
+} from "./RoundOverlay";
+import {
+  ROUND_CONFIGS,
+  TOTAL_ROUNDS,
+  durationFor,
+  minPoolSize,
+  passed,
+  sliceRoundQueue,
+} from "../lib/rounds";
+import type { AnyQuestion, DogMood, GameMode, QuizType } from "../types";
 
 interface ChoiceQuestionLike {
   id: string;
-  prompt: string; // 題目主文
-  subPrompt?: string; // 副標（例如：翻譯）
+  prompt: string;
+  subPrompt?: string;
   options: string[];
   answer: number;
   explanation?: string;
-  raw: AnyQuestion; // 原始題目（給錯題本）
+  raw: AnyQuestion;
 }
 
 interface ChoiceQuizProps {
   title: string;
   questions: ChoiceQuestionLike[];
   mode: GameMode;
-  timedSeconds?: number; // 計時模式的秒數，預設 60
+  quizType: QuizType;
 }
+
+type RoundPhase = "intro" | "playing" | "cleared" | "failed" | "champion";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -31,51 +48,178 @@ function shuffle<T>(arr: T[]): T[] {
   return a;
 }
 
-export function ChoiceQuiz({
-  title,
-  questions,
-  mode,
-  timedSeconds = 60,
-}: ChoiceQuizProps) {
-  // 打亂題目順序（已掌握的題目在 caller 已被過濾掉）
-  const [queue] = useState(() => shuffle(questions));
+export function ChoiceQuiz({ title, questions, mode, quizType }: ChoiceQuizProps) {
+  const isTimed = mode === "timed";
+  const config = ROUND_CONFIGS[quizType];
+
+  const [pool] = useState(() => shuffle(questions));
+
+  // Round phase machine — only meaningful in timed mode.
+  const [phase, setPhase] = useState<RoundPhase>(isTimed ? "intro" : "playing");
+  const [roundIdx, setRoundIdx] = useState(0);
+  const [roundCorrect, setRoundCorrect] = useState(0);
+  const [roundAnswered, setRoundAnswered] = useState(0);
+  // Refs mirror the round counters so async finalizers (timer onTimeUp,
+  // immediate handleNext) read the latest values without React-state lag.
+  const roundCorrectRef = useRef(0);
+  const roundAnsweredRef = useRef(0);
+
   const [idx, setIdx] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [showExplain, setShowExplain] = useState(false);
   const [flash, setFlash] = useState<"success" | "danger" | null>(null);
   const [dogMood, setDogMood] = useState<DogMood>("idle");
 
-  const { score, combo, addCorrect, addWrong, endQuiz, goHome } = useGameStore();
+  const { score, combo, correct, wrong, addCorrect, addWrong, endQuiz, goHome } =
+    useGameStore();
+
+  // Active queue for the current screen.
+  // - Combo: the whole pool.
+  // - Timed: a slice of `config.questionsPerRound` for the current round.
+  const queue = useMemo(
+    () => (isTimed ? sliceRoundQueue(pool, config, roundIdx) : pool),
+    [isTimed, pool, config, roundIdx]
+  );
 
   const currentQ = queue[idx];
-  const isLast = idx >= queue.length - 1;
-  const done = idx >= queue.length;
+  const isLastInRound = idx >= queue.length - 1;
 
-  const currentPoints = useMemo(() => {
-    // combo 加成：每 combo 增加 10 分
-    return 100 + combo * 10;
-  }, [combo]);
+  const currentPoints = useMemo(() => 100 + combo * 10, [combo]);
+
+  // ---- Timed-mode pre-checks ----
+  if (isTimed && pool.length < minPoolSize(config)) {
+    return (
+      <NotEnoughQuestions
+        needed={minPoolSize(config)}
+        have={pool.length}
+        onHome={goHome}
+      />
+    );
+  }
+
+  if (queue.length === 0) {
+    return <AllMasteredScreen title={title} onHome={goHome} />;
+  }
+
+  // ---- Round transitions ----
+
+  function startRound() {
+    setIdx(0);
+    setSelected(null);
+    setShowExplain(false);
+    setRoundCorrect(0);
+    setRoundAnswered(0);
+    roundCorrectRef.current = 0;
+    roundAnsweredRef.current = 0;
+    setDogMood("idle");
+    setPhase("playing");
+  }
+
+  function finishRound(finalCorrect: number, finalAnswered: number) {
+    const cleared = passed(config, finalCorrect, finalAnswered);
+    if (!cleared) {
+      setPhase("failed");
+      return;
+    }
+    if (roundIdx + 1 >= TOTAL_ROUNDS) {
+      setPhase("champion");
+      return;
+    }
+    setPhase("cleared");
+  }
+
+  function handleRoundTimeUp() {
+    if (phase !== "playing") return;
+    finishRound(roundCorrectRef.current, roundAnsweredRef.current);
+  }
+
+  function continueToNextRound() {
+    setRoundIdx((r) => r + 1);
+    setPhase("intro");
+  }
+
+  // ---- Intro / result overlays for timed mode ----
+
+  if (isTimed && phase === "intro") {
+    return (
+      <RoundIntro
+        roundIdx={roundIdx}
+        duration={durationFor(config, roundIdx)}
+        questionsPerRound={config.questionsPerRound}
+        passRatio={config.passRatio}
+        onStart={startRound}
+      />
+    );
+  }
+
+  if (isTimed && phase === "cleared") {
+    return (
+      <RoundCleared
+        roundIdx={roundIdx}
+        correct={roundCorrect}
+        total={roundAnswered}
+        passNeeded={Math.ceil(config.questionsPerRound * config.passRatio)}
+        onContinue={continueToNextRound}
+      />
+    );
+  }
+
+  if (isTimed && phase === "failed") {
+    return (
+      <RoundFailed
+        roundIdx={roundIdx}
+        correct={roundCorrect}
+        total={roundAnswered}
+        passNeeded={Math.ceil(config.questionsPerRound * config.passRatio)}
+        onFinish={endQuiz}
+      />
+    );
+  }
+
+  if (isTimed && phase === "champion") {
+    return (
+      <RoundChampion
+        totalCorrect={correct}
+        totalQuestions={correct + wrong}
+        onFinish={endQuiz}
+      />
+    );
+  }
+
+  // ---- Combo + Timed playing UI (shared) ----
 
   function handlePick(optIdx: number) {
-    if (selected !== null) return; // 已選過
+    if (selected !== null) return;
     setSelected(optIdx);
     const correct = optIdx === currentQ.answer;
     if (correct) {
       addCorrect(currentPoints, currentQ.id);
       setFlash("success");
       setDogMood(combo + 1 >= 3 ? "excited" : "happy");
+      if (isTimed) {
+        roundCorrectRef.current += 1;
+        setRoundCorrect(roundCorrectRef.current);
+      }
     } else {
       addWrong(currentQ.raw, currentQ.options[optIdx]);
       setFlash("danger");
       setDogMood("sad");
+    }
+    if (isTimed) {
+      roundAnsweredRef.current += 1;
+      setRoundAnswered(roundAnsweredRef.current);
     }
     setShowExplain(true);
     setTimeout(() => setFlash(null), 400);
   }
 
   function handleNext() {
-    if (isLast) {
-      endQuiz();
+    if (isLastInRound) {
+      if (isTimed) {
+        finishRound(roundCorrectRef.current, roundAnsweredRef.current);
+      } else {
+        endQuiz();
+      }
       return;
     }
     setSelected(null);
@@ -84,26 +228,12 @@ export function ChoiceQuiz({
     setIdx((i) => i + 1);
   }
 
-  function handleTimeUp() {
-    endQuiz();
-  }
-
-  if (queue.length === 0) {
-    return <AllMasteredScreen title={title} onHome={goHome} />;
-  }
-
-  if (done) {
-    endQuiz();
-    return null;
-  }
-
   return (
     <div
       className={`min-h-screen px-3 sm:px-4 py-4 pb-8 max-w-2xl mx-auto ${
         flash === "success" ? "flash-success" : ""
       } ${flash === "danger" ? "flash-danger" : ""}`}
     >
-      {/* 頂 bar */}
       <div className="flex items-center justify-between mb-3 gap-2">
         <button
           onClick={goHome}
@@ -111,7 +241,14 @@ export function ChoiceQuiz({
         >
           ← 戻る
         </button>
-        <h2 className="font-display text-xs sm:text-sm text-ink">{title}</h2>
+        <h2 className="font-display text-xs sm:text-sm text-ink">
+          {title}
+          {isTimed && (
+            <span className="ml-2 text-ink/60">
+              R{roundIdx + 1}/{TOTAL_ROUNDS}
+            </span>
+          )}
+        </h2>
         <div className="w-[60px] sm:w-[70px]" />
       </div>
 
@@ -120,12 +257,11 @@ export function ChoiceQuiz({
         combo={combo}
         current={idx + 1}
         total={queue.length}
-        timerSeconds={mode === "timed" ? timedSeconds : undefined}
-        onTimeUp={handleTimeUp}
-        timerRunning={!showExplain || mode !== "timed" ? true : true}
+        timerSeconds={isTimed ? durationFor(config, roundIdx) : undefined}
+        onTimeUp={handleRoundTimeUp}
+        timerRunning={phase === "playing"}
       />
 
-      {/* 狗狗＋提示 */}
       <div className="flex items-end gap-2 mb-3">
         <PixelDog mood={dogMood} size={70} className="shrink-0" />
         {showExplain && currentQ.explanation && (
@@ -135,7 +271,6 @@ export function ChoiceQuiz({
         )}
       </div>
 
-      {/* 題目卡 */}
       <div className="pixel-border bg-white shadow-pixel p-4 sm:p-5 mb-4">
         <div className="text-base sm:text-lg md:text-xl text-ink leading-relaxed font-pixel mb-2 break-words">
           {currentQ.prompt}
@@ -145,7 +280,6 @@ export function ChoiceQuiz({
         )}
       </div>
 
-      {/* 選項 */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3 mb-4">
         {currentQ.options.map((opt, i) => {
           const isAnswer = i === currentQ.answer;
@@ -174,14 +308,17 @@ export function ChoiceQuiz({
         })}
       </div>
 
-      {/* 下一題按鈕 */}
       {selected !== null && (
         <div className="flex justify-end">
           <button
             onClick={handleNext}
             className="pixel-btn pixel-border bg-beret text-white shadow-pixel px-5 sm:px-6 py-3 font-display text-xs sm:text-sm animate-pop"
           >
-            {isLast ? "結果を見る →" : "次へ →"}
+            {isLastInRound
+              ? isTimed
+                ? "ラウンド終了 →"
+                : "結果を見る →"
+              : "次へ →"}
           </button>
         </div>
       )}

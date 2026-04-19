@@ -18,5 +18,12 @@ export function GrammarQuiz() {
       raw: q,
     }));
 
-  return <ChoiceQuiz title="文法穴埋め" questions={adapted} mode={mode} />;
+  return (
+    <ChoiceQuiz
+      title="文法穴埋め"
+      questions={adapted}
+      mode={mode}
+      quizType="grammar"
+    />
+  );
 }

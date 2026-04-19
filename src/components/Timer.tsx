@@ -11,6 +11,11 @@ export function Timer({ seconds, onTimeUp, running = true }: TimerProps) {
   const onTimeUpRef = useRef(onTimeUp);
   onTimeUpRef.current = onTimeUp;
 
+  // Reset remaining when the configured seconds changes (e.g. new round).
+  useEffect(() => {
+    setRemaining(seconds);
+  }, [seconds]);
+
   useEffect(() => {
     if (!running) return;
     if (remaining <= 0) {

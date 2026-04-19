@@ -125,8 +125,8 @@ export function HomeScreen() {
             active={selectedMode === "timed"}
             onClick={() => setSelectedMode("timed")}
             title="タイムアタック"
-            sub="計時挑戰"
-            desc="60 秒內答越多越好"
+            sub="3 回合制"
+            desc="3 ラウンド・時間越來越短，沒過就 GAME OVER"
             icon="⏱"
           />
         </div>

@@ -1,11 +1,28 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { useGameStore } from "../store/useGameStore";
 import { PixelDog } from "../components/PixelDog";
 import { SpeechBubble } from "../components/SpeechBubble";
 import { ScoreBar } from "../components/ScoreBar";
 import { AllMasteredScreen } from "../components/ChoiceQuiz";
+import {
+  RoundIntro,
+  RoundCleared,
+  RoundChampion,
+  RoundFailed,
+  NotEnoughQuestions,
+} from "../components/RoundOverlay";
+import {
+  ROUND_CONFIGS,
+  TOTAL_ROUNDS,
+  durationFor,
+  minPoolSize,
+  passed,
+  sliceRoundQueue,
+} from "../lib/rounds";
 import { sentenceQuestions } from "../data/sentence";
 import type { DogMood, SentenceMatchQuestion } from "../types";
+
+type RoundPhase = "intro" | "playing" | "cleared" | "failed" | "champion";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -18,38 +35,145 @@ function shuffle<T>(arr: T[]): T[] {
 
 export function SentenceMatch() {
   const mode = useGameStore((s) => s.mode) ?? "combo";
-  const { score, combo, addCorrect, addWrong, endQuiz, goHome } = useGameStore();
+  const isTimed = mode === "timed";
+  const config = ROUND_CONFIGS.sentence;
+
+  const { score, combo, correct, wrong, addCorrect, addWrong, endQuiz, goHome } =
+    useGameStore();
   const isMastered = useGameStore((s) => s.isMastered);
 
-  const [queue] = useState(() =>
+  const [pool] = useState(() =>
     shuffle(sentenceQuestions.filter((q) => !isMastered(q.id)))
   );
+
+  const [phase, setPhase] = useState<RoundPhase>(isTimed ? "intro" : "playing");
+  const [roundIdx, setRoundIdx] = useState(0);
+  const [roundCorrect, setRoundCorrect] = useState(0);
+  const [roundAnswered, setRoundAnswered] = useState(0);
+  const roundCorrectRef = useRef(0);
+  const roundAnsweredRef = useRef(0);
+
   const [idx, setIdx] = useState(0);
-  const q = queue[idx];
-
-  if (queue.length === 0) {
-    return <AllMasteredScreen title="文型マッチ" onHome={goHome} />;
-  }
-
-  // 當前配對：pairs[leftIdx] = rightIdx (在 rights 陣列裡的 index)
   const [pairs, setPairs] = useState<Record<number, number>>({});
   const [selectedLeft, setSelectedLeft] = useState<number | null>(null);
   const [checked, setChecked] = useState(false);
   const [flash, setFlash] = useState<"success" | "danger" | null>(null);
   const [dogMood, setDogMood] = useState<DogMood>("thinking");
 
-  // 右邊是否已被配對
-  const usedRights = useMemo(
-    () => new Set(Object.values(pairs)),
-    [pairs]
+  const queue = useMemo(
+    () => (isTimed ? sliceRoundQueue(pool, config, roundIdx) : pool),
+    [isTimed, pool, config, roundIdx]
   );
 
+  const usedRights = useMemo(() => new Set(Object.values(pairs)), [pairs]);
+
+  if (isTimed && pool.length < minPoolSize(config)) {
+    return (
+      <NotEnoughQuestions
+        needed={minPoolSize(config)}
+        have={pool.length}
+        onHome={goHome}
+      />
+    );
+  }
+
+  if (queue.length === 0) {
+    return <AllMasteredScreen title="文型マッチ" onHome={goHome} />;
+  }
+
+  const q = queue[idx];
+  const isLastInRound = idx >= queue.length - 1;
+  const correctMap = new Map<number, number>(q.pairs);
   const allMatched =
     Object.keys(pairs).length === q.lefts.length && !checked;
 
+  // ---- Round transitions ----
+
+  function startRound() {
+    setIdx(0);
+    setPairs({});
+    setSelectedLeft(null);
+    setChecked(false);
+    setRoundCorrect(0);
+    setRoundAnswered(0);
+    roundCorrectRef.current = 0;
+    roundAnsweredRef.current = 0;
+    setDogMood("thinking");
+    setPhase("playing");
+  }
+
+  function finishRound(c: number, total: number) {
+    if (!passed(config, c, total)) {
+      setPhase("failed");
+      return;
+    }
+    if (roundIdx + 1 >= TOTAL_ROUNDS) {
+      setPhase("champion");
+      return;
+    }
+    setPhase("cleared");
+  }
+
+  function continueToNextRound() {
+    setRoundIdx((r) => r + 1);
+    setPhase("intro");
+  }
+
+  function handleRoundTimeUp() {
+    if (phase !== "playing") return;
+    finishRound(roundCorrectRef.current, roundAnsweredRef.current);
+  }
+
+  if (isTimed && phase === "intro") {
+    return (
+      <RoundIntro
+        roundIdx={roundIdx}
+        duration={durationFor(config, roundIdx)}
+        questionsPerRound={config.questionsPerRound}
+        passRatio={config.passRatio}
+        onStart={startRound}
+      />
+    );
+  }
+
+  if (isTimed && phase === "cleared") {
+    return (
+      <RoundCleared
+        roundIdx={roundIdx}
+        correct={roundCorrect}
+        total={roundAnswered}
+        passNeeded={Math.ceil(config.questionsPerRound * config.passRatio)}
+        onContinue={continueToNextRound}
+      />
+    );
+  }
+
+  if (isTimed && phase === "failed") {
+    return (
+      <RoundFailed
+        roundIdx={roundIdx}
+        correct={roundCorrect}
+        total={roundAnswered}
+        passNeeded={Math.ceil(config.questionsPerRound * config.passRatio)}
+        onFinish={endQuiz}
+      />
+    );
+  }
+
+  if (isTimed && phase === "champion") {
+    return (
+      <RoundChampion
+        totalCorrect={correct}
+        totalQuestions={correct + wrong}
+        onFinish={endQuiz}
+      />
+    );
+  }
+
+  // ---- Pairing UI handlers ----
+
   function handleLeftClick(i: number) {
     if (checked) return;
-    // 如果已配對，取消配對
     if (pairs[i] !== undefined) {
       const next = { ...pairs };
       delete next[i];
@@ -63,10 +187,7 @@ export function SentenceMatch() {
   function handleRightClick(ri: number) {
     if (checked) return;
     if (usedRights.has(ri)) {
-      // 找到是哪個 left 用了這個 right，取消
-      const leftEntry = Object.entries(pairs).find(
-        ([, v]) => v === ri
-      );
+      const leftEntry = Object.entries(pairs).find(([, v]) => v === ri);
       if (leftEntry) {
         const next = { ...pairs };
         delete next[Number(leftEntry[0])];
@@ -81,14 +202,9 @@ export function SentenceMatch() {
 
   function check() {
     setChecked(true);
-    // 比對答案
-    const correctMap = new Map<number, number>(q.pairs); // leftIdx → rightIdx
     let correctCount = 0;
-    const wrongPairs: Array<[number, number]> = [];
     Object.entries(pairs).forEach(([l, r]) => {
-      const li = Number(l);
-      if (correctMap.get(li) === r) correctCount++;
-      else wrongPairs.push([li, r]);
+      if (correctMap.get(Number(l)) === r) correctCount++;
     });
     const allRight = correctCount === q.lefts.length;
     if (allRight) {
@@ -96,17 +212,29 @@ export function SentenceMatch() {
       addCorrect(points, q.id);
       setFlash("success");
       setDogMood("excited");
+      if (isTimed) {
+        roundCorrectRef.current += 1;
+        setRoundCorrect(roundCorrectRef.current);
+      }
     } else {
-      addWrong(q as SentenceMatchQuestion, `配對錯誤 ${wrongPairs.length} 處`);
+      addWrong(q as SentenceMatchQuestion, `配對錯誤 ${q.lefts.length - correctCount} 處`);
       setFlash("danger");
       setDogMood("sad");
+    }
+    if (isTimed) {
+      roundAnsweredRef.current += 1;
+      setRoundAnswered(roundAnsweredRef.current);
     }
     setTimeout(() => setFlash(null), 400);
   }
 
   function next() {
-    if (idx >= queue.length - 1) {
-      endQuiz();
+    if (isLastInRound) {
+      if (isTimed) {
+        finishRound(roundCorrectRef.current, roundAnsweredRef.current);
+      } else {
+        endQuiz();
+      }
       return;
     }
     setIdx(idx + 1);
@@ -116,17 +244,12 @@ export function SentenceMatch() {
     setDogMood("thinking");
   }
 
-  const correctMap = new Map<number, number>(q.pairs);
-
   function rightStateClass(ri: number): string {
     if (!checked) {
       if (usedRights.has(ri)) return "bg-mint text-ink";
       return "bg-white hover:bg-cream text-ink";
     }
-    // checked 狀態
-    const matchedLeft = Object.entries(pairs).find(
-      ([, v]) => v === ri
-    );
+    const matchedLeft = Object.entries(pairs).find(([, v]) => v === ri);
     if (!matchedLeft) return "bg-white/50 text-ink/40";
     const li = Number(matchedLeft[0]);
     if (correctMap.get(li) === ri) return "bg-success text-white";
@@ -157,7 +280,14 @@ export function SentenceMatch() {
         >
           ← 戻る
         </button>
-        <h2 className="font-display text-xs sm:text-sm text-ink">文型マッチ</h2>
+        <h2 className="font-display text-xs sm:text-sm text-ink">
+          文型マッチ
+          {isTimed && (
+            <span className="ml-2 text-ink/60">
+              R{roundIdx + 1}/{TOTAL_ROUNDS}
+            </span>
+          )}
+        </h2>
         <div className="w-[60px] sm:w-[70px]" />
       </div>
 
@@ -166,9 +296,9 @@ export function SentenceMatch() {
         combo={combo}
         current={idx + 1}
         total={queue.length}
-        timerSeconds={mode === "timed" ? 120 : undefined}
-        onTimeUp={endQuiz}
-        timerRunning={!checked}
+        timerSeconds={isTimed ? durationFor(config, roundIdx) : undefined}
+        onTimeUp={handleRoundTimeUp}
+        timerRunning={phase === "playing" && !checked}
       />
 
       <div className="flex items-end gap-2 mb-3">
@@ -187,13 +317,9 @@ export function SentenceMatch() {
       </div>
 
       <div className="pixel-border bg-white shadow-pixel p-3 sm:p-4 mb-4">
-        <div className="text-xs text-ink/60 mb-2 font-display">
-          {q.prompt}
-        </div>
+        <div className="text-xs text-ink/60 mb-2 font-display">{q.prompt}</div>
 
-        {/* 手機：上下堆疊；桌面：左右並排 */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {/* 左側：句子前半 */}
           <div className="space-y-2">
             <div className="text-[10px] font-display text-ink/50 sm:hidden">
               【前半】を選んで…
@@ -218,7 +344,6 @@ export function SentenceMatch() {
               </button>
             ))}
           </div>
-          {/* 右側：句子後半 */}
           <div className="space-y-2">
             <div className="text-[10px] font-display text-ink/50 sm:hidden">
               …【後半】とペアに
@@ -242,7 +367,6 @@ export function SentenceMatch() {
         </div>
       </div>
 
-      {/* 解答／翻譯 */}
       {checked && (
         <div className="pixel-border bg-cream shadow-pixel p-4 mb-4 animate-pop">
           <div className="font-display text-xs text-ink mb-2">正解と訳：</div>
@@ -270,7 +394,11 @@ export function SentenceMatch() {
             onClick={next}
             className="pixel-btn pixel-border bg-beret text-white shadow-pixel px-6 py-3 font-display text-sm animate-pop"
           >
-            {idx >= queue.length - 1 ? "結果を見る →" : "次へ →"}
+            {isLastInRound
+              ? isTimed
+                ? "ラウンド終了 →"
+                : "結果を見る →"
+              : "次へ →"}
           </button>
         )}
       </div>

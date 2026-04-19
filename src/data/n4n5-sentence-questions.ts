@@ -46,7 +46,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
     prompt: "配對：時間、方向、理由、範圍（助詞 に／へ／から／で）",
     lefts: [
       "毎朝6時",
-      "来週、京都",
+      "来週、金沢",
       "時間がありません",
       "日本",
     ],
@@ -64,7 +64,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
     ],
     translations: [
       "每天早上六點起床。（に：具體時間點）",
-      "下週要去京都旅行。（へ：移動方向）",
+      "下週要去金沢旅行。（へ：移動方向）",
       "因為沒有時間，所以搭計程車去。（から：原因理由）",
       "在日本哪裡最熱鬧？（で：範圍）",
     ],
@@ -77,7 +77,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
       "これは友達",
       "日本語",
       "昨日、映画",
-      "田中さんも日本人。私",
+      "桐谷さんも日本人。私",
     ],
     rights: [
       "を見ました。",
@@ -95,7 +95,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
       "這是朋友的相機。（の：所屬、所有）",
       "我懂一點日語。（が：狀態動詞わかる的焦點）",
       "昨天看了電影。（を：動作作用對象）",
-      "田中先生是日本人，我也是日本人。（も：也）",
+      "桐谷先生是日本人，我也是日本人。（も：也）",
     ],
   },
   {
@@ -190,8 +190,8 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
     type: "sentence",
     prompt: "配對：比較文型（より／ほど／で一番）",
     lefts: [
-      "京都は東京",
-      "北海道は沖縄",
+      "金沢は横浜",
+      "青森は鹿児島",
       "日本で",
       "コーヒーと紅茶と",
     ],
@@ -208,8 +208,8 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
       [3, 0],
     ],
     translations: [
-      "京都比東京安靜。（より：比較基準）",
-      "北海道沒有像沖繩那麼熱。（ほど＋否定：沒有像～那麼～）",
+      "金沢比横浜安靜。（より：比較基準）",
+      "青森沒有像沖繩那麼熱。（ほど＋否定：沒有像～那麼～）",
       "在日本哪裡最熱鬧？（で：範圍／一番：最）",
       "咖啡和紅茶，你喜歡哪一個？（二選一用どちら）",
     ],
@@ -249,7 +249,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
     prompt: "配對：存在・數量表現（います／あります／しか／も）",
     lefts: [
       "机の上にりんごが",
-      "会議室に田中さんが",
+      "会議室に桐谷さんが",
       "財布に1000円",
       "ケーキを8個",
     ],
@@ -267,7 +267,7 @@ export const n4n5SentenceQuestions: SentenceMatchQuestion[] = [
     ],
     translations: [
       "桌上有蘋果。（無生命用あります）",
-      "田中先生在會議室。（人用います）",
+      "桐谷先生在會議室。（人用います）",
       "錢包裡只有1000日圓而已。（しか＋否定：強調少）",
       "蛋糕竟然吃了8個。（量詞＋も：強調多）",
     ],

@@ -1,91 +1,16 @@
 import type { SentenceMatchQuestion } from "../types";
+import { n4n5SentenceQuestions } from "./n4n5-sentence-questions";
+import type { JlptLevel } from "./grammar";
 
-export const sentenceQuestions: SentenceMatchQuestion[] = [
-  {
-    id: "s1",
-    type: "sentence",
-    prompt: "配對：日常生活常用句型",
-    lefts: [
-      "毎朝コーヒーを飲む",
-      "雨が降りそう",
-      "仕事が終わった",
-      "電気をつけた",
-    ],
-    rights: [
-      "ばかりです。",
-      "ことにしている。",
-      "ままで寝てしまった。",
-      "だから、傘を持っていこう。",
-    ],
-    pairs: [
-      [0, 1], // 毎朝コーヒーを飲む + ことにしている
-      [1, 3], // 雨が降りそう + だから傘を
-      [2, 0], // 仕事が終わった + ばかり
-      [3, 2], // 電気をつけた + まま
-    ],
-    translations: [
-      "我每天早上都習慣喝咖啡。（〜ことにしている：養成習慣）",
-      "看起來要下雨，帶把傘去吧。（〜そう：樣態推測）",
-      "工作剛結束。（〜たばかり：剛剛做完）",
-      "開著燈就睡著了。（〜たまま：維持某狀態）",
-    ],
-  },
-  {
-    id: "s2",
-    type: "sentence",
-    prompt: "配對：推測與傳聞句型",
-    lefts: [
-      "天気予報によると、明日は",
-      "あの店は人気がある",
-      "彼はまだ来ない。きっと道に",
-      "子供の頃は、よくここで",
-    ],
-    rights: [
-      "遊んだものだ。",
-      "迷ったにちがいない。",
-      "雨だそうです。",
-      "らしいですよ。",
-    ],
-    pairs: [
-      [0, 2], // 天気予報 + そうです（傳聞）
-      [1, 3], // あの店 + らしい（推測）
-      [2, 1], // 道に迷った + にちがいない
-      [3, 0], // 子供の頃 + ものだ（回想）
-    ],
-    translations: [
-      "根據氣象預報，明天會下雨。（〜そうだ：傳聞）",
-      "那家店好像很受歡迎。（〜らしい：間接推測）",
-      "他還沒來。一定是迷路了。（〜にちがいない：強烈推測）",
-      "小時候常在這裡玩呢。（〜ものだ：回想往事）",
-    ],
-  },
-  {
-    id: "s3",
-    type: "sentence",
-    prompt: "配對：原因與變化句型",
-    lefts: [
-      "たくさん練習した",
-      "毎日運動する",
-      "忙しい",
-      "値段が高い",
-    ],
-    rights: [
-      "おかげで、試験に合格した。",
-      "ようにしています。",
-      "にしては、品質がよくない。",
-      "ので、行けません。",
-    ],
-    pairs: [
-      [0, 0], // 練習した + おかげで
-      [1, 1], // 毎日運動する + ようにしている
-      [2, 3], // 忙しい + ので
-      [3, 2], // 値段が高い + にしては
-    ],
-    translations: [
-      "多虧練習很多，考試合格了。（〜おかげで：正面原因）",
-      "每天都盡量運動。（〜ようにしている：努力做到）",
-      "因為很忙，所以不能去。（〜ので：因為）",
-      "以價格這麼高來說，品質並不好。（〜にしては：相較於預期）",
-    ],
-  },
-];
+// Add new levels by dropping a new file (e.g. n3-sentence-questions.ts)
+// and wiring it in here.
+export const sentenceByLevel: Record<JlptLevel, SentenceMatchQuestion[]> = {
+  "N5-N4": n4n5SentenceQuestions,
+  N3: [],
+  N2: [],
+  N1: [],
+};
+
+export const sentenceQuestions: SentenceMatchQuestion[] = Object.values(
+  sentenceByLevel
+).flat();
